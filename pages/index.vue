@@ -1,9 +1,3 @@
-<script setup>
-
-</script>
-
 <template>
-  <!-- <section> -->
-    <h1>Test AB</h1>
-  <!-- </section> -->
+  <h1>genius-invokation-simulator</h1>
 </template>
