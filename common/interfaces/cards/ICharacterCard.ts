@@ -2,7 +2,7 @@ import Element from "~~/common/enums/Element"
 import Weapon from "~~/common/enums/Weapon"
 import Skill from "../Skill"
 
-interface Character {
+interface ICharacterCard {
   id: string
   name: string
   hp: number
@@ -12,4 +12,4 @@ interface Character {
   skills: Skill[]
 }
 
-export default Character
+export default ICharacterCard

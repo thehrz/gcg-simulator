@@ -1,15 +1,15 @@
 enum Dice {
-  Any,
-  Same,
-  Void,
-  None,
-  Cryo,
-  Hydro,
-  Pyro,
-  Electro,
-  Geo,
-  Dendro,
-  Anemo,
+  Any = "any",
+  Same = "same",
+  Void = "void",
+  None = "none",
+  Cryo = "cryo",
+  Hydro = "hydro",
+  Pyro = "pyro",
+  Electro = "electro",
+  Geo = "geo",
+  Dendro = "dendro",
+  Anemo = "anemo",
 }
 
 export default Dice
