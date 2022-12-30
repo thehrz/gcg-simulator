@@ -19,7 +19,7 @@ defineProps<{
   height: auto;
   position: relative;
   display: inline-block;
-  margin: 5px;
+  margin: 4%;
 }
 
 .cardBoard {
@@ -55,5 +55,9 @@ defineProps<{
 img {
   width: 100%;
   height: 100%;
+}
+
+.fighting {
+  margin-top: 10%;
 }
 </style>

@@ -2,6 +2,7 @@
 import Table from "~~/common/enums/Table"
 import IPlayer from "~~/common/interfaces/player/IPlayer"
 import CharacterCard from "./CharacterCard.vue"
+import DicesNumber from "./DicesNumber.vue"
 
 const props = defineProps<{
   table: Table
@@ -27,6 +28,7 @@ const backgroundUrl = computed(() => `url("/images/tables/${props.table}.png")`)
     <div class="enemy_cards">
       <CharacterCard
         class="card"
+        :class="{ fighting: character.isFighting }"
         v-for="character in enemy.characters"
         :character="character"
       />
@@ -35,6 +37,8 @@ const backgroundUrl = computed(() => `url("/images/tables/${props.table}.png")`)
     <div class="enemy_summon"></div>
 
     <div class="dices">
+      <DicesNumber :num="owner.dices.length" />
+
       <nuxt-img
         v-for="dice in owner.dices"
         :src="'images/icons/' + dice + '.png'"
@@ -46,6 +50,7 @@ const backgroundUrl = computed(() => `url("/images/tables/${props.table}.png")`)
     <div class="owner_cards">
       <CharacterCard
         class="card"
+        :class="{ fighting: character.isFighting }"
         v-for="character in owner.characters"
         :character="character"
       />
@@ -84,6 +89,14 @@ const backgroundUrl = computed(() => `url("/images/tables/${props.table}.png")`)
   width: 50%;
 }
 
+.enemy_cards .fighting {
+  margin-top: 10%;
+}
+
+.owner_cards .fighting {
+  margin-bottom: 10%;
+}
+
 .card {
   width: 25%;
 }
@@ -119,11 +132,17 @@ const backgroundUrl = computed(() => `url("/images/tables/${props.table}.png")`)
   grid-column: 5 / 6;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
+  margin-right: 20%;
 }
 
-.dices img {
+.dices svg,
+img {
   width: 50%;
+}
+
+.dices svg {
+  margin-bottom: 15%;
 }
 
 .owner_info {

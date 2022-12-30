@@ -86,18 +86,21 @@ const ganyu1: ICharacter = {
   card: CharacterGanyu,
   hp: 5,
   energy: 1,
+  isFighting: true,
 }
 
 const ganyu2: ICharacter = {
   card: CharacterGanyu,
   hp: 10,
   energy: 2,
+  isFighting: false,
 }
 
 const ganyu3: ICharacter = {
   card: CharacterGanyu,
   hp: 10,
   energy: 2,
+  isFighting: true,
 }
 
 const robot: IPlayer = {

@@ -1,0 +1,28 @@
+<script setup lang="ts">
+defineProps<{ num: number }>()
+</script>
+
+<template>
+  <svg viewBox="0 0 110 110">
+    <g>
+      <circle
+        cx="55"
+        cy="55"
+        r="50"
+        fill="none"
+        stroke="#d3b879"
+        stroke-width="5"
+      />
+      <text
+        font-size="60"
+        x="55"
+        y="75"
+        text-anchor="middle"
+        fill="white"
+        font-family="HYWenHei"
+      >
+        {{ num }}
+      </text>
+    </g>
+  </svg>
+</template>
