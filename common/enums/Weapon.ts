@@ -1,10 +1,10 @@
 enum Weapon {
-  Bow,
-  Catalyst,
-  Claymore,
-  None,
-  Pole,
-  Sword,
+  Bow = "bow",
+  Catalyst = "catalyst",
+  Claymore = "claymore",
+  None = "none",
+  Pole = "pole",
+  Sword = "sword",
 }
 
 export default Weapon
