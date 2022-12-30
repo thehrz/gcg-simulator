@@ -1,6 +1,6 @@
 import Element from "~~/common/enums/Element"
 import Weapon from "~~/common/enums/Weapon"
-import Skill from "../Skill"
+import ISkill from "../ISkill"
 
 interface ICharacterCard {
   id: string
@@ -9,7 +9,7 @@ interface ICharacterCard {
   energy: number
   element: Element
   weapon: Weapon
-  skills: Skill[]
+  skills: ISkill[]
 }
 
 export default ICharacterCard

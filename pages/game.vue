@@ -6,7 +6,7 @@ import Weapon from "~~/common/enums/Weapon"
 import ICharacterCard from "~~/common/interfaces/cards/ICharacterCard"
 import ICharacter from "~~/common/interfaces/ICharacter"
 import IPlayer from "~~/common/interfaces/player/IPlayer"
-import { Type } from "~~/common/interfaces/Skill"
+import { Type } from "~~/common/interfaces/ISkill"
 
 //TODO: Test
 const CharacterGanyu: ICharacterCard = {
