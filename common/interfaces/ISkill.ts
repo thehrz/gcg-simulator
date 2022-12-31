@@ -1,17 +1,17 @@
 import Dice from "../enums/Dice"
 
-interface Skill {
+interface ISkill {
   type: Type
   name: string
   desc: string
-  cost: Cost[]
+  cost?: Cost[]
   sub?: Sub
 }
 
 export enum Type {
-  NormalAttack,
-  ElementalSkill,
-  ElementalBurst,
+  NormalAttack = "普通攻击",
+  ElementalSkill = "元素战技",
+  ElementalBurst = "元素爆发",
 }
 
 export interface Cost {
@@ -25,4 +25,4 @@ export interface Sub {
   desc: string
 }
 
-export default Skill
+export default ISkill

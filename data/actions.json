@@ -1,0 +1,1373 @@
+[
+  {
+    "id": "undivided_heart",
+    "name": "唯此一心",
+    "requirement": "ganyu",
+    "cost": [
+      {
+        "type": "cryo",
+        "count": 5
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">甘雨</span>时，装备此牌。\\n甘雨装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">唯此一心</span>。\\n装备有此牌的甘雨使用<span style=\"color: #FFFFFFFF;\">唯此一心</span>时：如果此技能在本场对局中曾经被使用过，则其造成的<span style=\"color: #99FFFFFF;\">冰元素伤害</span>+1，并且改为对敌方后台角色造成3点<span style=\"color: #FFFFFFFF; text-decoration: underline;\">穿透伤害</span>。\\n（牌组中包含甘雨，才能加入牌组）"
+  },
+  {
+    "id": "shaken,_not_purred",
+    "name": "猫爪冰摇",
+    "requirement": "diona",
+    "cost": [
+      {
+        "type": "cryo",
+        "count": 4
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">迪奥娜</span>时，装备此牌。\\n迪奥娜装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">猫爪冰摇</span>。\\n装备有此牌的迪奥娜生成的<span style=\"color: #FFFFFFFF;\">猫爪护盾</span>，所提供的<span style=\"color: #FFFFFFFF; text-decoration: underline;\">护盾</span>值+1。\\n（牌组中包含迪奥娜，才能加入牌组）"
+  },
+  {
+    "id": "cold-blooded_strike",
+    "name": "冷血之剑",
+    "requirement": "kaeya",
+    "cost": [
+      {
+        "type": "cryo",
+        "count": 4
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">凯亚</span>时，装备此牌。\\n凯亚装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">冷血之剑</span>。\\n装备有此牌的凯亚使用<span style=\"color: #FFFFFFFF;\">冷血之剑</span>后：治疗自身2点。（每回合1次）\\n（牌组中包含凯亚，才能加入牌组）"
+  },
+  {
+    "id": "steady_breathing",
+    "name": "吐纳真定",
+    "requirement": "chongyun",
+    "cost": [
+      {
+        "type": "cryo",
+        "count": 4
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">重云</span>时，装备此牌。\\n重云装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">吐纳真定</span>。\\n装备有此牌的重云生成的<span style=\"color: #FFFFFFFF;\">重华叠霜领域</span>获得以下效果：\\n初始<span style=\"color: #FFFFFFFF; text-decoration: underline;\">持续回合</span>+1，并且使我方单手剑、双手剑或长柄武器角色的<span style=\"color: #FFFFFFFF;\">普通攻击</span>伤害+1。\\n（牌组中包含重云，才能加入牌组）"
+  },
+  {
+    "id": "kanten_senmyou_blessing",
+    "name": "寒天宣命祝词",
+    "requirement": "kamisato_ayaka",
+    "cost": [
+      {
+        "type": "cryo",
+        "count": 2
+      }
+    ],
+    "desc": "装备有此牌的<span style=\"color: #FFFFFFFF;\">神里绫华</span>生成的<span style=\"color: #FFFFFFFF;\">冰元素附魔</span>会使所附属角色造成的<span style=\"color: #99FFFFFF;\"><span style=\"color: #99FFFFFF;\">冰元素伤害</span></span>+1。\\n切换到装备有此牌的神里绫华时：少花费1个元素骰。（每回合1次）\\n（牌组中包含神里绫华，才能加入牌组）"
+  },
+  {
+    "id": "glorious_season",
+    "name": "光辉的季节",
+    "requirement": "barbara",
+    "cost": [
+      {
+        "type": "hydro",
+        "count": 4
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">芭芭拉</span>时，装备此牌。\\n芭芭拉装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">光辉的季节</span>。\\n装备有此牌的芭芭拉在场时，<span style=\"color: #FFFFFFFF;\">歌声之环</span>会使我方执行「切换角色」行动时少花费1个元素骰。（每回合1次）\\n（牌组中包含芭芭拉，才能加入牌组）"
+  },
+  {
+    "id": "the_scent_remained",
+    "name": "重帘留香",
+    "requirement": "xingqiu",
+    "cost": [
+      {
+        "type": "hydro",
+        "count": 4
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">行秋</span>时，装备此牌。\\n行秋装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">重帘留香</span>。\\n装备有此牌的行秋生成的<span style=\"color: #FFFFFFFF;\">雨帘剑</span>，初始<span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>+1。\\n（牌组中包含行秋，才能加入牌组）"
+  },
+  {
+    "id": "prophecy_of_submersion",
+    "name": "沉没的预言",
+    "requirement": "mona",
+    "cost": [
+      {
+        "type": "hydro",
+        "count": 3
+      },
+      {
+        "type": "energy",
+        "count": 3
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">莫娜</span>时，装备此牌。\\n莫娜装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">沉没的预言</span>。\\n装备有此牌的莫娜出战期间，我方引发的<span style=\"color: #80C0FFFF;\">水元素相关反应</span>伤害额外+2。\\n（牌组中包含莫娜，才能加入牌组）"
+  },
+  {
+    "id": "flowing_flame",
+    "name": "流火焦灼",
+    "requirement": "diluc",
+    "cost": [
+      {
+        "type": "pyro",
+        "count": 3
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">迪卢克</span>时，装备此牌。\\n迪卢克装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">流火焦灼</span>。\\n装备有此牌的迪卢克每回合第2次使用<span style=\"color: #FFFFFFFF;\">流火焦灼</span>时，少花费1个<span style=\"color: #FF9999FF;\">火元素</span>。\\n（牌组中包含迪卢克，才能加入牌组）"
+  },
+  {
+    "id": "crossfire",
+    "name": "交叉火力",
+    "requirement": "xiangling",
+    "cost": [
+      {
+        "type": "pyro",
+        "count": 4
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">香菱</span>时，装备此牌。\\n香菱装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">交叉火力</span>。\\n装备有此牌的香菱施放<span style=\"color: #FFFFFFFF;\">交叉火力</span>时，自身也会造成1点<span style=\"color: #FF9999FF;\">火元素伤害</span>。\\n（牌组中包含香菱，才能加入牌组）"
+  },
+  {
+    "id": "grand_expectation",
+    "name": "冒险憧憬",
+    "requirement": "bennett",
+    "cost": [
+      {
+        "type": "pyro",
+        "count": 4
+      },
+      {
+        "type": "energy",
+        "count": 2
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">班尼特</span>时，装备此牌。\\n班尼特装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">冒险憧憬</span>。\\n装备有此牌的班尼特生成的<span style=\"color: #FFFFFFFF;\">鼓舞领域</span>，其伤害提升效果改为总是生效，不再具有生命值限制。\\n（牌组中包含班尼特，才能加入牌组）"
+  },
+  {
+    "id": "naganohara_meteor_swarm",
+    "name": "长野原龙势流星群",
+    "requirement": "yoimiya",
+    "cost": [
+      {
+        "type": "pyro",
+        "count": 2
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">宵宫</span>时，装备此牌。\\n宵宫装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">长野原龙势流星群</span>。\\n装备有此牌的宵宫触发<span style=\"color: #FFFFFFFF;\">庭火焰硝</span>后：额外造成1点<span style=\"color: #FF9999FF;\">火元素伤害</span>。\\n（牌组中包含宵宫，才能加入牌组）"
+  },
+  {
+    "id": "stellar_predator",
+    "name": "噬星魔鸦",
+    "requirement": "fischl",
+    "cost": [
+      {
+        "type": "electro",
+        "count": 3
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">菲谢尔</span>时，装备此牌。\\n菲谢尔装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">噬星魔鸦</span>。\\n装备有此牌的菲谢尔生成的<span style=\"color: #FFFFFFFF;\">奥兹</span>，会在菲谢尔<span style=\"color: #FFFFFFFF;\">普通攻击</span>后造成2点<span style=\"color: #FFACFFFF;\">雷元素伤害</span>。（需消耗<span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>）\\n（牌组中包含菲谢尔，才能加入牌组）"
+  },
+  {
+    "id": "awakening",
+    "name": "觉醒",
+    "requirement": "razor",
+    "cost": [
+      {
+        "type": "electro",
+        "count": 4
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">雷泽</span>时，装备此牌。\\n雷泽装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">觉醒</span>。\\n装备有此牌的雷泽<span style=\"color: #FFFFFFFF;\">使用觉醒后</span>：使我方一个雷元素角色获得1点充能。（出战角色优先）\\n（牌组中包含雷泽，才能加入牌组）"
+  },
+  {
+    "id": "thundering_penance",
+    "name": "抵天雷罚",
+    "requirement": "keqing",
+    "cost": [
+      {
+        "type": "electro",
+        "count": 3
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">刻晴</span>时，装备此牌。\\n刻晴装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">抵天雷罚</span>。\\n装备有此牌的刻晴生成的<span style=\"color: #FFFFFFFF;\">雷元素附魔</span>获得以下效果：\\n初始<span style=\"color: #FFFFFFFF; text-decoration: underline;\">持续回合</span>+1，并且会使所附属角色造成的<span style=\"color: #FFACFFFF;\">雷元素伤害</span>+1。\\n（牌组中包含刻晴，才能加入牌组）"
+  },
+  {
+    "id": "featherfall_judgment",
+    "name": "落羽的裁择",
+    "requirement": "cyno",
+    "cost": [
+      {
+        "type": "electro",
+        "count": 3
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">赛诺</span>时，装备此牌。\\n赛诺装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">落羽的裁择</span>。\\n装备有此牌的赛诺在<span style=\"color: #FFFFFFFF;\">启途誓使</span>的「凭依」级数为3或5时使用<span style=\"color: #FFFFFFFF;\">落羽的裁择</span>时，造成的伤害额外+1。\\n（牌组中包含赛诺，才能加入牌组）"
+  },
+  {
+    "id": "chaotic_entropy",
+    "name": "混元熵增论",
+    "requirement": "sucrose",
+    "cost": [
+      {
+        "type": "anemo",
+        "count": 3
+      },
+      {
+        "type": "energy",
+        "count": 2
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">砂糖</span>时，装备此牌。\\n砂糖装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">混元熵增论</span>。\\n装备有此牌的砂糖生成的<span style=\"color: #FFFFFFFF;\">大型风灵</span>已转换成另一种元素后：我方造成的此类元素伤害+1。\\n（牌组中包含砂糖，才能加入牌组）"
+  },
+  {
+    "id": "lands_of_dandelion",
+    "name": "蒲公英的国土",
+    "requirement": "jean",
+    "cost": [
+      {
+        "type": "anemo",
+        "count": 4
+      },
+      {
+        "type": "energy",
+        "count": 3
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">琴</span>时，装备此牌。\\n琴装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">蒲公英的国土</span>。\\n装备有此牌的琴在场时，<span style=\"color: #FFFFFFFF;\">蒲公英领域</span>会使我方造成的<span style=\"color: #80FFD7FF;\"><span style=\"color: #80FFD7FF;\">风元素伤害</span></span>+1。\\n（牌组中包含琴，才能加入牌组）"
+  },
+  {
+    "id": "strategic_reserve",
+    "name": "储之千日，用之一刻",
+    "requirement": "ningguang",
+    "cost": [
+      {
+        "type": "geo",
+        "count": 4
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">凝光</span>时，装备此牌。\\n凝光装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">储之千日，用之一刻</span>。\\n装备有此牌的凝光在场时，<span style=\"color: #FFFFFFFF;\">璇玑屏</span>会使我方造成的<span style=\"color: #FFE699FF;\"><span style=\"color: #FFE699FF;\">岩元素伤害</span></span>+1。\\n（牌组中包含凝光，才能加入牌组）"
+  },
+  {
+    "id": "i_got_your_back",
+    "name": "支援就交给我吧",
+    "requirement": "noelle",
+    "cost": [
+      {
+        "type": "geo",
+        "count": 3
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">诺艾尔</span>时，装备此牌。\\n诺艾尔装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">支援就交给我吧</span>。\\n装备有此牌的诺艾尔生成的<span style=\"color: #FFFFFFFF;\">护体岩铠</span>，会在诺艾尔使用<span style=\"color: #FFFFFFFF;\">普通攻击</span>后，治疗我方所有角色1点。（每回合1次）\\n（牌组中包含诺艾尔，才能加入牌组）"
+  },
+  {
+    "id": "floral_sidewinder",
+    "name": "飞叶迴斜",
+    "requirement": "collei",
+    "cost": [
+      {
+        "type": "dendro",
+        "count": 3
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">柯莱</span>时，装备此牌。\\n柯莱装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">飞叶迴斜</span>。\\n装备有此牌的柯莱使用了<span style=\"color: #FFFFFFFF;\">飞叶迴斜</span>的回合中，我方角色的技能引发<span style=\"color: #7EC236FF;\">草元素相关反应</span>后：造成1点<span style=\"color: #7EC236FF;\">草元素伤害</span>。（每回合1次）\\n（牌组中包含柯莱，才能加入牌组）"
+  },
+  {
+    "id": "streaming_surge",
+    "name": "百川奔流",
+    "requirement": "rhodeia_of_loch",
+    "cost": [
+      {
+        "type": "hydro",
+        "count": 4
+      },
+      {
+        "type": "energy",
+        "count": 3
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">纯水精灵·洛蒂娅</span>时，装备此牌。\\n纯水精灵·洛蒂娅装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">百川奔流</span>。\\n装备有此牌的纯水精灵·洛蒂娅施放<span style=\"color: #FFFFFFFF;\">百川奔流</span>时，使我方所有召唤物<span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>+1。\\n（牌组中包含纯水精灵·洛蒂娅，才能加入牌组）"
+  },
+  {
+    "id": "mirror_cage",
+    "name": "镜锢之笼",
+    "requirement": "mirror_maiden",
+    "cost": [
+      {
+        "type": "hydro",
+        "count": 4
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">愚人众·藏镜仕女</span>时，装备此牌。\\n愚人众·藏镜仕女装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">镜锢之笼</span>。\\n装备有此牌的愚人众·藏镜仕女生成的<span style=\"color: #FFFFFFFF;\">水光破镜</span>获得以下效果：\\n初始<span style=\"color: #FFFFFFFF; text-decoration: underline;\">持续回合</span>+1，并且会使所附属角色切换到其他角色时元素骰费用+1。\\n（牌组中包含愚人众·藏镜仕女，才能加入牌组）"
+  },
+  {
+    "id": "paid_in_full",
+    "name": "悉数讨回",
+    "requirement": "fatui_pyro_agent",
+    "cost": [
+      {
+        "type": "pyro",
+        "count": 3
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">愚人众·火之债务处理人</span>时，装备此牌。\\n愚人众·火之债务处理人装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">悉数讨回</span>。\\n装备有此牌的愚人众·火之债务处理人生成的<span style=\"color: #FFFFFFFF;\">潜行</span>获得以下效果：\\n初始<span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>+1，并且使所附属角色造成的<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理伤害</span>变为<span style=\"color: #FF9999FF;\">火元素伤害</span>。\\n（牌组中包含愚人众·火之债务处理人，才能加入牌组）"
+  },
+  {
+    "id": "transcendent_automaton",
+    "name": "机巧神通",
+    "requirement": "maguu_kenki",
+    "cost": [
+      {
+        "type": "anemo",
+        "count": 3
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">魔偶剑鬼</span>时，装备此牌。\\n魔偶剑鬼装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">机巧神通</span>。\\n装备有此牌的魔偶剑鬼施放<span style=\"color: #FFFFFFFF;\">机巧神通</span>后，我方切换到后一个角色；施放<span style=\"color: #FFFFFFFF;\">机巧神通</span>后，我方切换到前一个角色。\\n（牌组中包含魔偶剑鬼，才能加入牌组）"
+  },
+  {
+    "id": "stonehide_reforged",
+    "name": "重铸：岩盔",
+    "requirement": "stonehide_lawachurl",
+    "cost": [
+      {
+        "type": "geo",
+        "count": 4
+      },
+      {
+        "type": "energy",
+        "count": 2
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">丘丘岩盔王</span>时，装备此牌。\\n丘丘岩盔王装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">重铸：岩盔</span>。\\n装备有此牌的丘丘岩盔王击倒敌方角色后；丘丘岩盔王重新附属<span style=\"color: #FFFFFFFF;\">岩盔</span>和<span style=\"color: #FFFFFFFF;\">坚岩之力</span>。\\n（牌组中包含丘丘岩盔王，才能加入牌组）"
+  },
+  {
+    "id": "proliferating_spores",
+    "name": "孢子增殖",
+    "requirement": "jadeplume_terrorshroom",
+    "cost": [
+      {
+        "type": "dendro",
+        "count": 3
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">翠翎恐蕈</span>时，装备此牌。\\n翠翎恐蕈装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">孢子增殖</span>。\\n装备有此牌的翠翎恐蕈，可累积的「活化激能」层数+1。\\n（牌组中包含翠翎恐蕈，才能加入牌组）"
+  },
+  {
+    "id": "magic_guide",
+    "type": "weapon",
+    "name": "魔导绪论",
+    "cost": [
+      {
+        "type": "same",
+        "count": 2
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">角色造成的伤害+1</span>。\\n（<span style=\"color: #FFFFFFFF;\">「法器」角色</span>才能装备。角色最多装备1件「武器」）"
+  },
+  {
+    "id": "sacrificial_fragments",
+    "type": "weapon",
+    "name": "祭礼残章",
+    "cost": [
+      {
+        "type": "same",
+        "count": 3
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">角色造成的伤害+1</span>。\\n<span style=\"color: #FFFFFFFF;\">角色使用「元素战技」后：</span>生成1个此角色类型的元素骰。（每回合1次）\\n（<span style=\"color: #FFFFFFFF;\">「法器」角色</span>才能装备。角色最多装备1件「武器」）"
+  },
+  {
+    "id": "skyward_atlas",
+    "type": "weapon",
+    "name": "天空之卷",
+    "cost": [
+      {
+        "type": "same",
+        "count": 3
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">角色造成的伤害+1</span>。\\n<span style=\"color: #FFFFFFFF;\">每回合1次：</span>角色使用「普通攻击」造成的伤害额外+1。\\n（<span style=\"color: #FFFFFFFF;\">「法器」角色</span>才能装备。角色最多装备1件「武器」）"
+  },
+  {
+    "id": "raven_bow",
+    "type": "weapon",
+    "name": "鸦羽弓",
+    "cost": [
+      {
+        "type": "same",
+        "count": 2
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">角色造成的伤害+1</span>。\\n（<span style=\"color: #FFFFFFFF;\">「弓」角色</span>才能装备。角色最多装备1件「武器」）"
+  },
+  {
+    "id": "sacrificial_bow",
+    "type": "weapon",
+    "name": "祭礼弓",
+    "cost": [
+      {
+        "type": "same",
+        "count": 3
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">角色造成的伤害+1</span>。\\n<span style=\"color: #FFFFFFFF;\">角色使用「元素战技」后：</span>生成1个此角色类型的元素骰。（每回合1次）\\n（<span style=\"color: #FFFFFFFF;\">「弓」角色</span>才能装备。角色最多装备1件「武器」）"
+  },
+  {
+    "id": "skyward_harp",
+    "type": "weapon",
+    "name": "天空之翼",
+    "cost": [
+      {
+        "type": "same",
+        "count": 3
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">角色造成的伤害+1</span>。\\n<span style=\"color: #FFFFFFFF;\">每回合1次：</span>角色使用「普通攻击」造成的伤害额外+1。\\n（<span style=\"color: #FFFFFFFF;\">「弓」角色</span>才能装备。角色最多装备1件「武器」）"
+  },
+  {
+    "id": "white_iron_greatsword",
+    "type": "weapon",
+    "name": "白铁大剑",
+    "cost": [
+      {
+        "type": "same",
+        "count": 2
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">角色造成的伤害+1</span>。\\n（<span style=\"color: #FFFFFFFF;\">「双手剑」角色</span>才能装备。角色最多装备1件「武器」）"
+  },
+  {
+    "id": "sacrificial_greatsword",
+    "type": "weapon",
+    "name": "祭礼大剑",
+    "cost": [
+      {
+        "type": "same",
+        "count": 3
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">角色造成的伤害+1</span>。\\n<span style=\"color: #FFFFFFFF;\">角色使用「元素战技」后：</span>生成1个此角色类型的元素骰。（每回合1次）\\n（<span style=\"color: #FFFFFFFF;\">「双手剑」角色</span>才能装备。角色最多装备1件「武器」）"
+  },
+  {
+    "id": "wolfs_gravestone",
+    "type": "weapon",
+    "name": "狼的末路",
+    "cost": [
+      {
+        "type": "same",
+        "count": 3
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">角色造成的伤害+1</span>。\\n攻击剩余生命值不多于6的目标时，伤害额外+2。\\n（<span style=\"color: #FFFFFFFF;\">「双手剑」角色</span>才能装备。角色最多装备1件「武器」）"
+  },
+  {
+    "id": "white_tassel",
+    "type": "weapon",
+    "name": "白缨枪",
+    "cost": [
+      {
+        "type": "same",
+        "count": 2
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">角色造成的伤害+1</span>。\\n（<span style=\"color: #FFFFFFFF;\">「长柄武器」角色</span>才能装备。角色最多装备1件「武器」）"
+  },
+  {
+    "id": "lithic_spear",
+    "type": "weapon",
+    "name": "千岩长枪",
+    "cost": [
+      {
+        "type": "same",
+        "count": 3
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">角色造成的伤害+1</span>\\n入场时：队伍中每有一名「璃月」角色，此牌就为附属的角色提供<span style=\"color: #FFFFFFFF;\">1点<span style=\"color: #FFFFFFFF; text-decoration: underline;\">护盾</span></span>。（最多3点）\\n（<span style=\"color: #FFFFFFFF;\">「长柄武器」角色</span>才能装备。角色最多装备1件「武器」）"
+  },
+  {
+    "id": "skyward_spine",
+    "type": "weapon",
+    "name": "天空之脊",
+    "cost": [
+      {
+        "type": "same",
+        "count": 3
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">角色造成的伤害+1</span>。\\n<span style=\"color: #FFFFFFFF;\">每回合1次：</span>角色使用「普通攻击」造成的伤害额外+1。\\n（<span style=\"color: #FFFFFFFF;\">「长柄武器」角色</span>才能装备。角色最多装备1件「武器」）"
+  },
+  {
+    "id": "travelers_handy_sword",
+    "type": "weapon",
+    "name": "旅行剑",
+    "cost": [
+      {
+        "type": "same",
+        "count": 2
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">角色造成的伤害+1</span>。\\n（<span style=\"color: #FFFFFFFF;\">「单手剑」角色</span>才能装备。角色最多装备1件「武器」）"
+  },
+  {
+    "id": "sacrificial_sword",
+    "type": "weapon",
+    "name": "祭礼剑",
+    "cost": [
+      {
+        "type": "same",
+        "count": 3
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">角色造成的伤害+1</span>。\\n<span style=\"color: #FFFFFFFF;\">角色使用「元素战技」后：</span>生成1个此角色类型的元素骰。（每回合1次）\\n（<span style=\"color: #FFFFFFFF;\">「单手剑」角色</span>才能装备。角色最多装备1件「武器」）"
+  },
+  {
+    "id": "aquila_favonia",
+    "type": "weapon",
+    "name": "风鹰剑",
+    "cost": [
+      {
+        "type": "same",
+        "count": 3
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">角色造成的伤害+1</span>。\\n<span style=\"color: #FFFFFFFF;\">对方使用技能后：</span>如果所附属角色为「出战角色」，则治疗该角色1点。（每回合至多2次）\\n（<span style=\"color: #FFFFFFFF;\">「单手剑」角色</span>才能装备。角色最多装备1件「武器」）"
+  },
+  {
+    "id": "adventurers_bandana",
+    "type": "artifact",
+    "name": "冒险家头带",
+    "cost": [
+      {
+        "type": "same",
+        "count": 1
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">角色使用「普通攻击」后：</span>治疗自身1点。（每回合至多3次）\\n（角色最多装备1件「圣遗物」）"
+  },
+  {
+    "id": "lucky_dogs_silver_circlet",
+    "type": "artifact",
+    "name": "幸运儿银冠",
+    "cost": [
+      {
+        "type": "void",
+        "count": 2
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">角色使用「元素战技」后：</span>治疗自身2点。（每回合1次）\\n（角色最多装备1件「圣遗物」）"
+  },
+  {
+    "id": "traveling_doctors_handkerchief",
+    "type": "artifact",
+    "name": "游医的方巾",
+    "cost": [
+      {
+        "type": "same",
+        "count": 1
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">角色使用「元素爆发」后：</span>治疗所有我方角色1点。（每回合1次）\\n（角色最多装备1件「圣遗物」）"
+  },
+  {
+    "id": "gamblers_earrings",
+    "type": "artifact",
+    "name": "赌徒的耳环",
+    "cost": [
+      {
+        "type": "same",
+        "count": 1
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">敌方角色被击倒后：</span>如果所附属角色为「出战角色」，则生成2个<span style=\"color: #FFFFFFFF; text-decoration: underline;\">万能元素</span>。\\n（角色最多装备1件「圣遗物」）"
+  },
+  {
+    "id": "instructors_cap",
+    "type": "artifact",
+    "name": "教官的帽子",
+    "cost": [
+      {
+        "type": "void",
+        "count": 2
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">角色引发元素反应后：</span>生成1个此角色元素类型的元素骰。（每回合至多3次）\\n（角色最多装备1件「圣遗物」）"
+  },
+  {
+    "id": "exiles_circlet",
+    "type": "artifact",
+    "name": "流放者头冠",
+    "cost": [
+      {
+        "type": "void",
+        "count": 2
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">角色使用元素爆发后：</span>所有我方后台角色获得1点<span style=\"color: #FFFFFFFF; text-decoration: underline;\">充能</span>。（每回合1次）\\n（角色最多装备1件「圣遗物」）"
+  },
+  {
+    "id": "broken_rimes_echo",
+    "type": "artifact",
+    "name": "破冰踏雪的回音",
+    "cost": [
+      {
+        "type": "same",
+        "count": 2
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">角色使用技能或装备「天赋」时：</span>少花费1个<span style=\"color: #99FFFFFF;\">冰元素</span>。（每回合1次）\\n（角色最多装备1件「圣遗物」）"
+  },
+  {
+    "id": "blizzard_strayer",
+    "type": "artifact",
+    "name": "冰风迷途的勇士",
+    "cost": [
+      {
+        "type": "same",
+        "count": 3
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">角色使用技能或装备「天赋」时：</span>少花费1个<span style=\"color: #99FFFFFF;\">冰元素</span>。（每回合1次）\\n<span style=\"color: #FFFFFFFF;\">投掷阶段：</span>2个元素骰初始总是投出<span style=\"color: #99FFFFFF;\">冰元素</span>。\\n（角色最多装备1件「圣遗物」）"
+  },
+  {
+    "id": "wine-stained_tricorne",
+    "type": "artifact",
+    "name": "酒渍船帽",
+    "cost": [
+      {
+        "type": "same",
+        "count": 2
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">角色使用技能或装备「天赋」时：</span>少花费1个<span style=\"color: #80C0FFFF;\">水元素</span>。（每回合1次）\\n（角色最多装备1件「圣遗物」）"
+  },
+  {
+    "id": "heart_of_depth",
+    "type": "artifact",
+    "name": "沉沦之心",
+    "cost": [
+      {
+        "type": "same",
+        "count": 3
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">角色使用技能或装备「天赋」时：</span>少花费1个<span style=\"color: #80C0FFFF;\">水元素</span>。（每回合1次）\\n<span style=\"color: #FFFFFFFF;\">投掷阶段：</span>2个元素骰初始总是投出<span style=\"color: #80C0FFFF;\">水元素</span>。\\n（角色最多装备1件「圣遗物」）"
+  },
+  {
+    "id": "witchs_scorching_hat",
+    "type": "artifact",
+    "name": "焦灼的魔女帽",
+    "cost": [
+      {
+        "type": "same",
+        "count": 2
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">角色使用技能或装备「天赋」时：</span>少花费1个<span style=\"color: #FF9999FF;\">火元素</span>。（每回合1次）\\n（角色最多装备1件「圣遗物」）"
+  },
+  {
+    "id": "crimson_witch_of_flames",
+    "type": "artifact",
+    "name": "炽烈的炎之魔女",
+    "cost": [
+      {
+        "type": "same",
+        "count": 3
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">角色使用技能或装备「天赋」时：</span>少花费1个<span style=\"color: #FF9999FF;\">火元素</span>。（每回合1次）\\n<span style=\"color: #FFFFFFFF;\">投掷阶段：</span>2个元素骰初始总是投出<span style=\"color: #FF9999FF;\">火元素</span>。\\n（角色最多装备1件「圣遗物」）"
+  },
+  {
+    "id": "thunder_summoners_crown",
+    "type": "artifact",
+    "name": "唤雷的头冠",
+    "cost": [
+      {
+        "type": "same",
+        "count": 2
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">角色使用技能或装备「天赋」时：</span>少花费1个<span style=\"color: #FFACFFFF;\">雷元素</span>。（每回合1次）\\n（角色最多装备1件「圣遗物」）"
+  },
+  {
+    "id": "thundering_fury",
+    "type": "artifact",
+    "name": "如雷的盛怒",
+    "cost": [
+      {
+        "type": "same",
+        "count": 3
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">角色使用技能或装备「天赋」时：</span>少花费1个<span style=\"color: #FFACFFFF;\">雷元素</span>。（每回合1次）\\n<span style=\"color: #FFFFFFFF;\">投掷阶段：</span>2个元素骰初始总是投出<span style=\"color: #FFACFFFF;\">雷元素</span>。\\n（角色最多装备1件「圣遗物」）"
+  },
+  {
+    "id": "viridescent_venerers_diadem",
+    "type": "artifact",
+    "name": "翠绿的猎人之冠",
+    "cost": [
+      {
+        "type": "same",
+        "count": 2
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">角色使用技能或装备「天赋」时：</span>少花费1个<span style=\"color: #80FFD7FF;\">风元素</span>。（每回合1次）\\n（角色最多装备1件「圣遗物」）"
+  },
+  {
+    "id": "viridescent_venerer",
+    "type": "artifact",
+    "name": "翠绿之影",
+    "cost": [
+      {
+        "type": "same",
+        "count": 3
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">角色使用技能或装备「天赋」时：</span>少花费1个<span style=\"color: #80FFD7FF;\">风元素</span>。（每回合1次）\\n<span style=\"color: #FFFFFFFF;\">投掷阶段：</span>2个元素骰初始总是投出<span style=\"color: #80FFD7FF;\">风元素</span>。\\n（角色最多装备1件「圣遗物」）"
+  },
+  {
+    "id": "mask_of_solitude_basalt",
+    "type": "artifact",
+    "name": "不动玄石之相",
+    "cost": [
+      {
+        "type": "same",
+        "count": 2
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">角色使用技能或装备「天赋」时：</span>少花费1个<span style=\"color: #FFE699FF;\">岩元素</span>。（每回合1次）\\n（角色最多装备1件「圣遗物」）"
+  },
+  {
+    "id": "archaic_petra",
+    "type": "artifact",
+    "name": "悠古的磐岩",
+    "cost": [
+      {
+        "type": "same",
+        "count": 3
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">角色使用技能或装备「天赋」时：</span>少花费1个<span style=\"color: #FFE699FF;\">岩元素</span>。（每回合1次）\\n<span style=\"color: #FFFFFFFF;\">投掷阶段：</span>2个元素骰初始总是投出<span style=\"color: #FFE699FF;\">岩元素</span>。\\n（角色最多装备1件「圣遗物」）"
+  },
+  {
+    "id": "laurel_coronet",
+    "type": "artifact",
+    "name": "月桂的宝冠",
+    "cost": [
+      {
+        "type": "same",
+        "count": 2
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">角色使用技能或装备「天赋」时：</span>少花费1个<span style=\"color: #99FF88FF;\">草元素</span>。（每回合1次）\\n（角色最多装备1件「圣遗物」）"
+  },
+  {
+    "id": "deepwood_memories",
+    "type": "artifact",
+    "name": "深林的记忆",
+    "cost": [
+      {
+        "type": "same",
+        "count": 3
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">角色使用技能或装备「天赋」时：</span>少花费1个<span style=\"color: #99FF88FF;\">草元素</span>。（每回合1次）\\n<span style=\"color: #FFFFFFFF;\">投掷阶段：</span>2个元素骰初始总是投出<span style=\"color: #99FF88FF;\">草元素</span>。\\n（角色最多装备1件「圣遗物」）"
+  },
+  {
+    "id": "liyue_harbor_wharf",
+    "type": "place",
+    "name": "璃月港口",
+    "cost": [
+      {
+        "type": "same",
+        "count": 2
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">结束阶段：</span>抓2张牌。\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：2"
+  },
+  {
+    "id": "knights_of_favonius_library",
+    "type": "place",
+    "name": "骑士团图书馆",
+    "cost": [
+      {
+        "type": "same",
+        "count": 1
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">入场时：</span>选择任意元素骰重投。\\n<span style=\"color: #FFFFFFFF;\">投掷阶段：</span>获得额外一次重投机会。"
+  },
+  {
+    "id": "jade_chamber",
+    "type": "place",
+    "name": "群玉阁",
+    "cost": [
+      {
+        "type": "same",
+        "count": 1
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">投掷阶段：</span>2个元素骰初始总是投出我方出战角色类型的元素。"
+  },
+  {
+    "id": "dawn_winery",
+    "type": "place",
+    "name": "晨曦酒庄",
+    "cost": [
+      {
+        "type": "same",
+        "count": 2
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">我方执行「切换角色」行动时：</span>少花费1个元素骰。（每回合1次）"
+  },
+  {
+    "id": "wangshu_inn",
+    "type": "place",
+    "name": "望舒客栈",
+    "cost": [
+      {
+        "type": "same",
+        "count": 2
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">结束阶段：</span>治疗受伤最多的我方后台角色2点。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：2</span>"
+  },
+  {
+    "id": "favonius_cathedral",
+    "type": "place",
+    "name": "西风大教堂",
+    "cost": [
+      {
+        "type": "same",
+        "count": 2
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">结束阶段：</span>治疗我方出战角色2点。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：2</span>"
+  },
+  {
+    "id": "paimon",
+    "type": "ally",
+    "name": "派蒙",
+    "cost": [
+      {
+        "type": "same",
+        "count": 3
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">行动阶段开始时：</span>生成2点<span style=\"color: #FFFFFFFF; text-decoration: underline;\">万能元素</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：2</span>"
+  },
+  {
+    "id": "katheryne",
+    "type": "ally",
+    "name": "凯瑟琳",
+    "cost": [
+      {
+        "type": "void",
+        "count": 2
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">我方执行「切换角色」行动时：</span>将此次切换视为「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">快速行动</span>」而非「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>」。（每回合1次）"
+  },
+  {
+    "id": "timaeus",
+    "type": "ally",
+    "name": "蒂玛乌斯",
+    "cost": [
+      {
+        "type": "same",
+        "count": 2
+      }
+    ],
+    "desc": "入场时附带2个「合成材料」。\\n<span style=\"color: #FFFFFFFF;\">结束阶段：</span>补充1个「合成材料」。\\n<span style=\"color: #FFFFFFFF;\">打出「圣遗物」手牌时：</span>如可能，则支付等同于「圣遗物」总费用数量的「合成材料」，以免费装备此「圣遗物」。（每回合1次）"
+  },
+  {
+    "id": "wagner",
+    "type": "ally",
+    "name": "瓦格纳",
+    "cost": [
+      {
+        "type": "same",
+        "count": 2
+      }
+    ],
+    "desc": "入场时附带2个「锻造原胚」。\\n<span style=\"color: #FFFFFFFF;\">结束阶段：</span>补充1个「锻造原胚」。\\n<span style=\"color: #FFFFFFFF;\">打出「武器」手牌时：</span>如可能，则支付等同于「武器」总费用数量的「锻造原胚」，以免费装备此「武器」。（每回合1次）"
+  },
+  {
+    "id": "chef_mao",
+    "type": "ally",
+    "name": "卯师傅",
+    "cost": [
+      {
+        "type": "same",
+        "count": 1
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">打出「料理」事件牌后：</span>生成1个随机基础元素骰。（每回合1次）"
+  },
+  {
+    "id": "tubby",
+    "type": "ally",
+    "name": "阿圆",
+    "cost": [
+      {
+        "type": "same",
+        "count": 2
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">打出「场地」支援牌时：</span>少花费2个元素骰。（每回合1次）"
+  },
+  {
+    "id": "timmie",
+    "type": "ally",
+    "name": "提米",
+    "cost": [],
+    "desc": "<span style=\"color: #FFFFFFFF;\">每回合自动触发1次：</span>此牌累积<span style=\"color: #FFFFFFFF;\">1只「鸽子」</span>。\\n如果此牌已累积<span style=\"color: #FFFFFFFF;\">3只「鸽子」</span>，则弃置此牌：抓1张牌，生成一点<span style=\"color: #FFFFFFFF; text-decoration: underline;\">万能元素</span>。"
+  },
+  {
+    "id": "liben",
+    "type": "ally",
+    "name": "立本",
+    "cost": [],
+    "desc": "<span style=\"color: #FFFFFFFF;\">结束阶段：</span>收集我方未使用的元素骰（每种最多1个）。\\n<span style=\"color: #FFFFFFFF;\">行动阶段开始时：</span>如果此牌已收集3个元素骰，则抓2张牌，生成2点<span style=\"color: #FFFFFFFF; text-decoration: underline;\">万能元素</span>，然后弃置此牌。"
+  },
+  {
+    "id": "chang_the_ninth",
+    "type": "ally",
+    "name": "常九爷",
+    "cost": [],
+    "desc": "<span style=\"color: #FFFFFFFF;\">双方角色使用技能后：</span>如果造成了<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理伤害</span>、<span style=\"color: #FFFFFFFF; text-decoration: underline;\">穿透伤害</span>或引发了<span style=\"color: #FFFFFFFF;\">元素反应</span>，此牌累积<span style=\"color: #FFFFFFFF;\">1个「灵感」</span>。\\n如果此牌已累积<span style=\"color: #FFFFFFFF;\">3个「灵感」</span>，弃置此牌：抓2张牌。"
+  },
+  {
+    "id": "ellin",
+    "type": "ally",
+    "name": "艾琳",
+    "cost": [
+      {
+        "type": "same",
+        "count": 2
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">我方角色使用本回合使用过的技能时：</span>少花费1个元素骰。（每回合1次）"
+  },
+  {
+    "id": "iron_tongue_tian",
+    "type": "ally",
+    "name": "田铁嘴",
+    "cost": [
+      {
+        "type": "void",
+        "count": 2
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">结束阶段：</span>我方一名充能未满的角色获得1点<span style=\"color: #FFFFFFFF; text-decoration: underline;\">充能</span>。（出战角色优先）\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：2</span>"
+  },
+  {
+    "id": "liu_su",
+    "type": "ally",
+    "name": "刘苏",
+    "cost": [
+      {
+        "type": "same",
+        "count": 1
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">我方切换角色后：</span>如果切换到的角色没有<span style=\"color: #FFFFFFFF; text-decoration: underline;\">充能</span>，则使该角色获得1点<span style=\"color: #FFFFFFFF; text-decoration: underline;\">充能</span>。（每回合1次）\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：2</span>"
+  },
+  {
+    "id": "parametric_transformer",
+    "type": "item",
+    "name": "参量质变仪",
+    "cost": [
+      {
+        "type": "void",
+        "count": 2
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">双方角色使用技能后：</span>如果造成了元素伤害，此牌累积<span style=\"color: #FFFFFFFF;\">1个「质变进度」</span>。\\n当此牌已累积<span style=\"color: #FFFFFFFF;\">3个「质变进度」</span>时，弃置此牌：生成3个不同的基础元素骰子。"
+  },
+  {
+    "id": "nre",
+    "type": "item",
+    "name": "便携营养袋",
+    "cost": [
+      {
+        "type": "void",
+        "count": 2
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">入场时：</span>从牌组中随机抽取1张「料理」事件。\\n<span style=\"color: #FFFFFFFF;\">我方打出「料理」事件牌时：</span>从牌组中随机抽取1张「料理」事件。（每回合1次）"
+  },
+  {
+    "id": "elemental_resonance_woven_ice",
+    "type": "resonance",
+    "name": "元素共鸣：交织之冰",
+    "requirement": "cryo",
+    "cost": [],
+    "desc": "生成1个<span style=\"color: #99FFFFFF;\">冰元素骰</span>。\\n（牌组包含至少2个<span style=\"color: #99FFFFFF;\">冰元素</span>角色，才能加入牌组）"
+  },
+  {
+    "id": "elemental_resonance_shattering_ice",
+    "type": "resonance",
+    "name": "元素共鸣：粉碎之冰",
+    "requirement": "cryo",
+    "cost": [
+      {
+        "type": "cryo",
+        "count": 1
+      }
+    ],
+    "desc": "本回合中，我方当前出战角色下一次造成的伤害+2。\\n（牌组包含至少2个<span style=\"color: #99FFFFFF;\">冰元素</span>角色，才能加入牌组）"
+  },
+  {
+    "id": "elemental_resonance_woven_waters",
+    "type": "resonance",
+    "name": "元素共鸣：交织之水",
+    "requirement": "hydro",
+    "cost": [],
+    "desc": "生成1个<span style=\"color: #80C0FFFF;\">水元素骰</span>。\\n（牌组包含至少2个<span style=\"color: #80C0FFFF;\">水元素</span>角色，才能加入牌组）"
+  },
+  {
+    "id": "elemental_resonance_soothing_water",
+    "type": "resonance",
+    "name": "元素共鸣：愈疗之水",
+    "requirement": "hydro",
+    "cost": [
+      {
+        "type": "hydro",
+        "count": 1
+      }
+    ],
+    "desc": "治疗我方出战角色2点。然后，治疗所有我方后台角色1点。\\n（牌组包含至少2个<span style=\"color: #80C0FFFF;\">水元素</span>角色，才能加入牌组）"
+  },
+  {
+    "id": "elemental_resonance_woven_flames",
+    "type": "resonance",
+    "name": "元素共鸣：交织之火",
+    "requirement": "pyro",
+    "cost": [],
+    "desc": "生成1个<span style=\"color: #FF9999FF;\">火元素骰</span>。\\n（牌组包含至少2个<span style=\"color: #FF9999FF;\">火元素</span>角色，才能加入牌组）"
+  },
+  {
+    "id": "elemental_resonance_fervent_flames",
+    "type": "resonance",
+    "name": "元素共鸣：热诚之火",
+    "requirement": "pyro",
+    "cost": [
+      {
+        "type": "pyro",
+        "count": 1
+      }
+    ],
+    "desc": "本回合中，我方当前出战角色下一次引发<span style=\"color: #FF9999FF;\">火元素相关反应</span>时，造成的伤害+3。\\n（牌组包含至少2个<span style=\"color: #FF9999FF;\">火元素</span>角色，才能加入牌组）"
+  },
+  {
+    "id": "elemental_resonance_woven_thunder",
+    "type": "resonance",
+    "name": "元素共鸣：交织之雷",
+    "requirement": "electro",
+    "cost": [],
+    "desc": "生成1个<span style=\"color: #FFACFFFF;\">雷元素骰</span>。\\n（牌组包含至少2个<span style=\"color: #FFACFFFF;\">雷元素</span>角色，才能加入牌组）"
+  },
+  {
+    "id": "elemental_resonance_high_voltage",
+    "type": "resonance",
+    "name": "元素共鸣：强能之雷",
+    "requirement": "electro",
+    "cost": [
+      {
+        "type": "electro",
+        "count": 1
+      }
+    ],
+    "desc": "我方一名充能未满的角色获得1点<span style=\"color: #FFFFFFFF; text-decoration: underline;\">充能</span>。（出战角色优先）\\n（牌组包含至少2个<span style=\"color: #FFACFFFF;\">雷元素</span>角色，才能加入牌组）"
+  },
+  {
+    "id": "elemental_resonance_woven_winds",
+    "type": "resonance",
+    "name": "元素共鸣：交织之风",
+    "requirement": "anemo",
+    "cost": [],
+    "desc": "生成1个<span style=\"color: #80FFD7FF;\">风元素骰</span>。\\n（牌组包含至少2个<span style=\"color: #80FFD7FF;\">风元素</span>角色，才能加入牌组）"
+  },
+  {
+    "id": "elemental_resonance_impetuous_winds",
+    "type": "resonance",
+    "name": "元素共鸣：迅捷之风",
+    "requirement": "anemo",
+    "cost": [
+      {
+        "type": "anemo",
+        "count": 1
+      }
+    ],
+    "desc": "切换到目标角色，并生成1点<span style=\"color: #FFFFFFFF; text-decoration: underline;\">万能元素</span>。\\n（牌组包含至少2个<span style=\"color: #80FFD7FF;\">风元素</span>角色，才能加入牌组）"
+  },
+  {
+    "id": "elemental_resonance_woven_stone",
+    "type": "resonance",
+    "name": "元素共鸣：交织之岩",
+    "requirement": "geo",
+    "cost": [],
+    "desc": "生成1个<span style=\"color: #FFE699FF;\">岩元素骰</span>。\\n（牌组包含至少2个<span style=\"color: #FFE699FF;\">岩元素</span>角色，才能加入牌组）"
+  },
+  {
+    "id": "elemental_resonance_enduring_rock",
+    "type": "resonance",
+    "name": "元素共鸣：坚定之岩",
+    "requirement": "geo",
+    "cost": [
+      {
+        "type": "geo",
+        "count": 1
+      }
+    ],
+    "desc": "本回合中，我方角色下一次造成<span style=\"color: #FFE699FF;\">岩元素伤害</span>后：如果我方存在提供「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">护盾</span>」的出战状态，则为一个此类出战状态补充3点「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">护盾</span>」。\\n（牌组包含至少2个<span style=\"color: #FFE699FF;\">岩元素</span>角色，才能加入牌组）"
+  },
+  {
+    "id": "elemental_resonance_woven_weeds",
+    "type": "resonance",
+    "name": "元素共鸣：交织之草",
+    "requirement": "dendro",
+    "cost": [],
+    "desc": "生成1个<span style=\"color: #99FF88FF;\">草元素骰</span>。\\n（牌组包含至少2个<span style=\"color: #99FF88FF;\">草元素</span>角色，才能加入牌组）"
+  },
+  {
+    "id": "elemental_resonance_sprawling_greenery",
+    "type": "resonance",
+    "name": "元素共鸣：蔓生之草",
+    "requirement": "dendro",
+    "cost": [
+      {
+        "type": "dendro",
+        "count": 1
+      }
+    ],
+    "desc": "本回合中，我方下一次引发元素反应时，造成的伤害+2。\\n使我方场上的<span style=\"color: #FFFFFFFF;\">燃烧烈焰、草原核、和激化领域</span>「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>」+1。\\n（牌组包含至少2个<span style=\"color: #99FF88FF;\">草元素</span>角色，才能加入牌组）"
+  },
+  {
+    "id": "the_bestest_travel_companion!",
+    "type": "none",
+    "name": "最好的伙伴！",
+    "cost": [
+      {
+        "type": "void",
+        "count": 2
+      }
+    ],
+    "desc": "将所花费的元素骰转换为2个<span style=\"color: #FFFFFFFF; text-decoration: underline;\">万能元素</span>。"
+  },
+  {
+    "id": "changing_shifts",
+    "type": "none",
+    "name": "换班时间",
+    "cost": [],
+    "desc": "<span style=\"color: #FFFFFFFF;\">我方下次执行「切换角色」行动时：</span>少花费1个元素骰。"
+  },
+  {
+    "id": "toss-up",
+    "type": "none",
+    "name": "一掷乾坤",
+    "cost": [],
+    "desc": "选择任意元素骰<span style=\"color: #FFFFFFFF;\">重投</span>，可重投2次。"
+  },
+  {
+    "id": "strategize",
+    "type": "none",
+    "name": "运筹帷幄",
+    "cost": [
+      {
+        "type": "same",
+        "count": 1
+      }
+    ],
+    "desc": "抓2张牌。"
+  },
+  {
+    "id": "i_havent_lost_yet!",
+    "type": "none",
+    "name": "本大爷还没有输！",
+    "cost": [],
+    "desc": "本回合有我方角色被击倒，才能打出：\\n生成1个<span style=\"color: #FFFFFFFF; text-decoration: underline;\">万能元素</span>，我方当前出战角色获得1个<span style=\"color: #FFFFFFFF; text-decoration: underline;\">充能</span>。"
+  },
+  {
+    "id": "leave_it_to_me!",
+    "type": "none",
+    "name": "交给我吧！",
+    "cost": [],
+    "desc": "<span style=\"color: #FFFFFFFF;\">我方下次执行「切换角色」行动时：</span>将此次切换视为「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">快速行动</span>」而非「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>」。"
+  },
+  {
+    "id": "when_the_crane_returned",
+    "type": "none",
+    "name": "鹤归之时",
+    "cost": [
+      {
+        "type": "same",
+        "count": 1
+      }
+    ],
+    "desc": "<span style=\"color: #FFFFFFFF;\">我方下一次使用技能后：</span>将下一个我方后台角色切换到场上。"
+  },
+  {
+    "id": "starsigns",
+    "type": "none",
+    "name": "星天之兆",
+    "cost": [
+      {
+        "type": "void",
+        "count": 2
+      }
+    ],
+    "desc": "我方当前出战角色<span style=\"color: #FFFFFFFF;\">获得1点<span style=\"color: #FFFFFFFF; text-decoration: underline;\">充能</span></span>。"
+  },
+  {
+    "id": "calxs_arts",
+    "type": "none",
+    "name": "白垩之术",
+    "cost": [
+      {
+        "type": "same",
+        "count": 1
+      }
+    ],
+    "desc": "从最多2个我方后台角色身上，转移1点<span style=\"color: #FFFFFFFF; text-decoration: underline;\">充能</span>到我方出战角色。"
+  },
+  {
+    "id": "master_of_weaponry",
+    "type": "none",
+    "name": "诸武精通",
+    "cost": [],
+    "desc": "将一个装备在我方角色的「武器」装备牌，转移给另一个武器类型相同的我方角色。"
+  },
+  {
+    "id": "blessing_of_the_divine_relics_installation",
+    "type": "none",
+    "name": "神宝迁宫祝词",
+    "cost": [],
+    "desc": "将一个装备在我方角色的「圣遗物」装备牌，转移给另一个我方角色。"
+  },
+  {
+    "id": "quick_knit",
+    "type": "none",
+    "name": "快快缝补术",
+    "cost": [
+      {
+        "type": "same",
+        "count": 1
+      }
+    ],
+    "desc": "选择一个我方「召唤物」，使其「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>」+1。"
+  },
+  {
+    "id": "send_off",
+    "type": "none",
+    "name": "送你一程",
+    "cost": [
+      {
+        "type": "void",
+        "count": 2
+      }
+    ],
+    "desc": "选择一个敌方「召唤物」，将其消灭。"
+  },
+  {
+    "id": "guardians_oath",
+    "type": "none",
+    "name": "护法之誓",
+    "cost": [
+      {
+        "type": "same",
+        "count": 4
+      }
+    ],
+    "desc": "消灭所有「召唤物」。（不分敌我！）"
+  },
+  {
+    "id": "abyssal_summons",
+    "type": "none",
+    "name": "深渊的呼唤",
+    "cost": [
+      {
+        "type": "same",
+        "count": 2
+      }
+    ],
+    "desc": "召唤一个<span style=\"color: #FFFFFFFF; text-decoration: underline;\">随机「丘丘人」召唤物</span>！\\n（牌组包含至少2个「魔物」角色，才能加入牌组）"
+  },
+  {
+    "id": "jueyun_guoba",
+    "type": "food",
+    "name": "绝云锅巴",
+    "cost": [],
+    "desc": "本回合中，目标角色下一次<span style=\"color: #FFFFFFFF;\">普通攻击</span>造成的伤害+1。\\n（每回合每个角色最多食用1次「料理」）"
+  },
+  {
+    "id": "adeptus_temptation",
+    "type": "food",
+    "name": "仙跳墙",
+    "cost": [
+      {
+        "type": "void",
+        "count": 2
+      }
+    ],
+    "desc": "本回合中，目标角色下一次<span style=\"color: #FFFFFFFF;\">元素爆发</span>造成的伤害+3。\\n（每回合每个角色最多食用1次「料理」）"
+  },
+  {
+    "id": "lotus_flower_crisp",
+    "type": "food",
+    "name": "莲花酥",
+    "cost": [
+      {
+        "type": "same",
+        "count": 1
+      }
+    ],
+    "desc": "本回合中，目标角色下次受到的伤害-3。\\n（每回合中每个角色最多食用1次「料理」）"
+  },
+  {
+    "id": "northern_smoked_chicken",
+    "type": "food",
+    "name": "北地烟熏鸡",
+    "cost": [],
+    "desc": "本回合中，目标角色下一次<span style=\"color: #FFFFFFFF;\">普通攻击</span>少花费1<span style=\"color: #FFFFFFFF; text-decoration: underline;\">无色元素</span>。\\n（每回合每个角色最多食用1次「料理」）"
+  },
+  {
+    "id": "sweet_madame",
+    "type": "food",
+    "name": "甜甜花酿鸡",
+    "cost": [],
+    "desc": "治疗目标角色1点。\\n（每回合每个角色最多食用1次「料理」）"
+  },
+  {
+    "id": "mondstadt_hash_brown",
+    "type": "food",
+    "name": "蒙德土豆饼",
+    "cost": [
+      {
+        "type": "same",
+        "count": 1
+      }
+    ],
+    "desc": "治疗目标角色2点。\\n（每回合每个角色最多食用1次「料理」）"
+  },
+  {
+    "id": "mushroom_pizza",
+    "type": "food",
+    "name": "烤蘑菇披萨",
+    "cost": [
+      {
+        "type": "same",
+        "count": 1
+      }
+    ],
+    "desc": "治疗目标角色1点，两回合内结束阶段再治疗此角色1点。\\n（每回合每个角色最多食用1次「料理」）"
+  },
+  {
+    "id": "minty_meat_rolls",
+    "type": "food",
+    "name": "兽肉薄荷卷",
+    "cost": [
+      {
+        "type": "same",
+        "count": 1
+      }
+    ],
+    "desc": "目标角色在本回合结束前，所有<span style=\"color: #FFFFFFFF;\">普通攻击</span>都少花费1<span style=\"color: #FFFFFFFF; text-decoration: underline;\">无色元素</span>。\\n（每回合每个角色最多食用1次「料理」）"
+  }
+]
