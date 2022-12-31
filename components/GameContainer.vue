@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Table from "~~/common/enums/Table"
+import ICharacter from "~~/common/interfaces/ICharacter";
 import IPlayer from "~~/common/interfaces/player/IPlayer"
 import CharacterCard from "./CharacterCard.vue"
 import DicesNumber from "./DicesNumber.vue"
@@ -62,7 +63,9 @@ const backgroundUrl = computed(() => `url("/images/tables/${props.table}.png")`)
 
     <div class="owner_action_cards"></div>
 
-    <div class="skills"></div>
+    <div class="skills">
+      <Skill :character="owner.characters.find((value: ICharacter) => value.isFighting)!!" />
+    </div>
   </div>
 </template>
 
