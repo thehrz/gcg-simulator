@@ -52,9 +52,8 @@ defineProps<{
   zoom: 100%;
 }
 
-img {
+.card > img {
   width: 100%;
-  height: 100%;
 }
 
 .fighting {

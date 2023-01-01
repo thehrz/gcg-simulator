@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Dice from "~~/common/enums/Dice"
 import Table from "~~/common/enums/Table"
+import IAction from "~~/common/interfaces/IAction"
 import ICharacter from "~~/common/interfaces/ICharacter"
 import IPlayer from "~~/common/interfaces/player/IPlayer"
 
@@ -25,14 +26,21 @@ const ganyu: ICharacter = {
   isFighting: true,
 }
 
+const undivided_heart: IAction = {
+  card: getAction("undivided_heart"),
+  hp: 2,
+}
+
 const robot: IPlayer = {
   name: "robot",
   characters: [jadeplume_terrorshroom, chongyun],
+  actions: [],
   dices: [Dice.Any],
 }
 const player: IPlayer = {
   name: "player",
   characters: [ganyu],
+  actions: [undivided_heart, undivided_heart],
   dices: [Dice.Cryo, Dice.Cryo],
 }
 </script>
