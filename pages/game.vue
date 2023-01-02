@@ -3,7 +3,7 @@ import Dice from "~~/common/enums/Dice"
 import Table from "~~/common/enums/Table"
 import IAction from "~~/common/interfaces/IAction"
 import ICharacter from "~~/common/interfaces/ICharacter"
-import IPlayer from "~~/common/interfaces/player/IPlayer"
+import IPlayer from "~~/common/interfaces/IPlayer"
 
 const jadeplume_terrorshroom: ICharacter = {
   card: getCharacter("jadeplume_terrorshroom"),
@@ -36,17 +36,19 @@ const robot: IPlayer = {
   characters: [jadeplume_terrorshroom, chongyun],
   actions: [],
   dices: [Dice.Any],
+  thisRound: false,
 }
 const player: IPlayer = {
   name: "player",
   characters: [ganyu],
   actions: [undivided_heart, undivided_heart],
   dices: [Dice.Cryo, Dice.Cryo],
+  thisRound: true,
 }
 </script>
 
 <template>
   <div class="container">
-    <GameContainer :table="Table.Mondstadt" :owner="player" :enemy="robot" />
+    <GameContainer :table="Table.Mondstadt" :owner="player" :enemy="robot" :rounds="1" />
   </div>
 </template>

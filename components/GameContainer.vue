@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Table from "~~/common/enums/Table"
 import ICharacter from "~~/common/interfaces/ICharacter"
-import IPlayer from "~~/common/interfaces/player/IPlayer"
+import IPlayer from "~~/common/interfaces/IPlayer"
 import CharacterCard from "./CharacterCard.vue"
 import DicesNumber from "./DicesNumber.vue"
 
@@ -9,6 +9,7 @@ const props = defineProps<{
   table: Table
   owner: IPlayer
   enemy: IPlayer
+  rounds: number
 }>()
 
 const backgroundUrl = computed(() => `url("/images/tables/${props.table}.png")`)
@@ -16,7 +17,9 @@ const backgroundUrl = computed(() => `url("/images/tables/${props.table}.png")`)
 
 <template>
   <div class="game background grid">
-    <div class="enemy_info"></div>
+    <div class="enemy_id">
+      <PlayerID :player="enemy" type="enemy" />
+    </div>
 
     <div class="enemy_action_cards"></div>
 
@@ -59,7 +62,9 @@ const backgroundUrl = computed(() => `url("/images/tables/${props.table}.png")`)
 
     <div class="owner_summon"></div>
 
-    <div class="owner_info"></div>
+    <div class="owner_id">
+      <PlayerID :player="owner" type="owner" />
+    </div>
 
     <div class="owner_action_cards">
       <ActionCard
@@ -105,7 +110,7 @@ const backgroundUrl = computed(() => `url("/images/tables/${props.table}.png")`)
 .card {
   width: 25%;
 }
-.enemy_info {
+.enemy_id {
   grid-column: 1 / 3;
 }
 .enemy_action_cards {
@@ -139,14 +144,14 @@ const backgroundUrl = computed(() => `url("/images/tables/${props.table}.png")`)
   align-items: flex-end;
   margin-right: 20%;
 }
-.dices svg,
-img {
+.dices > svg,
+.dices > img {
   width: 50%;
 }
 .dices svg {
   margin-bottom: 15%;
 }
-.owner_info {
+.owner_id {
   grid-column: -6 / -4;
 }
 .skills {

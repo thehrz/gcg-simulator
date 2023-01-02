@@ -10,11 +10,12 @@
 }
 
 img {
-  display: block;
+  vertical-align: top;
+  display: inline-block;
 }
 
 @font-face {
-  font-family: 'HYWenHei';
-  src: url('/fonts/HYWenHei.woff') format('woff');
+  font-family: "HYWenHei";
+  src: url("/fonts/HYWenHei.woff") format("woff");
 }
 </style>
