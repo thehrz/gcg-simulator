@@ -77,6 +77,7 @@ const backgroundUrl = computed(() => `url("/images/tables/${props.table}.png")`)
     <div class="skills">
       <Skill
         :character="owner.characters.find((value: ICharacter) => value.isFighting)!!"
+        :disable="!owner.thisRound"
       />
     </div>
   </div>

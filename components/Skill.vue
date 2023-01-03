@@ -3,6 +3,7 @@ import ICharacter from "~~/common/interfaces/ICharacter"
 
 defineProps<{
   character: ICharacter
+  disable: boolean
 }>()
 </script>
 
@@ -13,7 +14,7 @@ defineProps<{
       :skill="skill"
       :id="index + 1"
       :name="character.card.id"
-      :enable="false"
+      :disable="disable"
     />
   </div>
 </template>

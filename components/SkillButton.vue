@@ -5,7 +5,7 @@ defineProps<{
   id: number
   name: string
   skill: ISkill
-  enable: boolean
+  disable: boolean
 }>()
 </script>
 
@@ -14,9 +14,8 @@ defineProps<{
     class="skillButton"
     :class="{ burst: skill.type == Type.ElementalBurst }"
   >
-    <button>
+    <button :class="{ disable: disable }">
       <nuxt-img
-        :class="{ enable: !enable }"
         :src="'./images/skills/' + name + '/skill_' + id + '.png'"
       />
     </button>
@@ -42,13 +41,25 @@ img {
   border: 2px solid #544e3b;
   margin: 0 1%;
 }
+
+.skillButton button:hover {
+  border: 2px solid #ccb15a;
+}
+
+.skillButton button:active {
+  border: 2px solid #888476;
+}
 .burst {
   background-image: url("/images/icons/skill_background_burst.png");
   background-size: 110%;
   background-position: center;
   background-repeat: no-repeat;
 }
-.enable {
+.disable {
+  pointer-events: none;
+}
+
+.disable > img {
   opacity: 50%;
 }
 </style>
