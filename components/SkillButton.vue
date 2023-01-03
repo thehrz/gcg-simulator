@@ -35,7 +35,7 @@ img {
 .skillButton button {
   display: block;
   width: 100%;
-  background-image: url("./images/icons/skill_background.png");
+  background-image: url("/images/icons/skill_background.png");
   background-size: 120%;
   background-position: center;
   border-radius: 50%;
@@ -43,7 +43,7 @@ img {
   margin: 0 1%;
 }
 .burst {
-  background-image: url("./images/icons/skill_background_burst.png");
+  background-image: url("/images/icons/skill_background_burst.png");
   background-size: 110%;
   background-position: center;
   background-repeat: no-repeat;
