@@ -87,6 +87,7 @@ const backgroundUrl = computed(() => `url("/images/tables/${props.table}.png")`)
 .game {
   margin: 0 auto;
 }
+
 .background {
   background-image: v-bind("backgroundUrl");
   background-size: 150% 150%;
@@ -94,49 +95,61 @@ const backgroundUrl = computed(() => `url("/images/tables/${props.table}.png")`)
   height: min(100vh, 100vw * 9 / 16);
   width: min(100vh * 16 / 9, 100vw);
 }
+
 .grid {
   display: grid;
   grid-template-columns: 1fr 2fr 4fr 2fr 1fr;
   grid-template-rows: 1fr 38% 38% 1fr;
 }
+
 .number {
   width: 50%;
 }
+
 .enemy_cards .fighting {
   margin-top: 10%;
 }
+
 .owner_cards .fighting {
   margin-bottom: 10%;
 }
+
 .card {
   width: 25%;
 }
+
 .enemy_id {
   grid-column: 1 / 3;
 }
+
 .enemy_action_cards {
   grid-column: 3 / 5;
 }
+
 .owner_action_cards {
   display: flex;
   overflow: hidden;
   justify-content: center;
 }
+
 .control {
   grid-row: 2 / 4;
 }
+
 .enemy_cards {
   margin: 0 5%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
+
 .owner_cards {
   margin: 0 5%;
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
+
 .dices {
   grid-row: -4 / -2;
   grid-column: 5 / 6;
@@ -145,16 +158,20 @@ const backgroundUrl = computed(() => `url("/images/tables/${props.table}.png")`)
   align-items: flex-end;
   margin-right: 20%;
 }
+
 .dices > svg,
 .dices > img {
   width: 50%;
 }
+
 .dices svg {
   margin-bottom: 15%;
 }
+
 .owner_id {
   grid-column: -6 / -4;
 }
+
 .skills {
   grid-column: -3 / -1;
 }

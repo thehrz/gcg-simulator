@@ -23,12 +23,18 @@ defineProps<{
 .card {
   margin: 4%;
 }
+
 .cardBoard {
   background: url("/images/icons/card_border.png");
   background-size: 100% 100%;
   padding: 2.5% 3%;
   position: relative;
 }
+
+.cardBoard > img {
+  width: 100%;
+}
+
 .hp {
   display: flex;
   align-items: center;
@@ -45,9 +51,6 @@ defineProps<{
   color: white;
   text-shadow: -1px -1px 1px #000, 1px -1px 1px #673b2c, -1px 1px 1px #673b2c,
     1px 1px 1px #673b2c;
-}
-.cardBoard > img {
-  width: 100%;
 }
 
 .elementIcons {

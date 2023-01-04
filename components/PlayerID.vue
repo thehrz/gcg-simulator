@@ -22,7 +22,7 @@ defineProps<{
 .playerid {
   display: flex;
   align-items: center;
-  margin: 3%;
+  margin: 2%;
 }
 .id {
   width: 50%;
