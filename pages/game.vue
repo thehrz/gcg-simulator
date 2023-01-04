@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Dice from "~~/common/enums/Dice"
+import Element from "~~/common/enums/Element"
 import Table from "~~/common/enums/Table"
 import IAction from "~~/common/interfaces/IAction"
 import ICharacter from "~~/common/interfaces/ICharacter"
@@ -24,6 +25,7 @@ const ganyu: ICharacter = {
   hp: 10,
   energy: 2,
   isFighting: true,
+  state: [Element.Dendro, Element.Cryo]
 }
 
 const undivided_heart: IAction = {

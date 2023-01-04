@@ -8,9 +8,13 @@ defineProps<{
 
 <template>
   <div class="card">
-    <div class="hp">{{ character.hp }}</div>
+    <div class="elementIcons" v-if="character.state">
+      <ElementIcon v-for="element in character.state" :element="element" />
+    </div>
+
     <div class="cardBoard">
       <nuxt-img :src="'images/cards/' + character.card.id + '.png'" />
+      <div class="hp">{{ character.hp }}</div>
     </div>
   </div>
 </template>
@@ -18,12 +22,12 @@ defineProps<{
 <style scoped>
 .card {
   margin: 4%;
-  position: relative;
 }
 .cardBoard {
   background: url("/images/icons/card_border.png");
   background-size: 100% 100%;
   padding: 2.5% 3%;
+  position: relative;
 }
 .hp {
   display: flex;
@@ -44,6 +48,15 @@ defineProps<{
 }
 .cardBoard > img {
   width: 100%;
+}
+
+.elementIcons {
+  display: flex;
+  justify-content: center;
+}
+
+.elementIcons > img {
+  width: 25%;
 }
 
 .fighting {
