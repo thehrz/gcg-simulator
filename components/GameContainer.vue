@@ -99,7 +99,7 @@ const backgroundUrl = computed(() => `url("/images/tables/${props.table}.png")`)
 .grid {
   display: grid;
   grid-template-columns: 1fr 2fr 4fr 2fr 1fr;
-  grid-template-rows: 1fr 38% 38% 1fr;
+  grid-template-rows: 12% 38% 38% 12%;
 }
 
 .number {
@@ -128,7 +128,6 @@ const backgroundUrl = computed(() => `url("/images/tables/${props.table}.png")`)
 
 .owner_action_cards {
   display: flex;
-  overflow: hidden;
   justify-content: center;
 }
 

@@ -25,11 +25,16 @@ const ganyu: ICharacter = {
   hp: 10,
   energy: 2,
   isFighting: true,
-  state: [Element.Dendro, Element.Cryo]
+  state: [Element.Dendro, Element.Cryo],
 }
 
 const undivided_heart: IAction = {
   card: getAction("undivided_heart"),
+  hp: 2,
+}
+
+const prophecy_of_submersion: IAction = {
+  card: getAction("prophecy_of_submersion"),
   hp: 2,
 }
 
@@ -43,7 +48,7 @@ const robot: IPlayer = {
 const player: IPlayer = {
   name: "player",
   characters: [ganyu],
-  actions: [undivided_heart, undivided_heart],
+  actions: [undivided_heart, prophecy_of_submersion],
   dices: [Dice.Cryo, Dice.Cryo],
   thisRound: true,
 }
@@ -51,6 +56,11 @@ const player: IPlayer = {
 
 <template>
   <div class="container">
-    <GameContainer :table="Table.Mondstadt" :owner="player" :enemy="robot" :rounds="1" />
+    <GameContainer
+      :table="Table.Mondstadt"
+      :owner="player"
+      :enemy="robot"
+      :rounds="1"
+    />
   </div>
 </template>
