@@ -11,7 +11,6 @@
 
 img {
   vertical-align: top;
-  display: inline-block;
 }
 
 @font-face {
