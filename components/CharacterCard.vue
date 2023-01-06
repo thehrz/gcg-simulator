@@ -1,20 +1,25 @@
 <script setup lang="ts">
 import ICharacter from "~~/common/interfaces/ICharacter"
 
-defineProps<{
+const props = defineProps<{
   character: ICharacter
 }>()
+
+const { card, hp, energy, state } = props.character
 </script>
 
 <template>
   <div class="card">
-    <div class="elementIcons" v-if="character.state">
-      <ElementIcon v-for="element in character.state" :element="element" />
+    <div class="elementIcons" v-if="state">
+      <ElementIcon v-for="element in state" :element="element" />
     </div>
 
     <div class="cardBoard">
-      <nuxt-img :src="'images/cards/' + character.card.id + '.png'" />
-      <div class="hp">{{ character.hp }}</div>
+      <nuxt-img :src="'images/cards/' + card.id + '.png'" />
+      <div class="hp">{{ hp }}</div>
+      <div class="energyIcons">
+        <EnergyIcon :is-full="index <= energy" v-for="index in card.energy" />
+      </div>
     </div>
   </div>
 </template>
@@ -51,6 +56,26 @@ defineProps<{
   color: white;
   text-shadow: -1px -1px 1px #000, 1px -1px 1px #673b2c, -1px 1px 1px #673b2c,
     1px 1px 1px #673b2c;
+}
+
+.energyIcons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35%;
+  position: absolute;
+  flex: 1;
+  right: -16%;
+  top: 3%;
+}
+
+.energyIcons > div {
+  width: 100%;
+  margin-bottom: -30%;
+}
+
+.energyIcons .null {
+  padding: 15%;
 }
 
 .elementIcons {
