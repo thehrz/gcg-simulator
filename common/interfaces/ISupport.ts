@@ -1,6 +1,7 @@
 interface ISupport {
   cardID: string
-  hp: number
+  count?: number
+  time?: number
 }
 
 export default ISupport

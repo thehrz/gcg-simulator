@@ -39,13 +39,18 @@ const prophecy_of_submersion: IAction = {
 
 const timmie: ISupport = {
   cardID: "timmie",
-  hp: 1,
+  count: 1,
 }
 
 const parametric_transformer: ISupport = {
   cardID: "parametric_transformer",
-  hp: 1,
 }
+
+const favonius_cathedral: ISupport = {
+  cardID: "favonius_cathedral",
+  time: 1,
+}
+
 const robot: IPlayer = {
   name: "robot",
   characters: [jadeplume_terrorshroom, chongyun],
@@ -60,7 +65,7 @@ const player: IPlayer = {
   characters: [ganyu],
   actions: [undivided_heart, prophecy_of_submersion],
   dices: [Dice.Cryo, Dice.Cryo],
-  support: [parametric_transformer, parametric_transformer],
+  support: [parametric_transformer, favonius_cathedral],
   thisRound: true,
 }
 </script>
