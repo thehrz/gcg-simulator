@@ -1,4 +1,5 @@
 import Dice from "~~/common/enums/Dice"
+import Cost from "../Cost"
 
 interface IActionCard {
   id: string
@@ -6,11 +7,6 @@ interface IActionCard {
   requirement?: Dice | string
   cost: Cost[]
   desc: string
-}
-
-export interface Cost {
-  type: Dice | "energy"
-  count: number
 }
 
 export default IActionCard

@@ -1,8 +1,5 @@
-import IActionCard from "./cards/IActionCard"
-
 interface IAction {
-  card: IActionCard
-  hp: number
+  cardID: string
 }
 
 export default IAction

@@ -5,23 +5,24 @@ import Table from "~~/common/enums/Table"
 import IAction from "~~/common/interfaces/IAction"
 import ICharacter from "~~/common/interfaces/ICharacter"
 import IPlayer from "~~/common/interfaces/IPlayer"
+import ISupport from "~~/common/interfaces/ISupport"
 
 const jadeplume_terrorshroom: ICharacter = {
-  card: getCharacter("jadeplume_terrorshroom"),
+  cardID: "jadeplume_terrorshroom",
   hp: 5,
   energy: 1,
   isFighting: true,
 }
 
 const chongyun: ICharacter = {
-  card: getCharacter("chongyun"),
+  cardID: "chongyun",
   hp: 10,
   energy: 2,
   isFighting: false,
 }
 
 const ganyu: ICharacter = {
-  card: getCharacter("ganyu"),
+  cardID: "ganyu",
   hp: 10,
   energy: 2,
   isFighting: true,
@@ -29,27 +30,37 @@ const ganyu: ICharacter = {
 }
 
 const undivided_heart: IAction = {
-  card: getAction("undivided_heart"),
-  hp: 2,
+  cardID: "undivided_heart",
 }
 
 const prophecy_of_submersion: IAction = {
-  card: getAction("prophecy_of_submersion"),
-  hp: 2,
+  cardID: "prophecy_of_submersion",
 }
 
+const timmie: ISupport = {
+  cardID: "timmie",
+  hp: 1,
+}
+
+const parametric_transformer: ISupport = {
+  cardID: "parametric_transformer",
+  hp: 1,
+}
 const robot: IPlayer = {
   name: "robot",
   characters: [jadeplume_terrorshroom, chongyun],
   actions: [],
   dices: [Dice.Any],
+  support: [timmie],
   thisRound: false,
 }
+
 const player: IPlayer = {
   name: "player",
   characters: [ganyu],
   actions: [undivided_heart, prophecy_of_submersion],
   dices: [Dice.Cryo, Dice.Cryo],
+  support: [parametric_transformer, parametric_transformer],
   thisRound: true,
 }
 </script>

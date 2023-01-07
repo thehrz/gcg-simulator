@@ -1,19 +1,23 @@
 <script setup lang="ts">
 import ICharacter from "~~/common/interfaces/ICharacter"
 
-defineProps<{
+const props = defineProps<{
   character: ICharacter
   disable: boolean
 }>()
+
+const { cardID } = props.character
+
+const card = getCharacter(cardID)
 </script>
 
 <template>
   <div class="skill">
     <SkillButton
-      v-for="(skill, index) in character.card.skills"
+      v-for="(skill, index) in card.skills"
       :skill="skill"
       :id="index + 1"
-      :name="character.card.id"
+      :name="cardID"
       :disable="disable"
     />
   </div>

@@ -1,6 +1,7 @@
 [
   {
     "id": "undivided_heart",
+    "type": "talent",
     "name": "唯此一心",
     "requirement": "ganyu",
     "cost": [
@@ -13,6 +14,7 @@
   },
   {
     "id": "shaken,_not_purred",
+    "type": "talent",
     "name": "猫爪冰摇",
     "requirement": "diona",
     "cost": [
@@ -25,6 +27,7 @@
   },
   {
     "id": "cold-blooded_strike",
+    "type": "talent",
     "name": "冷血之剑",
     "requirement": "kaeya",
     "cost": [
@@ -37,6 +40,7 @@
   },
   {
     "id": "steady_breathing",
+    "type": "talent",
     "name": "吐纳真定",
     "requirement": "chongyun",
     "cost": [
@@ -49,6 +53,7 @@
   },
   {
     "id": "kanten_senmyou_blessing",
+    "type": "talent",
     "name": "寒天宣命祝词",
     "requirement": "kamisato_ayaka",
     "cost": [
@@ -61,6 +66,7 @@
   },
   {
     "id": "glorious_season",
+    "type": "talent",
     "name": "光辉的季节",
     "requirement": "barbara",
     "cost": [
@@ -73,6 +79,7 @@
   },
   {
     "id": "the_scent_remained",
+    "type": "talent",
     "name": "重帘留香",
     "requirement": "xingqiu",
     "cost": [
@@ -85,6 +92,7 @@
   },
   {
     "id": "prophecy_of_submersion",
+    "type": "talent",
     "name": "沉没的预言",
     "requirement": "mona",
     "cost": [
@@ -101,6 +109,7 @@
   },
   {
     "id": "flowing_flame",
+    "type": "talent",
     "name": "流火焦灼",
     "requirement": "diluc",
     "cost": [
@@ -113,6 +122,7 @@
   },
   {
     "id": "crossfire",
+    "type": "talent",
     "name": "交叉火力",
     "requirement": "xiangling",
     "cost": [
@@ -125,6 +135,7 @@
   },
   {
     "id": "grand_expectation",
+    "type": "talent",
     "name": "冒险憧憬",
     "requirement": "bennett",
     "cost": [
@@ -141,6 +152,7 @@
   },
   {
     "id": "naganohara_meteor_swarm",
+    "type": "talent",
     "name": "长野原龙势流星群",
     "requirement": "yoimiya",
     "cost": [
@@ -153,6 +165,7 @@
   },
   {
     "id": "stellar_predator",
+    "type": "talent",
     "name": "噬星魔鸦",
     "requirement": "fischl",
     "cost": [
@@ -165,6 +178,7 @@
   },
   {
     "id": "awakening",
+    "type": "talent",
     "name": "觉醒",
     "requirement": "razor",
     "cost": [
@@ -177,6 +191,7 @@
   },
   {
     "id": "thundering_penance",
+    "type": "talent",
     "name": "抵天雷罚",
     "requirement": "keqing",
     "cost": [
@@ -189,6 +204,7 @@
   },
   {
     "id": "featherfall_judgment",
+    "type": "talent",
     "name": "落羽的裁择",
     "requirement": "cyno",
     "cost": [
@@ -201,6 +217,7 @@
   },
   {
     "id": "chaotic_entropy",
+    "type": "talent",
     "name": "混元熵增论",
     "requirement": "sucrose",
     "cost": [
@@ -217,6 +234,7 @@
   },
   {
     "id": "lands_of_dandelion",
+    "type": "talent",
     "name": "蒲公英的国土",
     "requirement": "jean",
     "cost": [
@@ -233,6 +251,7 @@
   },
   {
     "id": "strategic_reserve",
+    "type": "talent",
     "name": "储之千日，用之一刻",
     "requirement": "ningguang",
     "cost": [
@@ -245,6 +264,7 @@
   },
   {
     "id": "i_got_your_back",
+    "type": "talent",
     "name": "支援就交给我吧",
     "requirement": "noelle",
     "cost": [
@@ -257,6 +277,7 @@
   },
   {
     "id": "floral_sidewinder",
+    "type": "talent",
     "name": "飞叶迴斜",
     "requirement": "collei",
     "cost": [
@@ -269,6 +290,7 @@
   },
   {
     "id": "streaming_surge",
+    "type": "talent",
     "name": "百川奔流",
     "requirement": "rhodeia_of_loch",
     "cost": [
@@ -285,6 +307,7 @@
   },
   {
     "id": "mirror_cage",
+    "type": "talent",
     "name": "镜锢之笼",
     "requirement": "mirror_maiden",
     "cost": [
@@ -297,6 +320,7 @@
   },
   {
     "id": "paid_in_full",
+    "type": "talent",
     "name": "悉数讨回",
     "requirement": "fatui_pyro_agent",
     "cost": [
@@ -309,6 +333,7 @@
   },
   {
     "id": "transcendent_automaton",
+    "type": "talent",
     "name": "机巧神通",
     "requirement": "maguu_kenki",
     "cost": [
@@ -321,6 +346,7 @@
   },
   {
     "id": "stonehide_reforged",
+    "type": "talent",
     "name": "重铸：岩盔",
     "requirement": "stonehide_lawachurl",
     "cost": [
@@ -337,6 +363,7 @@
   },
   {
     "id": "proliferating_spores",
+    "type": "talent",
     "name": "孢子增殖",
     "requirement": "jadeplume_terrorshroom",
     "cost": [

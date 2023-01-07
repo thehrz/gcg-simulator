@@ -5,7 +5,9 @@ const props = defineProps<{
   character: ICharacter
 }>()
 
-const { card, hp, energy, state } = props.character
+const { cardID, hp, energy, state } = props.character
+
+const card = getCharacter(cardID)
 </script>
 
 <template>
@@ -15,7 +17,7 @@ const { card, hp, energy, state } = props.character
     </div>
 
     <div class="cardBoard">
-      <nuxt-img :src="'images/cards/' + card.id + '.png'" />
+      <nuxt-img :src="'images/cards/' + cardID + '.png'" />
       <div class="hp">{{ hp }}</div>
       <div class="energyIcons">
         <EnergyIcon :is-full="index <= energy" v-for="index in card.energy" />
@@ -44,7 +46,7 @@ const { card, hp, energy, state } = props.character
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 21% 0;
+  padding: 20.5% 0;
   height: 0;
   width: 34%;
   background-image: url("/images/icons/hp.png");

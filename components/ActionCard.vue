@@ -1,17 +1,22 @@
 <script setup lang="ts">
 import IAction from "~~/common/interfaces/IAction"
 
-defineProps<{
+const props = defineProps<{
   action: IAction
 }>()
+
+const { cardID } = props.action
+
+const card = getAction(cardID)
+
 </script>
 
 <template>
   <div class="card">
     <div class="cardBoard">
-      <nuxt-img :src="'images/cards/' + action.card.id + '.png'" />
+      <nuxt-img :src="'images/cards/' + cardID + '.png'" />
       <div class="cost">
-        <CostIcon :cost="cost" v-for="cost in action.card.cost" />
+        <CostIcon :cost="cost" v-for="cost in card.cost" />
       </div>
     </div>
   </div>
@@ -31,7 +36,7 @@ defineProps<{
 
 .cardBoard {
   background: url("/images/icons/card_border.png");
-  background-size: 100% 100%;
+  background-size: cover;
   padding: 2.5% 2%;
   overflow: hidden;
   height: 100%;

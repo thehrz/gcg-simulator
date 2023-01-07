@@ -1,8 +1,7 @@
 import Element from "../enums/Element"
-import ICharacterCard from "./cards/ICharacterCard"
 
 interface ICharacter {
-  card: ICharacterCard
+  cardID: string
   hp: number
   energy: number
   isFighting: boolean

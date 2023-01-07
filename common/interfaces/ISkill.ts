@@ -1,4 +1,4 @@
-import Dice from "../enums/Dice"
+import Cost from "./Cost"
 
 interface ISkill {
   type: Type
@@ -12,11 +12,6 @@ export enum Type {
   NormalAttack = "普通攻击",
   ElementalSkill = "元素战技",
   ElementalBurst = "元素爆发",
-}
-
-export interface Cost {
-  type: Dice | "energy"
-  count: number
 }
 
 export interface Sub {

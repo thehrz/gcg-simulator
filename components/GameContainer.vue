@@ -27,7 +27,9 @@ const backgroundUrl = computed(() => `url("/images/tables/${props.table}.png")`)
 
     <div class="control"></div>
 
-    <div class="enemy_artifact"></div>
+    <div class="enemy_support">
+      <SupportCard :support="support" v-for="support in enemy.support" />
+    </div>
 
     <div class="enemy_cards">
       <CharacterCard
@@ -49,7 +51,9 @@ const backgroundUrl = computed(() => `url("/images/tables/${props.table}.png")`)
       />
     </div>
 
-    <div class="owner_artifact"></div>
+    <div class="owner_support">
+      <SupportCard :support="support" v-for="support in owner.support" />
+    </div>
 
     <div class="owner_cards">
       <CharacterCard
@@ -120,6 +124,21 @@ const backgroundUrl = computed(() => `url("/images/tables/${props.table}.png")`)
 
 .enemy_id {
   grid-column: 1 / 3;
+}
+
+.enemy_support,
+.owner_support {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  justify-items: center;
+}
+
+.enemy_support > div,
+.owner_support > div {
+  width: 70%;
+  height: 75%;
 }
 
 .enemy_action_cards {
