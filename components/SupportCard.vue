@@ -17,6 +17,10 @@ defineProps<{
     <div class="time font_shadow" v-else-if="support.time">
       {{ support.time }}
     </div>
+    <!-- TODO: Need hp image -->
+    <!-- <div class="hp font_shadow" v-else-if="support.hp">
+      {{ support.hp }}
+    </div> -->
   </div>
 </template>
 
