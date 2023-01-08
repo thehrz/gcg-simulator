@@ -1,3 +1,3 @@
 <template>
-  <h1>genius-invokation-simulator</h1>
+  <h1>gcg-simulator</h1>
 </template>

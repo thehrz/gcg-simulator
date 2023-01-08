@@ -1,4 +1,4 @@
-# genius-invokation-simulator
+# gcg-simulator
 
 ...
 
