@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Cost } from "~~/common/interfaces/cards/IActionCard"
+import Cost from '~~/common/interfaces/Cost';
 
 const props = defineProps<{
   cost: Cost
