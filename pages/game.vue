@@ -17,6 +17,9 @@ const robot: IPlayer = {
       cardID: "chongyun",
       hp: 10,
       energy: 2,
+      artifact: {
+        cardID: "broken_rimes_echo",
+      },
       isFighting: false,
     },
   ],
@@ -40,6 +43,12 @@ const player: IPlayer = {
       hp: 10,
       energy: 2,
       isFighting: true,
+      weapon: {
+        cardID: "skyward_harp",
+      },
+      talent: {
+        cardID: "undivided_heart",
+      },
       state: [Element.Dendro, Element.Cryo],
     },
   ],

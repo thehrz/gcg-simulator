@@ -1,6 +1,7 @@
 import Element from "../enums/Element"
 import IArtifact from "./IArtifact"
 import IWeapon from "./IWeapon"
+import ITalent from "./ITalent"
 
 interface ICharacter {
   cardID: string
@@ -9,6 +10,7 @@ interface ICharacter {
   isFighting: boolean
   weapon?: IWeapon
   artifact?: IArtifact
+  talent?: ITalent
   state?: Element[]
 }
 

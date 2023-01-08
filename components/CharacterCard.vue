@@ -5,7 +5,7 @@ const props = defineProps<{
   character: ICharacter
 }>()
 
-const { cardID, hp, energy, state } = props.character
+const { cardID, hp, energy, weapon, artifact, talent, state } = props.character
 
 const card = getCharacter(cardID)
 </script>
@@ -19,6 +19,11 @@ const card = getCharacter(cardID)
     <div class="cardBoard">
       <nuxt-img :src="`images/cards/${cardID}.png`" />
       <div class="hp font_shadow">{{ hp }}</div>
+      <div class="actionIcons">
+        <nuxt-img src="images/icons/weapon.png" v-if="weapon" />
+        <nuxt-img src="images/icons/artifact.png" v-if="artifact" />
+        <nuxt-img src="images/icons/talent.png" v-if="talent" />
+      </div>
       <div class="energyIcons">
         <EnergyIcon :is-full="index <= energy" v-for="index in card.energy" />
       </div>
@@ -38,7 +43,7 @@ const card = getCharacter(cardID)
   position: relative;
 }
 
-.cardBoard > img {
+.cardBoard > img:first-child {
   width: 100%;
 }
 
@@ -54,6 +59,20 @@ const card = getCharacter(cardID)
   position: absolute;
   top: -8%;
   left: -12%;
+}
+
+.actionIcons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 28%;
+  left: -9%;
+  top: 20%;
+}
+
+.actionIcons > img {
+  width: 100%;
 }
 
 .energyIcons {
