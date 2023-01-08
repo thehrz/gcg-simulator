@@ -14,7 +14,10 @@ defineProps<{
       :src="`images/icons/playerid_thisround_${type}.png`"
       v-if="player.thisRound"
     />
-    <nuxt-img class="avatar" :src="`images/characters/${player.avatar ?? 'traveler'}.png`" />
+    <nuxt-img
+      class="avatar"
+      :src="`images/characters/${player.avatar ?? 'traveler'}.png`"
+    />
     <nuxt-img class="id" :src="`images/icons/playerid_${type}.png`" />
     <a class="name font">{{ player.name }}</a>
   </div>
@@ -30,8 +33,9 @@ defineProps<{
 
 .avatar {
   position: absolute;
-  width: 15%;
-  left: 5%;
+  width: 14.65%;
+  left: 5.55%;
+  top: 8%;
   clip-path: circle(50%);
 }
 
@@ -48,13 +52,13 @@ defineProps<{
 
 .name {
   position: absolute;
-  top: 8%;
-  left: 21%;
+  top: 6%;
+  left: 22.5%;
   height: 0;
   width: 25%;
   padding: 4% 0;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
 }
 </style>
