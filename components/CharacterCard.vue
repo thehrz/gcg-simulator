@@ -18,7 +18,7 @@ const card = getCharacter(cardID)
 
     <div class="cardBoard">
       <nuxt-img :src="'images/cards/' + cardID + '.png'" />
-      <div class="hp">{{ hp }}</div>
+      <div class="hp font_shadow">{{ hp }}</div>
       <div class="energyIcons">
         <EnergyIcon :is-full="index <= energy" v-for="index in card.energy" />
       </div>
@@ -54,10 +54,6 @@ const card = getCharacter(cardID)
   position: absolute;
   top: -8%;
   left: -12%;
-  font-family: "HYWenHei";
-  color: white;
-  text-shadow: -1px -1px 1px #000, 1px -1px 1px #673b2c, -1px 1px 1px #673b2c,
-    1px 1px 1px #673b2c;
 }
 
 .energyIcons {

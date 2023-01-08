@@ -19,7 +19,7 @@ defineProps<{ num: number }>()
         y="75"
         text-anchor="middle"
         fill="white"
-        font-family="HYWenHei"
+        class="font"
       >
         {{ num }}
       </text>

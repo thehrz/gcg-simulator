@@ -14,7 +14,19 @@ img {
 }
 
 @font-face {
-  font-family: "HYWenHei";
-  src: url("/fonts/HYWenHei.woff") format("woff");
+  font-family: "HYWenHei-85W";
+  src: url("/fonts/HYWenHei-85W.ttf") format("truetype");
+}
+
+.font {
+  color: white;
+  font-family: "HYWenHei-85W";
+}
+
+.font_shadow {
+  font-family: "HYWenHei-85W";
+  color: white;
+  text-shadow: -1px -1px 1px #000, 1px -1px 1px #673b2c, -1px 1px 1px #673b2c,
+    1px 1px 1px #673b2c;
 }
 </style>

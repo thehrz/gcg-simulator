@@ -11,10 +11,10 @@ defineProps<{
     <div>
       <nuxt-img :src="`/images/cards/${support.cardID}.png`" />
     </div>
-    <div class="count" v-if="support.count">
+    <div class="count font_shadow" v-if="support.count">
       {{ support.count }}
     </div>
-    <div class="time" v-else-if="support.time">
+    <div class="time font_shadow" v-else-if="support.time">
       {{ support.time }}
     </div>
   </div>
@@ -45,10 +45,6 @@ defineProps<{
   height: 0;
   align-items: center;
   justify-content: center;
-  font-family: "HYWenHei";
-  color: white;
-  text-shadow: -1px -1px 1px #000, 1px -1px 1px #673b2c, -1px 1px 1px #673b2c,
-    1px 1px 1px #673b2c;
 }
 
 .count {

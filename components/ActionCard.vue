@@ -15,7 +15,7 @@ const card = getAction(cardID)
   <div class="card">
     <div class="cardBoard">
       <nuxt-img :src="'images/cards/' + cardID + '.png'" />
-      <div class="cost">
+      <div class="cost font_shadow">
         <CostIcon :cost="cost" v-for="cost in card.cost" />
       </div>
     </div>
@@ -53,9 +53,5 @@ const card = getAction(cardID)
   top: -20%;
   left: -20%;
   width: 40%;
-  font-family: "HYWenHei";
-  color: white;
-  text-shadow: -1px -1px 1px #000, 1px -1px 1px #673b2c, -1px 1px 1px #673b2c,
-    1px 1px 1px #673b2c;
 }
 </style>

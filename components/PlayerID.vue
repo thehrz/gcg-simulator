@@ -15,6 +15,7 @@ defineProps<{
       v-if="player.thisRound"
     />
     <nuxt-img class="id" :src="'images/icons/playerid_' + type + '.png'" />
+    <a class="name font">{{ player.name }}</a>
   </div>
 </template>
 
@@ -23,14 +24,29 @@ defineProps<{
   display: flex;
   align-items: center;
   margin: 2%;
+  position: relative;
 }
+
 .id {
   width: 50%;
 }
+
 .thisround {
   position: relative;
   width: 10%;
   left: 2%;
   margin: -5%;
+}
+
+.name {
+  position: absolute;
+  top: 8%;
+  left: 21%;
+  height: 0;
+  width: 25%;
+  padding: 4% 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 </style>
