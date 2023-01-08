@@ -8,13 +8,12 @@ const props = defineProps<{
 const { cardID } = props.action
 
 const card = getAction(cardID)
-
 </script>
 
 <template>
   <div class="card">
     <div class="cardBoard">
-      <nuxt-img :src="'images/cards/' + cardID + '.png'" />
+      <nuxt-img :src="`images/cards/${cardID}.png`" />
       <div class="cost font_shadow">
         <CostIcon :cost="cost" v-for="cost in card.cost" />
       </div>

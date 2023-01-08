@@ -17,7 +17,7 @@ const card = getCharacter(cardID)
     </div>
 
     <div class="cardBoard">
-      <nuxt-img :src="'images/cards/' + cardID + '.png'" />
+      <nuxt-img :src="`images/cards/${cardID}.png`" />
       <div class="hp font_shadow">{{ hp }}</div>
       <div class="energyIcons">
         <EnergyIcon :is-full="index <= energy" v-for="index in card.energy" />
