@@ -14,6 +14,7 @@ defineProps<{
       :src="`images/icons/playerid_thisround_${type}.png`"
       v-if="player.thisRound"
     />
+    <nuxt-img class="avatar" :src="`images/characters/${player.avatar ?? 'traveler'}.png`" />
     <nuxt-img class="id" :src="`images/icons/playerid_${type}.png`" />
     <a class="name font">{{ player.name }}</a>
   </div>
@@ -25,6 +26,13 @@ defineProps<{
   align-items: center;
   margin: 2%;
   position: relative;
+}
+
+.avatar {
+  position: absolute;
+  width: 15%;
+  left: 5%;
+  clip-path: circle(50%);
 }
 
 .id {

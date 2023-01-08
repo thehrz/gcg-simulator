@@ -62,6 +62,7 @@ const robot: IPlayer = {
 
 const player: IPlayer = {
   name: "player",
+  avatar: "nahida",
   characters: [ganyu],
   actions: [undivided_heart, prophecy_of_submersion],
   dices: [Dice.Cryo, Dice.Cryo],

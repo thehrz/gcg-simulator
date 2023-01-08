@@ -5,6 +5,7 @@ import ISupport from "./ISupport"
 
 interface IPlayer {
   name: string
+  avatar?: string
   characters: ICharacter[]
   actions: IAction[]
   support?: ISupport[]
