@@ -14,13 +14,12 @@ defineProps<{
     <div class="count font_shadow" v-if="support.count">
       {{ support.count }}
     </div>
-    <div class="time font_shadow" v-else-if="support.time">
+    <div class="time font_shadow" v-if="support.time">
       {{ support.time }}
     </div>
-    <!-- TODO: Need hp image -->
-    <!-- <div class="hp font_shadow" v-else-if="support.hp">
-      {{ support.hp }}
-    </div> -->
+    <div class="heal font_shadow" v-if="support.heal">
+      {{ support.heal }}
+    </div>
   </div>
 </template>
 
@@ -38,10 +37,10 @@ defineProps<{
   border-radius: 15%;
 }
 
-.supportCard > div:nth-child(2) {
+.count,
+.time,
+.heal {
   position: absolute;
-  top: -12%;
-  right: -16%;
   display: flex;
   background-size: 100% 100%;
   padding: 20%;
@@ -51,12 +50,24 @@ defineProps<{
   justify-content: center;
 }
 
+.count,
+.time {
+  top: -12%;
+  right: -16%;
+}
+
 .count {
   background-image: url("/images/icons/counter.png");
 }
 
 .time {
   background-image: url("/images/icons/time.png");
+}
+
+.heal {
+  bottom: -12%;
+  left: -16%;
+  background-image: url("/images/icons/heal.png");
 }
 
 img {
