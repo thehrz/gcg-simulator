@@ -26,7 +26,7 @@ const backgroundUrl = computed(() => `url("/images/tables/${props.table}.png")`)
     <div class="settings"></div>
 
     <div class="control">
-      <!-- <SwitchRoundButton :this-round="owner.thisRound" /> -->
+      <SwitchRoundButton :this-round="owner.thisRound" />
     </div>
 
     <div class="enemy_support">
@@ -122,6 +122,9 @@ const backgroundUrl = computed(() => `url("/images/tables/${props.table}.png")`)
 
 .control {
   grid-row: 2 / 8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .enemy_support {
@@ -261,7 +264,9 @@ const backgroundUrl = computed(() => `url("/images/tables/${props.table}.png")`)
 }
 
 .skills > div {
+  bottom: 40%;
   position: relative;
-  bottom: 8%;
+  width: 120%;
+  right: 20%;
 }
 </style>
