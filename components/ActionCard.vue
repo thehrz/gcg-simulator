@@ -26,7 +26,7 @@ const card = getAction(cardID)
   height: auto;
   position: relative;
   display: inline-block;
-  margin-left: -15%;
+  margin-left: -9%;
 }
 
 .card > img {

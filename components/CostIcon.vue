@@ -9,7 +9,7 @@ const iconUrl = computed(() => `url("/images/icons/${props.cost.type}.png")`)
 </script>
 
 <template>
-  <div class="icon">
+  <div class="icon font_shadow">
     {{ cost.count }}
   </div>
 </template>

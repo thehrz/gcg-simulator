@@ -33,14 +33,14 @@ defineProps<{
 
 .avatar {
   position: absolute;
-  width: 14.65%;
-  left: 5.55%;
-  top: 8%;
+  width: 29.65%;
+  left: 10.8%;
+  top: 7%;
   clip-path: circle(50%);
 }
 
 .id {
-  width: 50%;
+  width: 100%;
 }
 
 .thisround {
@@ -53,10 +53,10 @@ defineProps<{
 .name {
   position: absolute;
   top: 6%;
-  left: 22.5%;
+  left: 42.5%;
   height: 0;
-  width: 25%;
-  padding: 4% 0;
+  width: 50%;
+  padding: 8% 0;
   display: flex;
   align-items: center;
   justify-content: flex-start;

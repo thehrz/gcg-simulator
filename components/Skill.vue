@@ -18,6 +18,7 @@ const card = getCharacter(cardID)
       :skill="skill"
       :id="index + 1"
       :name="cardID"
+      :costs="skill.cost"
       :disable="disable"
     />
   </div>
@@ -28,4 +29,9 @@ const card = getCharacter(cardID)
   display: flex;
   justify-content: center;
 }
+
+.skill > div {
+  width:  20%;
+}
+
 </style>

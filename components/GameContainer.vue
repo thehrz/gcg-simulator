@@ -25,7 +25,9 @@ const backgroundUrl = computed(() => `url("/images/tables/${props.table}.png")`)
 
     <div class="settings"></div>
 
-    <div class="control"></div>
+    <div class="control">
+      <!-- <SwitchRoundButton :this-round="owner.thisRound" /> -->
+    </div>
 
     <div class="enemy_support">
       <SupportCard :support="support" v-for="support in enemy.support" />
@@ -75,11 +77,7 @@ const backgroundUrl = computed(() => `url("/images/tables/${props.table}.png")`)
     </div>
 
     <div class="owner_action_cards">
-      <ActionCard
-        class="card"
-        v-for="action in owner.actions"
-        :action="action"
-      />
+      <ActionCard v-for="action in owner.actions" :action="action" />
     </div>
 
     <div class="skills">
@@ -106,79 +104,77 @@ const backgroundUrl = computed(() => `url("/images/tables/${props.table}.png")`)
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 4fr 2fr 1fr;
-  grid-template-rows: 12% 38% 38% 12%;
-}
-
-.number {
-  width: 50%;
-}
-
-.enemy_cards .fighting {
-  margin-top: 10%;
-}
-
-.owner_cards .fighting {
-  margin-bottom: 10%;
-}
-
-.card {
-  width: 25%;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: repeat(8, minmax(0, 1fr));
 }
 
 .enemy_id {
   grid-column: 1 / 3;
 }
 
-.enemy_support,
-.owner_support,
-.enemy_summon,
-.owner_summon {
+.enemy_action_cards {
+  grid-column: 3 / 11;
+}
+
+.settings {
+  grid-column: 11 / 1;
+}
+
+.control {
+  grid-row: 2 / 8;
+}
+
+.enemy_support {
+  grid-row: 2 / 5;
+  grid-column: 2 / 5;
   display: grid;
+  margin: 0 10%;
   grid-template-rows: 50% 50%;
   grid-template-columns: 50% 50%;
   align-items: center;
   justify-items: center;
 }
 
-.enemy_support > div,
-.owner_support > div,
-.enemy_summon > div,
-.owner_summon > div {
-  width: 70%;
-  height: 75%;
-}
-
-.enemy_action_cards {
-  grid-column: 3 / 5;
-}
-
-.owner_action_cards {
-  display: flex;
-  justify-content: center;
-}
-
-.control {
-  grid-row: 2 / 4;
+.enemy_support > div {
+  height: 80%;
+  width: 75%;
 }
 
 .enemy_cards {
+  grid-row: 2 / 5;
+  grid-column: 5 / 9;
   margin: 0 5%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
 
-.owner_cards {
-  margin: 0 5%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+.enemy_cards > div {
+  width: 30%;
+}
+
+.enemy_cards .fighting {
+  margin-top: 10%;
+}
+
+.enemy_summon {
+  grid-row: 2 / 5;
+  grid-column: 9 / 12;
+  display: grid;
+  margin: 0 10%;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  justify-items: center;
+}
+
+.enemy_summon > div {
+  height: 80%;
+  width: 75%;
 }
 
 .dices {
-  grid-row: -4 / -2;
-  grid-column: 5 / 6;
+  grid-row: 2 / 8;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -190,15 +186,82 @@ const backgroundUrl = computed(() => `url("/images/tables/${props.table}.png")`)
   width: 50%;
 }
 
-.dices svg {
+.dices > svg {
   margin-bottom: 15%;
 }
 
+.owner_support {
+  grid-row: 5 / 8;
+  grid-column: 2 / 5;
+  display: grid;
+  margin: 0 10%;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  justify-items: center;
+}
+
+.owner_support > div {
+  height: 80%;
+  width: 75%;
+}
+
+.owner_cards {
+  grid-row: 5 / 8;
+  grid-column: 5 / 9;
+  margin: 0 5%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.owner_cards > div {
+  width: 30%;
+}
+
+.owner_cards .fighting {
+  margin-bottom: 10%;
+}
+
+.owner_summon {
+  grid-row: 5 / 8;
+  grid-column: 9 / 12;
+  display: grid;
+  margin: 0 10%;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  justify-items: center;
+}
+
+.owner_summon > div {
+  height: 80%;
+  width: 75%;
+}
+
 .owner_id {
-  grid-column: -6 / -4;
+  grid-column: 1 / 3;
+  grid-row: 8;
+}
+
+.owner_action_cards {
+  grid-column: 3 / 11;
+  grid-row: 8;
+  display: flex;
+  justify-content: center;
+}
+
+.owner_action_cards > div {
+  width: 15%;
 }
 
 .skills {
-  grid-column: -3 / -1;
+  grid-column: 10 / 13;
+  grid-row: 8;
+}
+
+.skills > div {
+  position: relative;
+  bottom: 8%;
 }
 </style>
