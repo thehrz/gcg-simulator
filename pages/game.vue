@@ -71,6 +71,12 @@ const player: IPlayer = {
       heal: 2,
     },
   ],
+  summons: [
+    {
+      cardID: "sacred_cryo_pearl",
+      time: 2,
+    },
+  ],
   thisRound: true,
 }
 </script>

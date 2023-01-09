@@ -40,7 +40,9 @@ const backgroundUrl = computed(() => `url("/images/tables/${props.table}.png")`)
       />
     </div>
 
-    <div class="enemy_summon"></div>
+    <div class="enemy_summon">
+      <SummonCard :summon="summon" v-for="summon in enemy.summons" />
+    </div>
 
     <div class="dices">
       <DicesNumber :num="owner.dices.length" />
@@ -64,7 +66,9 @@ const backgroundUrl = computed(() => `url("/images/tables/${props.table}.png")`)
       />
     </div>
 
-    <div class="owner_summon"></div>
+    <div class="owner_summon">
+      <SummonCard :summon="summon" v-for="summon in owner.summons" />
+    </div>
 
     <div class="owner_id">
       <PlayerID :player="owner" type="owner" />
@@ -127,7 +131,9 @@ const backgroundUrl = computed(() => `url("/images/tables/${props.table}.png")`)
 }
 
 .enemy_support,
-.owner_support {
+.owner_support,
+.enemy_summon,
+.owner_summon {
   display: grid;
   grid-template-rows: 50% 50%;
   grid-template-columns: 50% 50%;
@@ -136,7 +142,9 @@ const backgroundUrl = computed(() => `url("/images/tables/${props.table}.png")`)
 }
 
 .enemy_support > div,
-.owner_support > div {
+.owner_support > div,
+.enemy_summon > div,
+.owner_summon > div {
   width: 70%;
   height: 75%;
 }
