@@ -1,5 +1,10 @@
 {
   "private": true,
+  "name": "gcg-simulator",
+  "version": "1.0.0",
+  "homepage": "https://github.com/Thehrz/gcg-simulator",
+  "license": "MIT",
+  "repository": "github:Thehrz/gcg-simulator",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
