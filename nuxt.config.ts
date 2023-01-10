@@ -10,4 +10,7 @@ export default defineNuxtConfig({
     },
   },
   modules: ["@nuxt/image-edge"],
+  typescript: {
+    strict: true,
+  },
 })

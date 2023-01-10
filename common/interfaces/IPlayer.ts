@@ -12,7 +12,7 @@ interface IPlayer {
   support?: ISupport[]
   summons?: ISummon[]
   dices: Dice[]
-  thisRound: boolean
+  thisRound?: boolean
 }
 
 export default IPlayer

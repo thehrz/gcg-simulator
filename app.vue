@@ -9,7 +9,7 @@
   box-sizing: border-box;
 }
 
-img {
+img, svg {
   vertical-align: top;
 }
 
