@@ -17,6 +17,8 @@
     "nuxt": "3.0.0"
   },
   "dependencies": {
-    "@nuxt/image": "^0.7.1"
+    "@element-plus/nuxt": "^1.0.1",
+    "@nuxt/image": "^0.7.1",
+    "element-plus": "^2.2.28"
   }
 }
