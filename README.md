@@ -18,9 +18,9 @@ An open source front-end simulator for the Genius Invokation TCG. Using Nuxt.
 
 This repository does not include the Genshin Impact access, so the user can not view the complete game access, including cards, avatars, skills and other image in the browser after starting this repository code.
 
-**You are required to obtain the original God game resources without violating the [Genshin Impact Terms of Service](https://genshin.hoyoverse.com/en/company/terms) (without unpacking, etc.) in order to start the project successfully.**
+**You are required to obtain the original Genshin Impact assets without violating the [Genshin Impact Terms of Service](https://genshin.hoyoverse.com/en/company/terms) (without unpacking, etc.) in order to start the project successfully.**
 
-### Build Command
+### Build Commandgod
 
 ```shell
 $ yarn build
