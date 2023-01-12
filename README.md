@@ -8,9 +8,9 @@ An open source front-end simulator for the Genius Invokation TCG. Using Nuxt.
 
 ## Demo
 
-[Link](gcg-simulator.nahida.work)
+[Link](https://gcg-simulator.nahida.work)
 
-> Disclaimer: This demo is based on `gcg-simulator`, and uses some of the Genshin Impact assets, But it has no direct relationship with this repository. Some of the assets (including but not limited to text, pictures, audio, video, diagrams, interface design, layout framework, data or electronic documents, etc.) used in the Genshin Impact belong to COGNOSPHERE, the assets is from the Internet or in-game interception, no unpacking, decompiling code actions. This demo is for the Genshin Impact players to share and learn, only as a test site to show this project, not with online game properties.
+> Disclaimer: This demo is based on `gcg-simulator`, and uses some of the Genshin Impact assets, But it has no direct relationship with this repository. Some of the assets used in the Genshin Impact belong to COGNOSPHERE, the assets is from the Internet or in-game interception, no unpacking, decompiling code actions. This demo is for the Genshin Impact players to share and learn, only as a test site to show this project, not with online game properties.
 
 ## Build
 
