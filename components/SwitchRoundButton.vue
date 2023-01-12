@@ -75,6 +75,10 @@ button {
   align-items: center;
 }
 
+.highlight {
+  width: 100%;
+}
+
 button.enable .countDown,
 button.enable .highlight {
   fill: #af7e29;
@@ -96,31 +100,6 @@ button.disable .highlight {
 button.disable .countDown {
   fill: #96c1fa;
 }
-
-/* .switchRoundButton svg.enable {
-  fill: #af7e29;
-}
-
-.switchRoundButton svg.disable:first-child {
-  fill: none;
-}
-
-.switchRoundButton path.enable {
-  fill: #e5af46;
-}
-
-.switchRoundButton path.disable {
-  fill: none;
-} */
-
-/* button > .countDown {
-  position: absolute;
-  width: 55%;
-}
-
-button > .disable {
-  fill: #96c1fa;
-} */
 
 .round_enemy {
   position: absolute;
