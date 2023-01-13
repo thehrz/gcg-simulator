@@ -7,10 +7,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--el-font-family);
 }
 
 img, svg {
   vertical-align: top;
+}
+
+a {
+  text-decoration: none;
 }
 
 @font-face {
