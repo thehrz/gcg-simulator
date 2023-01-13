@@ -1,25 +1,15 @@
 <template>
-  <client-only>
-    <el-menu mode="horizontal" :ellipsis="false" router>
-      <div class="flex-grow" />
-      <el-menu-item index="/cards">卡牌</el-menu-item>
-      <el-menu-item index="/cardgroup">卡组</el-menu-item>
-      <el-menu-item index="/game">开始游戏</el-menu-item>
-    </el-menu>
-
-    <main>
-      <h1>gcg-simulator</h1>
+  <nuxt-layout>
+    <div class="title">
+      <h1>gcg-simulator <el-tag class="ml-2" type="warning">WIP</el-tag></h1>
+      <el-divider class="divider" />
       <p>开源的七圣召唤模拟器</p>
-    </main>
-  </client-only>
+    </div>
+  </nuxt-layout>
 </template>
 
 <style scoped>
-.flex-grow {
-  flex-grow: 1;
-}
-
-main {
+.title {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -27,5 +17,9 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.divider {
+  margin: 12px 0;
 }
 </style>
