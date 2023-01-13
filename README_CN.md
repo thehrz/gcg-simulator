@@ -30,6 +30,8 @@ yarn build
 
 > 再次声明: 本项目完全遵循 [米哈游原神游戏使用许可及服务协议](https://ys.mihoyo.com/main/company/agreement), 本仓库 (Thehrz/gcg-simulator) 不包含原神游戏资源, 无分发原神游戏资源的行为。
 
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FThehrz%2Fgcg-simulator.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FThehrz%2Fgcg-simulator?ref=badge_large)
+
 本项目基于 [MIT](https://github.com/Thehrz/gcg-simulator/blob/master/LICENSE) 协议开源。
 
 本项目与上海米哈游影铁科技有限公司及其关联公司没有从属关系。
