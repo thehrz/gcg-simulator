@@ -35,7 +35,6 @@ const backgroundUrl = computed(() => `url("/images/tables/${props.table}.png")`)
 
     <div class="enemy_cards">
       <CharacterCard
-        class="card"
         :class="{ fighting: character.isFighting }"
         v-for="character in enemy.characters"
         :character="character"
@@ -61,7 +60,6 @@ const backgroundUrl = computed(() => `url("/images/tables/${props.table}.png")`)
 
     <div class="owner_cards">
       <CharacterCard
-        class="card"
         :class="{ fighting: character.isFighting }"
         v-for="character in owner.characters"
         :character="character"
@@ -153,6 +151,7 @@ const backgroundUrl = computed(() => `url("/images/tables/${props.table}.png")`)
 }
 
 .enemy_cards > div {
+  margin: 4%;
   width: 30%;
 }
 
@@ -219,6 +218,7 @@ const backgroundUrl = computed(() => `url("/images/tables/${props.table}.png")`)
 }
 
 .owner_cards > div {
+  margin: 4%;
   width: 30%;
 }
 
