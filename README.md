@@ -32,6 +32,8 @@ $ yarn build
 
 > Disclaimer: This project is fully compliant with the [Genshin Impact Terms of Service](https://genshin.hoyoverse.com/en/company/terms), this git repository (Thehrz/gcg-simulator) does not include Genshin Impact assets, no distribution of Genshin Impact assets.
 
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FThehrz%2Fgcg-simulator.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FThehrz%2Fgcg-simulator?ref=badge_large)
+
 [MIT](https://github.com/Thehrz/gcg-simulator/blob/master/LICENSE)
 
 This project has no affiliation with COGNOSPHERE.
