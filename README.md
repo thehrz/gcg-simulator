@@ -1,4 +1,4 @@
-# gcg-simulator
+# gcg-simulator [WIP]
 
 [[中文/Chinese]](https://github.com/Thehrz/gcg-simulator/blob/master/README_CN.md)
 
