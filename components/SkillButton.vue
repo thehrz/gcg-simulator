@@ -17,7 +17,7 @@ defineProps<{
       <button
         :class="{ disable: disable, burst: skill.type == Type.ElementalBurst }"
       >
-        <nuxt-img :src="`./images/skills${name}/skill_${id}.png`" />
+        <nuxt-img :src="`./images/skills/${name}/skill_${id}.png`" />
       </button>
     </div>
 
