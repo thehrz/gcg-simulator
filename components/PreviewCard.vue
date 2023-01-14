@@ -1,0 +1,100 @@
+<script setup lang="ts">
+const props = defineProps<{
+  isCharacter: boolean
+  id: string
+}>()
+
+const card = getCharacter(props.id)
+
+const isDetailVisible = ref(false)
+</script>
+
+<template>
+  <div class="previewCard" @click="isDetailVisible = true">
+    <div class="cardBoard">
+      <nuxt-img :src="`images/cards/${id}.png`" />
+      <div class="hp font_shadow" v-if="isCharacter">{{ card.hp }}</div>
+      <div class="energyIcons">
+        <EnergyIcon :is-full="true" v-for="_ in card.energy" />
+      </div>
+    </div>
+    <client-only>
+      <el-dialog :title="card.name" v-model="isDetailVisible">
+        <el-card class="card" v-for="(skill, index) in card.skills">
+          <div class="skill">
+            <nuxt-img
+              class="skillIcon image"
+              :src="`./images/skills/${card.id}/skill_${index + 1}.png`"
+            />
+            <div>
+              <p class="name">{{ skill.name }}</p>
+              <p class="desc" v-html="skill.desc"></p>
+            </div>
+          </div>
+        </el-card>
+      </el-dialog>
+    </client-only>
+  </div>
+</template>
+
+<style scoped>
+.cardBoard {
+  background: url("/images/icons/card_border.png");
+  background-size: 100% 100%;
+  padding: 2.5% 3%;
+  position: relative;
+}
+
+.cardBoard > img {
+  width: 100%;
+}
+
+.hp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20.5% 0;
+  height: 0;
+  width: 34%;
+  background-image: url("/images/icons/hp.png");
+  background-size: 100% 100%;
+  position: absolute;
+  top: -8%;
+  left: -12%;
+}
+
+.energyIcons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35%;
+  position: absolute;
+  flex: 1;
+  right: -16%;
+  top: 3%;
+}
+
+.energyIcons > div {
+  width: 100%;
+  margin-bottom: -30%;
+}
+
+.card img {
+  width: 65px;
+}
+
+.card {
+  --el-card-padding: 10px;
+  margin-bottom: 3%;
+  background: #909399;
+  color: white;
+}
+
+.skill {
+  display: flex;
+}
+
+.skill > div {
+  margin-left: 10px;
+}
+</style>
