@@ -8,7 +8,7 @@ interface IPlayer {
   name: string
   avatar?: string
   characters: ICharacter[]
-  actions: IAction[]
+  actions?: IAction[]
   support?: ISupport[]
   summons?: ISummon[]
   dices: Dice[]
