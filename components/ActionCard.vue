@@ -37,8 +37,6 @@ const card = getAction(cardID)
   background: url("/images/icons/card_border.png");
   background-size: cover;
   padding: 2.5% 2%;
-  overflow: hidden;
-  height: 100%;
 }
 
 .cardBoard > img {

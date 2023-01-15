@@ -90,6 +90,7 @@ const backgroundUrl = computed(() => `url("/images/tables/${props.table}.png")`)
 <style scoped>
 .game {
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .background {
