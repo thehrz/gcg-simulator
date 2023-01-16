@@ -5,7 +5,7 @@ const props = defineProps<{
   character: ICharacter
 }>()
 
-const isShowInfo = ref(false)
+const selected = ref(false)
 
 const { cardID, hp, energy, weapon, artifact, talent, state } = props.character
 
@@ -13,7 +13,7 @@ const card = getCharacter(cardID)
 </script>
 
 <template>
-  <div class="card" @click="isShowInfo = true">
+  <div class="card" @click="selected = true">
     <div class="elementIcons" v-if="state">
       <ElementIcon v-for="element in state" :element="element" />
     </div>
@@ -29,12 +29,19 @@ const card = getCharacter(cardID)
       <div class="energyIcons">
         <EnergyIcon :is-full="index <= energy" v-for="index in card.energy" />
       </div>
+      <transition name="fade">
+        <nuxt-img
+          v-if="selected"
+          class="selectd"
+          src="images/icons/card_select.png"
+        />
+      </transition>
     </div>
     <client-only>
       <character-info
-        :show="isShowInfo"
+        :show="selected"
         :character="character"
-        @close="isShowInfo = false"
+        @close="selected = false"
       />
     </client-only>
   </div>
@@ -111,6 +118,14 @@ const card = getCharacter(cardID)
 
 .elementIcons > img {
   width: 25%;
+}
+
+.selectd {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
 }
 
 .fighting {

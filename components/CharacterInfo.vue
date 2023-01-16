@@ -21,31 +21,40 @@ const card = getCharacter(props.character.cardID)
 <template>
   <client-only>
     <teleport to=".game">
-      <div v-if="show" ref="contentRef" class="characterInfo">
-        <div class="card">
-          <div class="cardBoard">
-            <nuxt-img :src="`images/cards/${character.cardID}.png`" />
+      <transition name="fade">
+        <div v-if="show" ref="contentRef" class="characterInfo">
+          <div class="card">
+            <div class="cardBoard">
+              <nuxt-img :src="`images/cards/${character.cardID}.png`" />
+            </div>
           </div>
-        </div>
 
-        <div class="info">
-          <div v-for="(skill, index) in card.skills">
-            <div class="skill">
-              <nuxt-img
-                :src="`./images/skills/${card.id}/skill_${index + 1}.png`"
-              />
-              <div>
-                <p class="name">{{ skill.name }}</p>
-                <div class="costs">
-                  <div v-for="cost in skill.cost">
-                    <CostIcon :cost="cost" />
+          <div class="info">
+            <h1>{{ card.name }}</h1>
+
+            <div class="icons">
+              <element-icon :element="card.element" />
+            </div>
+
+            <div v-for="(skill, index) in card.skills">
+              <div class="skill">
+                <nuxt-img
+                  :src="`./images/skills/${card.id}/skill_${index + 1}.png`"
+                />
+
+                <div>
+                  <p>{{ skill.name }}</p>
+                  <div class="costs">
+                    <div v-for="cost in skill.cost">
+                      <CostIcon :cost="cost" />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </transition>
     </teleport>
   </client-only>
 </template>
@@ -84,12 +93,21 @@ const card = getCharacter(props.character.cardID)
   display: flex;
   background-color: #2e3741;
   flex-direction: column;
-  padding: 1%;
+  padding: 2%;
   width: 100%;
 }
 
-.info > div{
+.info > h1 {
+  font-size: 20px;
+  margin-bottom: 5%;
+}
+
+.info > div {
   margin-bottom: 2%;
+}
+
+.icons > img {
+  width: 10%;
 }
 
 .skill {
