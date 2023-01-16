@@ -25,7 +25,7 @@ const isSelected = ref(false)
   </div>
 
   <transition name="fade">
-    <div class="desc" v-html="skill.desc" v-if="isSelected"></div>
+    <p class="desc" v-html="skill.desc" v-if="isSelected"></p>
   </transition>
 </template>
 
@@ -55,16 +55,14 @@ const isSelected = ref(false)
 }
 
 .costs > div {
-  width: 20%;
+  width: 25%;
 }
 
 .desc {
-  display: flex;
   border: grey 2px solid;
   border-radius: 8px;
   padding: 0 3%;
   margin: 0 3%;
-  align-items: center;
   margin-bottom: 3%;
 }
 </style>

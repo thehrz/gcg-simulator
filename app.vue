@@ -10,7 +10,8 @@
   font-family: var(--el-font-family);
 }
 
-img, svg {
+img,
+svg {
   vertical-align: top;
 }
 
@@ -44,5 +45,4 @@ a {
 .fade-leave-to {
   opacity: 0;
 }
-
 </style>
