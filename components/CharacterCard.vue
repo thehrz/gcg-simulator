@@ -5,13 +5,15 @@ const props = defineProps<{
   character: ICharacter
 }>()
 
+const isShowInfo = ref(false)
+
 const { cardID, hp, energy, weapon, artifact, talent, state } = props.character
 
 const card = getCharacter(cardID)
 </script>
 
 <template>
-  <div class="card">
+  <div class="card" @click="isShowInfo = true">
     <div class="elementIcons" v-if="state">
       <ElementIcon v-for="element in state" :element="element" />
     </div>
@@ -28,6 +30,13 @@ const card = getCharacter(cardID)
         <EnergyIcon :is-full="index <= energy" v-for="index in card.energy" />
       </div>
     </div>
+    <client-only>
+      <character-info
+        :show="isShowInfo"
+        :character="character"
+        @close="isShowInfo = false"
+      />
+    </client-only>
   </div>
 </template>
 

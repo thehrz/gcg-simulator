@@ -91,6 +91,7 @@ const backgroundUrl = computed(() => `url("/images/tables/${props.table}.png")`)
 .game {
   margin: 0 auto;
   overflow: hidden;
+  position: relative;
 }
 
 .background {
