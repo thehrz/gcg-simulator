@@ -146,7 +146,6 @@ const backgroundUrl = computed(() => `url("/images/tables/${props.table}.png")`)
 .enemy_cards {
   grid-row: 2 / 5;
   grid-column: 5 / 9;
-  margin: 0 5%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -213,7 +212,6 @@ const backgroundUrl = computed(() => `url("/images/tables/${props.table}.png")`)
 .owner_cards {
   grid-row: 5 / 8;
   grid-column: 5 / 9;
-  margin: 0 5%;
   display: flex;
   justify-content: center;
   align-items: flex-end;

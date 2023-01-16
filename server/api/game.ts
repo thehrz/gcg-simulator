@@ -20,7 +20,11 @@ export default defineEventHandler(() => {
               artifact: {
                 cardID: "broken_rimes_echo",
               },
-              isFighting: false,
+            },
+            {
+              cardID: "diona",
+              hp: 10,
+              energy: 0,
             },
           ],
           dices: ["any"],
@@ -49,6 +53,17 @@ export default defineEventHandler(() => {
               },
               state: ["dendro", "cryo"],
             },
+            {
+              cardID: "maguu_kenki",
+              hp: 10,
+              energy: 2,
+              state: ["dendro"],
+            },
+            {
+              cardID: "yoimiya",
+              hp: 8,
+              energy: 0,
+            }
           ],
           actions: [
             {

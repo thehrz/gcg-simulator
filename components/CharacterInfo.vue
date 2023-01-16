@@ -36,22 +36,12 @@ const card = getCharacter(props.character.cardID)
               <element-icon :element="card.element" />
             </div>
 
-            <div v-for="(skill, index) in card.skills">
-              <div class="skill">
-                <nuxt-img
-                  :src="`./images/skills/${card.id}/skill_${index + 1}.png`"
-                />
-
-                <div>
-                  <p>{{ skill.name }}</p>
-                  <div class="costs">
-                    <div v-for="cost in skill.cost">
-                      <CostIcon :cost="cost" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <skill-info
+              :character-name="card.id"
+              :skill="skill"
+              :index="index + 1"
+              v-for="(skill, index) in card.skills"
+            />
           </div>
         </div>
       </transition>
@@ -62,9 +52,10 @@ const card = getCharacter(props.character.cardID)
 <style scoped>
 .characterInfo {
   position: absolute;
-  top: 5%;
-  left: 2%;
-  width: 36%;
+  top: 8%;
+  left: 3%;
+  width: 32%;
+  height: 80%;
   z-index: 10;
   display: flex;
   color: #cad8ea;
@@ -95,39 +86,34 @@ const card = getCharacter(props.character.cardID)
   flex-direction: column;
   padding: 2%;
   width: 100%;
+  max-height: 100%;
+  overflow: auto;
 }
 
 .info > h1 {
   font-size: 20px;
-  margin-bottom: 5%;
+  margin-bottom: 1%;
 }
 
-.info > div {
-  margin-bottom: 2%;
+.info::-webkit-scrollbar {
+  width: 4px;
+}
+
+.info::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.info::-webkit-scrollbar-track {
+  border-radius: 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.icons {
+  margin-bottom: 3%;
 }
 
 .icons > img {
   width: 10%;
-}
-
-.skill {
-  display: flex;
-}
-
-.skill > img {
-  width: 25%;
-}
-
-.skill > div {
-  margin-left: 10px;
-  width: 100%;
-}
-
-.costs {
-  display: flex;
-}
-
-.costs > div {
-  width: 20%;
 }
 </style>
