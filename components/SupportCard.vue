@@ -4,10 +4,12 @@ import ISupport from "~~/common/interfaces/ISupport"
 defineProps<{
   support: ISupport
 }>()
+
+const selected = ref(false)
 </script>
 
 <template>
-  <div class="supportCard">
+  <div class="supportCard" @click="selected = true">
     <div>
       <nuxt-img :src="`/images/cards/${support.cardID}.png`" />
     </div>
@@ -20,6 +22,21 @@ defineProps<{
     <div class="heal font_shadow" v-if="support.heal">
       {{ support.heal }}
     </div>
+    <transition name="fade">
+      <nuxt-img
+        v-if="selected"
+        class="selectd"
+        src="images/icons/card_select.png"
+      />
+    </transition>
+
+    <client-only>
+      <support-info
+        :show="selected"
+        :support="support"
+        @close="selected = false"
+      />
+    </client-only>
   </div>
 </template>
 
@@ -68,6 +85,14 @@ defineProps<{
   bottom: -12%;
   left: -16%;
   background-image: url("/images/icons/heal.png");
+}
+
+.selectd {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
 }
 
 img {

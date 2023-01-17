@@ -18,7 +18,7 @@ const isSelected = ref(false)
       <p>{{ skill.name }}</p>
       <div class="costs">
         <div v-for="cost in skill.cost">
-          <CostIcon :cost="cost" />
+          <cost-icon :cost="cost" />
         </div>
       </div>
     </div>
