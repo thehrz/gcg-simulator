@@ -32,11 +32,7 @@
             "count": 3
           }
         ],
-        "sub": {
-          "id": "ice_lotus",
-          "name": "冰莲",
-          "desc": "<span style=\"color: #FFFFFFFF;\">我方出战角色受到伤害时：</span>抵消1点伤害。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：2</span>"
-        }
+        "subID": "ice_lotus"
       },
       {
         "type": "普通攻击",
@@ -63,11 +59,7 @@
             "count": 2
           }
         ],
-        "sub": {
-          "id": "sacred_cryo_pearl",
-          "name": "冰灵珠",
-          "desc": "<span style=\"color: #FFFFFFFF;\">结束阶段：</span>造成1点<span style=\"color: #99FFFFFF;\">冰元素伤害</span>，对所有敌方后台角色造成1点<span style=\"color: #FFFFFFFF; text-decoration: underline;\">穿透伤害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：2</span>"
-        }
+        "subID": "sacred_cryo_pearl"
       }
     ]
   },
@@ -104,11 +96,7 @@
             "count": 3
           }
         ],
-        "sub": {
-          "id": "cat-claw_shield",
-          "name": "猫爪护盾",
-          "desc": "为我方出战角色提供<span style=\"color: #FFFFFFFF;\">1点<span style=\"color: #FFFFFFFF; text-decoration: underline;\">护盾</span></span>。"
-        }
+        "subID": "cat-claw_shield"
       },
       {
         "type": "元素爆发",
@@ -124,11 +112,7 @@
             "count": 3
           }
         ],
-        "sub": {
-          "id": "drunken_mist",
-          "name": "酒雾领域",
-          "desc": "<span style=\"color: #FFFFFFFF;\">结束阶段：</span>造成1点<span style=\"color: #99FFFFFF;\">冰元素伤害</span>，治疗我方出战角色2点。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：2</span>"
-        }
+        "subID": "drunken_mist"
       }
     ]
   },
@@ -180,11 +164,7 @@
             "count": 2
           }
         ],
-        "sub": {
-          "id": "icicle",
-          "name": "寒冰之棱",
-          "desc": "<span style=\"color: #FFFFFFFF;\">我方切换角色后：</span>造成2点<span style=\"color: #99FFFFFF;\">冰元素伤害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：3</span>"
-        }
+        "subID": "icicle"
       }
     ]
   },
@@ -221,11 +201,7 @@
             "count": 3
           }
         ],
-        "sub": {
-          "id": "chonghua_frost_field",
-          "name": "重华叠霜领域",
-          "desc": "我方单手剑、双手剑或长柄武器角色造成的<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理伤害</span>变为<span style=\"color: #99FFFFFF;\">冰元素伤害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">持续回合</span>：2</span>"
-        }
+        "subID": "chonghua_frost_field"
       },
       {
         "type": "元素爆发",
@@ -292,22 +268,14 @@
             "count": 3
           }
         ],
-        "sub": {
-          "id": "frostflake_seki_no_to",
-          "name": "霜见雪关扉",
-          "desc": "<span style=\"color: #FFFFFFFF;\">结束阶段：</span>造成2点<span style=\"color: #99FFFFFF;\">冰元素伤害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：2</span>"
-        }
+        "subID": "frostflake_seki_no_to"
       },
       {
         "type": "被动技能",
         "name": "神里流·霰步",
         "desc": "【被动】此角色被切换为「出战角色」时，附属<span style=\"color: #FFFFFFFF;\">冰元素附魔</span>。",
         "cost": [],
-        "sub": {
-          "id": "cryo_elemental_infusion",
-          "name": "冰元素附魔",
-          "desc": "所附属角色造成的<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理伤害</span>变为<span style=\"color: #99FFFFFF;\">冰元素伤害</span>。\\n（持续到回合结束）"
-        }
+        "subID": "cryo_elemental_infusion"
       }
     ]
   },
@@ -344,11 +312,7 @@
             "count": 3
           }
         ],
-        "sub": {
-          "id": "melody_loop",
-          "name": "歌声之环",
-          "desc": "<span style=\"color: #FFFFFFFF;\">结束阶段：</span>治疗所有我方角色1点，然后对我方出战角色<span style=\"color: #80C0FFFF;\">附着水元素</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：2</span>"
-        }
+        "subID": "melody_loop"
       },
       {
         "type": "元素爆发",
@@ -400,11 +364,7 @@
             "count": 3
           }
         ],
-        "sub": {
-          "id": "rain_sword",
-          "name": "雨帘剑",
-          "desc": "<span style=\"color: #FFFFFFFF;\">我方出战角色受到至少为3的伤害时：</span>抵消1点伤害。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：2</span>"
-        }
+        "subID": "rain_sword"
       },
       {
         "type": "元素爆发",
@@ -420,11 +380,7 @@
             "count": 2
           }
         ],
-        "sub": {
-          "id": "rainbow_bladework",
-          "name": "虹剑势",
-          "desc": "<span style=\"color: #FFFFFFFF;\">我方角色普通攻击后：</span>造成2点<span style=\"color: #80C0FFFF;\">水元素伤害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：3</span>"
-        }
+        "subID": "rainbow_bladework"
       }
     ]
   },
@@ -461,11 +417,7 @@
             "count": 3
           }
         ],
-        "sub": {
-          "id": "reflection",
-          "name": "虚影",
-          "desc": "<span style=\"color: #FFFFFFFF;\">我方出战角色受到伤害时：</span>抵消1点伤害。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：1</span>，耗尽时不弃置此牌。\\n<span style=\"color: #FFFFFFFF;\">结束阶段：</span>弃置此牌，造成1点<span style=\"color: #80C0FFFF;\">水元素伤害</span>。"
-        }
+        "subID": "reflection"
       },
       {
         "type": "元素爆发",
@@ -481,11 +433,7 @@
             "count": 3
           }
         ],
-        "sub": {
-          "id": "illusory_bubble",
-          "name": "泡影",
-          "desc": "<span style=\"color: #FFFFFFFF;\">我方造成技能伤害时：</span>移除此状态，使本次伤害加倍。"
-        }
+        "subID": "illusory_bubble"
       },
       {
         "type": "被动技能",
@@ -543,11 +491,7 @@
             "count": 3
           }
         ],
-        "sub": {
-          "id": "pyro_infusion",
-          "name": "火元素附魔",
-          "desc": "所附属角色造成的<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理伤害</span>，变为<span style=\"color: #FF9999FF;\">火元素伤害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">持续回合</span>：2</span>"
-        }
+        "subID": "pyro_infusion"
       }
     ]
   },
@@ -584,11 +528,7 @@
             "count": 3
           }
         ],
-        "sub": {
-          "id": "guoba",
-          "name": "锅巴",
-          "desc": "<span style=\"color: #FFFFFFFF;\">结束阶段：</span>造成2点<span style=\"color: #FF9999FF;\">火元素伤害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：2</span>"
-        }
+        "subID": "guoba"
       },
       {
         "type": "元素爆发",
@@ -604,11 +544,7 @@
             "count": 2
           }
         ],
-        "sub": {
-          "id": "pyronado",
-          "name": "旋火轮",
-          "desc": "<span style=\"color: #FFFFFFFF;\">我方角色使用技能后：</span>造成2点<span style=\"color: #FF9999FF;\">火元素伤害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：2</span>"
-        }
+        "subID": "pyronado"
       }
     ]
   },
@@ -660,11 +596,7 @@
             "count": 2
           }
         ],
-        "sub": {
-          "id": "inspiration_field",
-          "name": "鼓舞领域",
-          "desc": "<span style=\"color: #FFFFFFFF;\">我方角色使用技能时：</span>如果该角色生命值至少为7，则使此伤害额外+2；技能结算后，如果该角色生命值不多于6，则治疗该角色2点。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">持续回合</span>：2</span>"
-        }
+        "subID": "inspiration_field"
       }
     ]
   },
@@ -701,11 +633,7 @@
             "count": 1
           }
         ],
-        "sub": {
-          "id": "niwabi_enshou",
-          "name": "庭火焰硝",
-          "desc": "所附属角色<span style=\"color: #FFFFFFFF;\">普通攻击</span>伤害+1，造成的<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理伤害</span>变为<span style=\"color: #FF9999FF;\">火元素伤害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：2</span>"
-        }
+        "subID": "niwabi_enshou"
       },
       {
         "type": "元素爆发",
@@ -721,11 +649,7 @@
             "count": 2
           }
         ],
-        "sub": {
-          "id": "aurous_blaze",
-          "name": "琉金火光",
-          "desc": "宵宫以外的我方角色使用技能后：造成1点<span style=\"color: #FF9999FF;\">火元素伤害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">持续回合</span>：2</span>"
-        }
+        "subID": "aurous_blaze"
       }
     ]
   },
@@ -762,11 +686,7 @@
             "count": 3
           }
         ],
-        "sub": {
-          "id": "oz",
-          "name": "奥兹",
-          "desc": "<span style=\"color: #FFFFFFFF;\">结束阶段：</span>造成1点<span style=\"color: #FFACFFFF;\">雷元素伤害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：2</span>"
-        }
+        "subID": "oz"
       },
       {
         "type": "元素爆发",
@@ -833,11 +753,7 @@
             "count": 3
           }
         ],
-        "sub": {
-          "id": "the_wolf_within",
-          "name": "雷狼",
-          "desc": "<span style=\"color: #FFFFFFFF;\">所附属角色使用普通攻击或元素战技后：</span>造成2点<span style=\"color: #FFACFFFF;\">雷元素伤害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">持续回合</span>：2</span>"
-        }
+        "subID": "the_wolf_within"
       }
     ]
   },
@@ -874,11 +790,7 @@
             "count": 3
           }
         ],
-        "sub": {
-          "id": "lightning_stiletto",
-          "name": "雷楔",
-          "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：将刻晴切换到场上，立刻使用星斗归位。本次星斗归位会为刻晴附属<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">雷元素附魔</span></span>，但是不会再生成雷楔。\\n（刻晴使用星斗归位时，如果此牌在手中：不会再生成雷楔，而是改为弃置此牌，并为刻晴附属<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">雷元素附魔</span></span>）"
-        }
+        "subID": "lightning_stiletto"
       },
       {
         "type": "元素爆发",
@@ -945,22 +857,14 @@
             "count": 2
           }
         ],
-        "sub": {
-          "id": "pactsworn_pathclearer",
-          "name": "启途誓使",
-          "desc": "<span style=\"color: #FFFFFFFF;\">结束阶段：</span>累积1级「凭依」。\\n<span style=\"color: #FFFFFFFF;\">根据「凭依」级数，提供效果：</span>\\n大于等于2级：<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理伤害</span>转化为<span style=\"color: #FFACFFFF;\">雷元素伤害</span>；\\n大于等于4级：造成的伤害+2；\\n大于等于6级时：「凭依」级数-4。"
-        }
+        "subID": "pactsworn_pathclearer"
       },
       {
         "type": "被动技能",
         "name": "行度誓惩",
         "desc": "【被动】战斗开始时，初始附属<span style=\"color: #FFFFFFFF;\">启途誓使</span>。",
         "cost": [],
-        "sub": {
-          "id": "pactsworn_pathclearer",
-          "name": "启途誓使",
-          "desc": "<span style=\"color: #FFFFFFFF;\">结束阶段：</span>累积1级「凭依」。\\n<span style=\"color: #FFFFFFFF;\">根据「凭依」级数，提供效果：</span>\\n大于等于2级：<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理伤害</span>转化为<span style=\"color: #FFACFFFF;\">雷元素伤害</span>；\\n大于等于4级：造成的伤害+2；\\n大于等于6级时：「凭依」级数-4。"
-        }
+        "subID": "pactsworn_pathclearer"
       }
     ]
   },
@@ -1012,11 +916,7 @@
             "count": 2
           }
         ],
-        "sub": {
-          "id": "large_wind_spirit",
-          "name": "大型风灵",
-          "desc": "<span style=\"color: #FFFFFFFF;\">结束阶段：</span>造成2点<span style=\"color: #80FFD7FF;\">风元素伤害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：3</span>\\n\\n我方角色或召唤物引发扩散反应后：转换此牌的元素类型，改为造成被扩散的元素类型的伤害。（离场前仅限一次）"
-        }
+        "subID": "large_wind_spirit"
       }
     ]
   },
@@ -1068,11 +968,7 @@
             "count": 3
           }
         ],
-        "sub": {
-          "id": "dandelion_field",
-          "name": "蒲公英领域",
-          "desc": "<span style=\"color: #FFFFFFFF;\">结束阶段：</span>造成2点<span style=\"color: #80FFD7FF;\">风元素伤害</span>，治疗我方出战角色1点。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：2</span>"
-        }
+        "subID": "dandelion_field"
       }
     ]
   },
@@ -1109,11 +1005,7 @@
             "count": 3
           }
         ],
-        "sub": {
-          "id": "jade_screen",
-          "name": "璇玑屏",
-          "desc": "<span style=\"color: #FFFFFFFF;\">我方出战角色受到至少为2的伤害时：</span>抵消1点伤害。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：2</span>"
-        }
+        "subID": "jade_screen"
       },
       {
         "type": "元素爆发",
@@ -1129,11 +1021,7 @@
             "count": 3
           }
         ],
-        "sub": {
-          "id": "jade_screen",
-          "name": "璇玑屏",
-          "desc": "<span style=\"color: #FFFFFFFF;\">我方出战角色受到至少为2的伤害时：</span>抵消1点伤害。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：2</span>"
-        }
+        "subID": "jade_screen"
       }
     ]
   },
@@ -1170,11 +1058,7 @@
             "count": 3
           }
         ],
-        "sub": {
-          "id": "full_plate",
-          "name": "护体岩铠",
-          "desc": "为我方出战角色提供<span style=\"color: #FFFFFFFF;\">2点<span style=\"color: #FFFFFFFF; text-decoration: underline;\">护盾</span></span>。\\n此<span style=\"color: #FFFFFFFF; text-decoration: underline;\">护盾</span>耗尽前，我方受到的<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理伤害</span>减半。（向上取整）"
-        }
+        "subID": "full_plate"
       },
       {
         "type": "元素爆发",
@@ -1190,11 +1074,7 @@
             "count": 2
           }
         ],
-        "sub": {
-          "id": "sweeping_time",
-          "name": "大扫除",
-          "desc": "角色使用普通攻击时：少花费1个<span style=\"color: #FFE699FF;\">岩元素</span>。（每回合1次）\\n角色<span style=\"color: #FFFFFFFF;\">普通攻击</span>造成的伤害+2，造成的<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理伤害</span>变为<span style=\"color: #FFE699FF;\">岩元素伤害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">持续回合</span>：2</span>"
-        }
+        "subID": "sweeping_time"
       }
     ]
   },
@@ -1246,11 +1126,7 @@
             "count": 2
           }
         ],
-        "sub": {
-          "id": "cuilein-anbar",
-          "name": "柯里安巴",
-          "desc": "<span style=\"color: #FFFFFFFF;\">结束阶段：</span>造成2点<span style=\"color: #7EC236FF;\">草元素伤害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：2</span>"
-        }
+        "subID": "cuilein-anbar"
       }
     ]
   },
@@ -1287,11 +1163,7 @@
             "count": 3
           }
         ],
-        "sub": {
-          "id": "oceanid_mimic",
-          "name": "纯水幻形",
-          "desc": "「纯水幻形」共有3种：\\n<span style=\"color: #FFFFFFFF;\">花鼠</span>：结束阶段造成2点<span style=\"color: #80C0FFFF;\">水元素伤害</span>，可用2次。\\n<span style=\"color: #FFFFFFFF;\">飞鸢</span>：结束阶段造成1点<span style=\"color: #80C0FFFF;\">水元素伤害</span>，可用3次。\\n<span style=\"color: #FFFFFFFF;\">蛙</span>：可抵挡2点伤害，并在耗尽后造成2点<span style=\"color: #80C0FFFF;\">水元素伤害</span>。"
-        }
+        "subID": "oceanid_mimic"
       },
       {
         "type": "元素战技",
@@ -1303,11 +1175,7 @@
             "count": 5
           }
         ],
-        "sub": {
-          "id": "oceanid_mimic",
-          "name": "纯水幻形",
-          "desc": "「纯水幻形」共有3种：\\n<span style=\"color: #FFFFFFFF;\">花鼠</span>：结束阶段造成2点<span style=\"color: #80C0FFFF;\">水元素伤害</span>，可用2次。\\n<span style=\"color: #FFFFFFFF;\">飞鸢</span>：结束阶段造成1点<span style=\"color: #80C0FFFF;\">水元素伤害</span>，可用3次。\\n<span style=\"color: #FFFFFFFF;\">蛙</span>：可抵挡2点伤害，并在耗尽后造成2点<span style=\"color: #80C0FFFF;\">水元素伤害</span>。"
-        }
+        "subID": "oceanid_mimic"
       },
       {
         "type": "元素爆发",
@@ -1359,11 +1227,7 @@
             "count": 3
           }
         ],
-        "sub": {
-          "id": "refraction",
-          "name": "水光破镜",
-          "desc": "所附属角色受到的水元素伤害+1。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">持续回合</span>：2</span>\\n（同一方场上最多存在一个此状态）"
-        }
+        "subID": "refraction"
       },
       {
         "type": "元素爆发",
@@ -1415,11 +1279,7 @@
             "count": 3
           }
         ],
-        "sub": {
-          "id": "stealth",
-          "name": "潜行",
-          "desc": "所附属角色受到的伤害-1，造成的伤害+1。\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：2"
-        }
+        "subID": "stealth"
       },
       {
         "type": "元素爆发",
@@ -1441,11 +1301,7 @@
         "name": "潜行大师",
         "desc": "【被动】战斗开始时，初始附属<span style=\"color: #FFFFFFFF;\">潜行</span>。",
         "cost": [],
-        "sub": {
-          "id": "stealth",
-          "name": "潜行",
-          "desc": "所附属角色受到的伤害-1，造成的伤害+1。\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：2"
-        }
+        "subID": "stealth"
       }
     ]
   },
@@ -1482,11 +1338,7 @@
             "count": 3
           }
         ],
-        "sub": {
-          "id": "shadowsword_lone_gale",
-          "name": "剑影·孤风",
-          "desc": "<span style=\"color: #FFFFFFFF;\">结束阶段：</span>造成1点<span style=\"color: #80FFD7FF;\">风元素伤害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：2</span>"
-        }
+        "subID": "shadowsword_lone_gale"
       },
       {
         "type": "元素战技",
@@ -1498,11 +1350,7 @@
             "count": 3
           }
         ],
-        "sub": {
-          "id": "shadowsword_galloping_frost",
-          "name": "剑影·霜驰",
-          "desc": "<span style=\"color: #FFFFFFFF;\">结束阶段：</span>造成1点<span style=\"color: #99FFFFFF;\">冰元素伤害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：2</span>"
-        }
+        "subID": "shadowsword_galloping_frost"
       },
       {
         "type": "元素爆发",
@@ -1575,11 +1423,7 @@
         "name": "魔化：岩盔",
         "desc": "【被动】战斗开始时，初始附属<span style=\"color: #FFFFFFFF;\">岩盔</span>和<span style=\"color: #FFFFFFFF;\">坚岩之力</span>。",
         "cost": [],
-        "sub": {
-          "id": "stonehide",
-          "name": "岩盔",
-          "desc": "<span style=\"color: #FFFFFFFF;\">所附属角色受到伤害时：</span>抵消1点伤害。抵消岩伤害时，需额外消耗1次<span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：3</span>"
-        }
+        "subID": "stonehide"
       }
     ]
   },
@@ -1631,22 +1475,14 @@
             "count": 2
           }
         ],
-        "sub": {
-          "id": "radical_vitality",
-          "name": "活化激能",
-          "desc": "本角色造成或受到元素伤害后：累积1层「活化激能」。（最多累积3层）\\n<span style=\"color: #FFFFFFFF;\">结束阶段：</span>如果「活化激能」层数已达到上限，就将其清空。同时，角色失去所有充能。"
-        }
+        "subID": "radical_vitality"
       },
       {
         "type": "被动技能",
         "name": "活化激能",
         "desc": "【被动】战斗开始时，初始附属<span style=\"color: #FFFFFFFF;\">活化激能</span>。",
         "cost": [],
-        "sub": {
-          "id": "radical_vitality",
-          "name": "活化激能",
-          "desc": "本角色造成或受到元素伤害后：累积1层「活化激能」。（最多累积3层）\\n<span style=\"color: #FFFFFFFF;\">结束阶段：</span>如果「活化激能」层数已达到上限，就将其清空。同时，角色失去所有充能。"
-        }
+        "subID": "radical_vitality"
       }
     ]
   }

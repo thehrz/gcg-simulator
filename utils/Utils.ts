@@ -1,7 +1,9 @@
 import ICharacterCard from "~~/common/interfaces/cards/ICharacterCard"
 import _characters from "../data/characters.json"
 import _actions from "../data/actions.json"
+import _summons from "../data/subs.json"
 import IActionCard from "~~/common/interfaces/cards/IActionCard"
+import ISummonCard from "~~/common/interfaces/cards/ISummonCard"
 
 const characters = new Map<string, ICharacterCard>()
 
@@ -13,6 +15,12 @@ const actions = new Map<string, IActionCard>()
 
 getAllActions().forEach((value: IActionCard) => {
   actions.set(value.id, value)
+})
+
+const summons = new Map<string, ISummonCard>()
+
+getAllSummons().forEach((value: ISummonCard) => {
+  summons.set(value.id, value)
 })
 
 export function getAllCharacters(): ICharacterCard[] {
@@ -29,4 +37,12 @@ export function getAllActions(): IActionCard[] {
 
 export function getAction(id: string): IActionCard {
   return actions.get(id)!!
+}
+
+export function getAllSummons(): ISummonCard[] {
+  return <ISummonCard[]>_summons
+}
+
+export function getSummon(id: string): ISummonCard {
+  return summons.get(id)!!
 }
