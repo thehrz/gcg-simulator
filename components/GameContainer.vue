@@ -256,6 +256,7 @@ const backgroundUrl = computed(() => `url("/images/tables/${props.table}.png")`)
 
 .owner_action_cards > div {
   width: 15%;
+  margin-left: -9%;
 }
 
 .skills {

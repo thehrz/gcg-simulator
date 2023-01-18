@@ -44,7 +44,6 @@ const card = getAction(cardID)
   height: auto;
   position: relative;
   display: inline-block;
-  margin-left: -9%;
 }
 
 .card > img {
@@ -54,7 +53,7 @@ const card = getAction(cardID)
 .cardBoard {
   background: url("/images/icons/card_border.png");
   background-size: cover;
-  padding: 2.5% 2%;
+  padding: 2% 1%;
   position: relative;
 }
 
