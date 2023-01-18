@@ -1,7 +1,7 @@
 import ICharacterCard from "~~/common/interfaces/cards/ICharacterCard"
-import _characters from "../data/characters.json"
-import _actions from "../data/actions.json"
-import _summons from "../data/subs.json"
+import _characters from "@/assets/data/characters.json"
+import _actions from "@/assets/data/actions.json"
+import _summons from "@/assets/data/subs.json"
 import IActionCard from "~~/common/interfaces/cards/IActionCard"
 import ISummonCard from "~~/common/interfaces/cards/ISummonCard"
 

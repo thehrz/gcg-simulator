@@ -317,7 +317,7 @@
       {
         "type": "元素爆发",
         "name": "闪耀奇迹♪",
-        "desc": "治疗我方所有角色4点。",
+        "desc": "治疗所有我方角色4点。",
         "cost": [
           {
             "type": "hydro",
@@ -604,7 +604,7 @@
     "id": "yoimiya",
     "name": "宵宫",
     "hp": 10,
-    "energy": 2,
+    "energy": 3,
     "element": "pyro",
     "weapon": "bow",
     "skills": [
@@ -638,7 +638,61 @@
       {
         "type": "元素爆发",
         "name": "琉金云间草",
-        "desc": "造成3点<span style=\"color: #FF9999FF;\">火元素伤害</span>，生成<span style=\"color: #FFFFFFFF;\">琉金火光</span>。",
+        "desc": "造成4点<span style=\"color: #FF9999FF;\">火元素伤害</span>，生成<span style=\"color: #FFFFFFFF;\">琉金火光</span>。",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "subID": "aurous_blaze"
+      }
+    ]
+  },
+  {
+    "id": "klee",
+    "type": "character",
+    "name": "可莉",
+    "hp": 10,
+    "energy": 3,
+    "element": "pyro",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "type": "普通攻击",
+        "name": "砰砰",
+        "desc": "造成1点<span style=\"color: #FF9999FF;\">火元素伤害</span>。",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "type": "元素战技",
+        "name": "蹦蹦炸弹",
+        "desc": "造成3点<span style=\"color: #FF9999FF;\">火元素伤害</span>，本角色附属<span style=\"color: #FFFFFFFF;\">爆裂火花</span>。",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          }
+        ],
+        "subID": "explosive_spark"
+      },
+      {
+        "type": "元素爆发",
+        "name": "轰轰火花",
+        "desc": "造成3点<span style=\"color: #FF9999FF;\">火元素伤害</span>，在对方场上生成<span style=\"color: #FFFFFFFF;\">轰轰火花</span>。",
         "cost": [
           {
             "type": "pyro",
@@ -646,10 +700,10 @@
           },
           {
             "type": "energy",
-            "count": 2
+            "count": 3
           }
         ],
-        "subID": "aurous_blaze"
+        "subID": "sparks_n_splash"
       }
     ]
   },
@@ -869,6 +923,66 @@
     ]
   },
   {
+    "id": "beidou",
+    "type": "character",
+    "name": "北斗",
+    "hp": 10,
+    "energy": 3,
+    "element": "electro",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "type": "普通攻击",
+        "name": "征涛",
+        "desc": "造成2点<span style=\"color: #FFFFFFFF;\">物理伤害</span>。",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "type": "元素战技",
+        "name": "捉浪",
+        "desc": "本角色附属<span style=\"color: #FFFFFFFF;\">捉浪·涛拥之守</span>并<span style=\"color: #FFFFFFFF; text-decoration: underline;\">准备技能</span>：<span style=\"color: #FFFFFFFF;\">踏潮</span>。",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ],
+        "subID": "tidecaller_surf_embrace"
+      },
+      {
+        "type": "元素爆发",
+        "name": "斫雷",
+        "desc": "造成3点<span style=\"color: #FFACFFFF;\">雷元素伤害</span>，生成<span style=\"color: #FFFFFFFF;\">雷兽之盾</span>。",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "subID": "thunderbeasts_targe"
+      },
+      {
+        "type": "元素战技",
+        "name": "踏潮",
+        "desc": "（需准备1个行动轮）\\n造成2点<span style=\"color: #FFACFFFF;\">雷元素伤害</span>。",
+        "cost": []
+      }
+    ]
+  },
+  {
     "id": "sucrose",
     "name": "砂糖",
     "hp": 10,
@@ -957,7 +1071,7 @@
       {
         "type": "元素爆发",
         "name": "蒲公英之风",
-        "desc": "治疗我方所有角色2点，召唤<span style=\"color: #FFFFFFFF;\">蒲公英领域</span>。",
+        "desc": "治疗所有我方角色2点，召唤<span style=\"color: #FFFFFFFF;\">蒲公英领域</span>。",
         "cost": [
           {
             "type": "anemo",
@@ -1331,7 +1445,7 @@
       {
         "type": "元素战技",
         "name": "孤风刀势",
-        "desc": "造成1点<span style=\"color: #80FFD7FF;\">风元素伤害</span>，召唤<span style=\"color: #FFFFFFFF;\">剑影·孤风</span>。",
+        "desc": "召唤<span style=\"color: #FFFFFFFF;\">剑影·孤风</span>。",
         "cost": [
           {
             "type": "anemo",
@@ -1343,7 +1457,7 @@
       {
         "type": "元素战技",
         "name": "霜驰影突",
-        "desc": "造成1点<span style=\"color: #99FFFFFF;\">冰元素伤害</span>，召唤<span style=\"color: #FFFFFFFF;\">剑影·霜驰</span>。",
+        "desc": "召唤<span style=\"color: #FFFFFFFF;\">剑影·霜驰</span>。",
         "cost": [
           {
             "type": "cryo",
@@ -1355,7 +1469,7 @@
       {
         "type": "元素爆发",
         "name": "机巧伪天狗抄",
-        "desc": "造成6点<span style=\"color: #80FFD7FF;\">风元素伤害</span>，触发我方所有<span style=\"color: #FFFFFFFF;\">剑影</span>召唤物的效果。（不消耗其可用次数）",
+        "desc": "造成6点<span style=\"color: #80FFD7FF;\">风元素伤害</span>，触发所有我方<span style=\"color: #FFFFFFFF;\">剑影</span>召唤物的效果。（不消耗其可用次数）",
         "cost": [
           {
             "type": "anemo",

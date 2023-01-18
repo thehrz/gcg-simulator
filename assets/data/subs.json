@@ -95,6 +95,16 @@
     "desc": "宵宫以外的我方角色使用技能后：造成1点<span style=\"color: #FF9999FF;\">火元素伤害</span>。<br/><span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">持续回合</span>：2</span>"
   },
   {
+    "id": "explosive_spark",
+    "name": "爆裂火花",
+    "desc": "<span style=\"color: #FFFFFFFF;\">所附属角色进行<span style=\"color: #FFFFFFFF; text-decoration: underline;\">重击</span>时：</span>少花费1个<span style=\"color: #FF9999FF;\">火元素</span>，并且伤害+1。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：1</span>"
+  },
+  {
+    "id": "sparks_n_splash",
+    "name": "轰轰火花",
+    "desc": "<span style=\"color: #FFFFFFFF;\">我方角色使用技能后：</span>对我方出战角色造成2点<span style=\"color: #FF9999FF;\">火元素伤害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：2</span>"
+  },
+  {
     "id": "oz",
     "name": "奥兹",
     "desc": "<span style=\"color: #FFFFFFFF;\">结束阶段：</span>造成1点<span style=\"color: #FFACFFFF;\">雷元素伤害</span>。<br/><span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：2</span>"
@@ -118,6 +128,16 @@
     "id": "pactsworn_pathclearer",
     "name": "启途誓使",
     "desc": "<span style=\"color: #FFFFFFFF;\">结束阶段：</span>累积1级「凭依」。<br/><span style=\"color: #FFFFFFFF;\">根据「凭依」级数，提供效果：</span><br/>大于等于2级：<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理伤害</span>转化为<span style=\"color: #FFACFFFF;\">雷元素伤害</span>；<br/>大于等于4级：造成的伤害+2；<br/>大于等于6级时：「凭依」级数-4。"
+  },
+  {
+    "id": "tidecaller_surf_embrace",
+    "name": "捉浪·涛拥之守",
+    "desc": "本角色将在下次行动时，直接使用技能：<span style=\"color: #FFFFFFFF;\">捉浪</span>。\\n准备技能期间：提供2点<span style=\"color: #FFFFFFFF; text-decoration: underline;\">护盾</span>，保护所附属的角色。"
+  },
+  {
+    "id": "thunderbeasts_targe",
+    "name": "雷兽之盾",
+    "desc": "<span style=\"color: #FFFFFFFF;\">我方角色普通攻击后：</span>造成1点<span style=\"color: #FFACFFFF;\">雷元素伤害</span>。\\n<span style=\"color: #FFFFFFFF;\">我方角色受到至少为3的伤害时：</span>抵消其中1点伤害。\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">持续回合</span>：2"
   },
   {
     "id": "large_wind_spirit",
