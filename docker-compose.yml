@@ -3,29 +3,23 @@ version: "3.7"
 services:
   frontend:
     build:
-      dockerfile: Dockerfile.frontend
+      dockerfile: frontend.Dockerfile
     container_name: frontend
     restart: always
-    ports:
-      - "3000:3000"
 
   backend:
     build:
-      dockerfile: Dockerfile.backend
+      dockerfile: backend.Dockerfile
     container_name: backend
     restart: always
-    ports:
-      - "3001:8086"
 
   nginx:
     image: nginx:1.19
+    restart: always
     ports:
       - "80:80"
     volumes:
-      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+      - ./nginx.default.conf:/etc/nginx/conf.d/default.conf
     depends_on:
-      - frontend
-      - backend
-    links:
       - frontend
       - backend

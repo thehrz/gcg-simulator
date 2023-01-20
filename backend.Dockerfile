@@ -14,4 +14,4 @@ FROM alpine:3
 WORKDIR /backend
 COPY --from=backend /backend/main .
 RUN mkdir -p ./data/persistence
-ENTRYPOINT [ "./main" ]
+ENTRYPOINT [ "./main", "--port=3001" ]
