@@ -4,9 +4,10 @@ RUN apk add --no-cache --virtual .build-deps \
   ca-certificates \
   gcc \
   g++
-COPY backend/go.mod backend/go.sum ./
+COPY backend/go.mod ./
 RUN go mod download
 COPY backend/ .
+RUN go get -a
 RUN go build -o main main.go
 
 FROM alpine:3
