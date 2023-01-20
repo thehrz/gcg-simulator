@@ -6,7 +6,7 @@
 
 ![gcg-simulator](https://s2.loli.net/2023/01/17/MRPIGXvZ2UlBKcD.png)
 
-An open-source front-end simulator for the Genius Invokation TCG. Using Nuxt.
+An open-source front-end simulator for the Genius Invokation TCG. Using Nuxt3.
 
 ## Demo
 
@@ -14,18 +14,34 @@ An open-source front-end simulator for the Genius Invokation TCG. Using Nuxt.
 
 > Disclaimer: This demo is based on `gcg-simulator`, and uses some of the Genshin Impact assets, But it has no direct relationship with this repository. Some of the Genshin Impact assets used in the demo are copyrighted by COGNOSPHERE, and the assets are from the Internet or in-game interception, with no unpacking, or decompiling code behavior. This demo is for the Genshin Impact players to share and learn, only as a test site to show this project, not with online game properties.
 
-## Build
+## Usage
 
 ### Pre-Build Notes
 
-This repository does not include the Genshin Impact access, so the user can not view the complete game access, including cards, avatars, skills, and other images in the browser after starting this repository code.
+> This repository does not include the Genshin Impact access, so the user can not view the complete game access, including cards, avatars, skills, and other images in the browser after starting this repository code.
 
-**You are required to obtain the original Genshin Impact assets without violating the [Genshin Impact Terms of Service](https://genshin.hoyoverse.com/en/company/terms) (without unpacking, etc.) to start the project successfully.**
+> **You are required to obtain the original Genshin Impact assets without violating the [Genshin Impact Terms of Service](https://genshin.hoyoverse.com/en/company/terms) (without unpacking, etc.) to start the project successfully.**
 
-### Build Command
+We use Docker to containerize services and use Docker Compose to build and run these containers.
+
+[Docker installation docs](https://docs.docker.com/get-docker/)
+
+### Clone
 
 ```shell
-$ yarn build
+$ git clone --recurse-submodules https://github.com/Thehrz/gcg-simulator.git
+```
+
+### Run
+
+```shell
+$ docker compose up -d
+```
+
+### Stop
+
+```shell
+$ docker compose down
 ```
 
 ## License
