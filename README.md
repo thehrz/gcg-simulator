@@ -24,8 +24,6 @@ An open-source front-end simulator for the Genius Invokation TCG. Using Nuxt3.
 
 We use Docker to containerize services and use Docker Compose to build and run these containers.
 
-[Docker installation docs](https://docs.docker.com/get-docker/)
-
 ### Clone
 
 ```shell
