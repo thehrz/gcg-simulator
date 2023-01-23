@@ -12,7 +12,7 @@ const isDetailVisible = ref(false)
 <template>
   <div class="previewCard" @click="isDetailVisible = true">
     <div class="cardBoard">
-      <nuxt-img :src="`images/cards/${id}.png`" />
+      <img :src="`images/cards/${id}.png`" />
       <div class="hp font_shadow" v-if="isCharacter">{{ card.hp }}</div>
       <div class="energyIcons">
         <EnergyIcon :is-full="true" v-for="_ in card.energy" />
@@ -22,7 +22,7 @@ const isDetailVisible = ref(false)
       <el-dialog :title="card.name" v-model="isDetailVisible">
         <el-card class="card" v-for="(skill, index) in card.skills">
           <div class="skill">
-            <nuxt-img
+            <img
               class="skillIcon image"
               :src="`./images/skills/${card.id}/skill_${index + 1}.png`"
             />

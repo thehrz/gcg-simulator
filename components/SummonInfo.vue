@@ -23,7 +23,7 @@ const card = getSummon(props.summon.cardID)
         <div v-if="show" class="characterInfo" v-on-click-outside="close">
           <div class="card">
             <div class="cardBoard">
-              <nuxt-img :src="`images/cards/${summon.cardID}.png`" />
+              <img :src="`images/cards/${summon.cardID}.png`" />
             </div>
           </div>
 

@@ -18,14 +18,10 @@ const card = getAction(cardID)
       <CostIcon :cost="cost" v-for="cost in card.cost" />
     </div>
     <div class="cardBoard">
-      <nuxt-img :src="`images/cards/${cardID}.png`" />
+      <img :src="`/images/cards/${cardID}.png`" />
 
       <transition name="fade">
-        <nuxt-img
-          v-if="selected"
-          class="selectd"
-          src="images/icons/card_select.png"
-        />
+        <selected-icon :selected="selected" />
       </transition>
     </div>
 
@@ -69,13 +65,5 @@ const card = getAction(cardID)
   left: -20%;
   width: 40%;
   z-index: 1;
-}
-
-.selectd {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 90%;
 }
 </style>

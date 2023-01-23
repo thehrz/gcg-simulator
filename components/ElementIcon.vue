@@ -7,5 +7,5 @@ defineProps<{
 </script>
 
 <template>
-  <nuxt-img :src="`/images/icons/elements/${element}.png`" />
+  <img :src="`/images/icons/elements/${element}.png`" />
 </template>

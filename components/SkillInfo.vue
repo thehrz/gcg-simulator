@@ -12,7 +12,7 @@ const isSelected = ref(false)
 
 <template>
   <div class="skillInfo" @click="isSelected = !isSelected">
-    <nuxt-img :src="`./images/skills/${characterName}/skill_${index}.png`" />
+    <img :src="`./images/skills/${characterName}/skill_${index}.png`" />
 
     <div>
       <p>{{ skill.name }}</p>

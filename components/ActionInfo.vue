@@ -25,7 +25,7 @@ const card = getAction(props.action.cardID)
         <div v-if="show" ref="contentRef" class="characterInfo">
           <div class="card">
             <div class="cardBoard">
-              <nuxt-img :src="`images/cards/${action.cardID}.png`" />
+              <img :src="`images/cards/${action.cardID}.png`" />
             </div>
           </div>
 

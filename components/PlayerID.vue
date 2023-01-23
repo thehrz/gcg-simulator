@@ -9,16 +9,16 @@ defineProps<{
 
 <template>
   <div class="playerid">
-    <nuxt-img
+    <img
       class="thisround"
       :src="`images/icons/playerid_thisround_${type}.png`"
       v-if="player.thisRound"
     />
-    <nuxt-img
+    <img
       class="avatar"
       :src="`images/characters/${player.avatar ?? 'traveler'}.png`"
     />
-    <nuxt-img class="id" :src="`images/icons/playerid_${type}.png`" />
+    <img class="id" :src="`images/icons/playerid_${type}.png`" />
     <a class="name font">{{ player.name }}</a>
   </div>
 </template>

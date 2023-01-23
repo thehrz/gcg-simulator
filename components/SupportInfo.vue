@@ -24,7 +24,7 @@ const card = getAction(props.support.cardID)
         <div v-if="show" class="supportInfo" v-on-click-outside="close">
           <div class="card">
             <div class="cardBoard">
-              <nuxt-img :src="`images/cards/${support.cardID}.png`" />
+              <img :src="`images/cards/${support.cardID}.png`" />
             </div>
           </div>
 

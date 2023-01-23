@@ -19,22 +19,18 @@ const card = getCharacter(cardID)
     </div>
 
     <div class="cardBoard">
-      <nuxt-img :src="`images/cards/${cardID}.png`" />
+      <img :src="`/images/cards/${cardID}.png`" />
       <div class="hp font_shadow">{{ hp }}</div>
       <div class="actionIcons">
-        <nuxt-img src="images/icons/weapon.png" v-if="weapon" />
-        <nuxt-img src="images/icons/artifact.png" v-if="artifact" />
-        <nuxt-img src="images/icons/talent.png" v-if="talent" />
+        <img src="/images/icons/weapon.png" v-if="weapon" />
+        <img src="/images/icons/artifact.png" v-if="artifact" />
+        <img src="/images/icons/talent.png" v-if="talent" />
       </div>
       <div class="energyIcons">
         <EnergyIcon :is-full="index <= energy" v-for="index in card.energy" />
       </div>
       <transition name="fade">
-        <nuxt-img
-          v-if="selected"
-          class="selectd"
-          src="images/icons/card_select.png"
-        />
+        <selected-icon :selected="selected" />
       </transition>
     </div>
     <client-only>
@@ -118,14 +114,6 @@ const card = getCharacter(cardID)
 
 .elementIcons > img {
   width: 25%;
-}
-
-.selectd {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 90%;
 }
 
 .fighting {

@@ -11,7 +11,7 @@ const selected = ref(false)
 <template>
   <div class="supportCard" @click="selected = true">
     <div>
-      <nuxt-img :src="`/images/cards/${support.cardID}.png`" />
+      <img :src="`/images/cards/${support.cardID}.png`" />
     </div>
     <div class="count font_shadow" v-if="support.count">
       {{ support.count }}
@@ -23,11 +23,7 @@ const selected = ref(false)
       {{ support.heal }}
     </div>
     <transition name="fade">
-      <nuxt-img
-        v-if="selected"
-        class="selectd"
-        src="images/icons/card_select.png"
-      />
+      <selected-icon :selected="selected" />
     </transition>
 
     <client-only>
@@ -85,14 +81,6 @@ const selected = ref(false)
   bottom: -12%;
   left: -16%;
   background-image: url("/images/icons/heal.png");
-}
-
-.selectd {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 90%;
 }
 
 img {

@@ -13,4 +13,13 @@ export default defineNuxtConfig({
   typescript: {
     strict: true,
   },
+  vite: {
+    vue: {
+      template: {
+        transformAssetUrls: {
+          includeAbsolute: false,
+        },
+      },
+    },
+  },
 })

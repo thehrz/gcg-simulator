@@ -48,7 +48,7 @@ const backgroundUrl = computed(() => `url("/images/tables/${props.table}.png")`)
     <div class="dices">
       <DicesNumber :num="owner.dices.length" />
 
-      <nuxt-img
+      <img
         v-for="dice in owner.dices"
         :src="'images/icons/' + dice + '.png'"
       />
