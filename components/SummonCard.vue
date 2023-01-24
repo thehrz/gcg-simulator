@@ -31,6 +31,7 @@ const selected = ref(false)
   background-image: url("/images/icons/card_border_small.png");
   background-size: 100% 100%;
   padding: 3%;
+  cursor: pointer;
 }
 
 .summonCard > div:first-child {

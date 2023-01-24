@@ -38,6 +38,7 @@ img {
 .skillButton {
   width: 20%;
   margin: 0 1%;
+  cursor: pointer;
 }
 
 .skillButton button {

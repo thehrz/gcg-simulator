@@ -53,6 +53,7 @@ const card = getCharacter(cardID)
   background-size: 100% 100%;
   padding: 2.5% 3%;
   position: relative;
+  cursor: pointer;
 }
 
 .cardBoard > img:first-child {

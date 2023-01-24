@@ -39,6 +39,7 @@ const selected = ref(false)
 <style scoped>
 .supportCard {
   position: relative;
+  cursor: pointer;
 }
 
 .supportCard > div:first-child {

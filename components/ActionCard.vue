@@ -40,6 +40,7 @@ const card = getAction(cardID)
   height: auto;
   position: relative;
   display: inline-block;
+  cursor: pointer;
 }
 
 .card > img {
