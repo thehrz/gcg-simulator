@@ -22,4 +22,7 @@ export default defineNuxtConfig({
       },
     },
   },
+  alias: {
+    pinia: "/node_modules/@pinia/nuxt/node_modules/pinia/dist/pinia.mjs",
+  },
 })

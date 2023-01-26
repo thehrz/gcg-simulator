@@ -11,11 +11,20 @@ const formRef = ref<FormInstance>()
 
 const submit = (formEl: FormInstance | undefined) => {
   if (!formEl) return
-  formEl.validate((valid) => {
+  formEl.validate(async (valid) => {
     if (valid) {
-      console.log("submit!")
+      const { data, pending, error, refresh } = await useFetch<{
+        player_nick_name: string
+        player_uid: string
+      }>("/backend/player", {
+        method: "POST",
+        body: {
+          nick_name: form.nickName,
+          password: form.password,
+        },
+      })
     } else {
-      console.log("error submit!")
+      ElMessage.error("请检查信息")
       return false
     }
   })
@@ -88,7 +97,7 @@ const rules = reactive({
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  border: rgba(0,0,0,.03) 2px solid;
+  border: rgba(0, 0, 0, 0.03) 2px solid;
   border-radius: 20px;
   padding: 3%;
 }
