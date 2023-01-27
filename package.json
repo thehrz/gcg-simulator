@@ -19,7 +19,6 @@
   "dependencies": {
     "@element-plus/nuxt": "^1.0.1",
     "@nuxt/image": "^0.7.1",
-    "@pinia/nuxt": "^0.4.6",
     "@vueuse/components": "^9.10.0",
     "@vueuse/core": "^9.10.0",
     "element-plus": "^2.2.28"

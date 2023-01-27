@@ -9,7 +9,7 @@ export default defineNuxtConfig({
       meta: [{ name: "description", content: "gcg-simulator" }],
     },
   },
-  modules: ["@nuxt/image-edge", "@element-plus/nuxt", "@pinia/nuxt"],
+  modules: ["@nuxt/image-edge", "@element-plus/nuxt"],
   typescript: {
     strict: true,
   },
@@ -21,8 +21,5 @@ export default defineNuxtConfig({
         },
       },
     },
-  },
-  alias: {
-    pinia: "/node_modules/@pinia/nuxt/dist/pinia.mjs",
   },
 })
