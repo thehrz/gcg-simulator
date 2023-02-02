@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "@nuxt/image-edge": "^1.0.0-27840416.dc1ed65",
-    "nuxt": "3.0.0"
+    "nuxt": "^3.1.1"
   },
   "dependencies": {
     "@element-plus/nuxt": "^1.0.1",
