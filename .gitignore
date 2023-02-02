@@ -4,6 +4,13 @@ node_modules
 .nitro
 .cache
 .output
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
 .env
 dist
 *.png
