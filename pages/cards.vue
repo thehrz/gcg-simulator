@@ -14,16 +14,16 @@ const cards: string[] = getAllCharacters().map((value: ICharacterCard) => {
   </nuxt-layout>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .cardsList {
   display: grid;
   grid-template-columns: repeat(auto-fill, 132px);
   justify-items: center;
   justify-content: center;
-}
 
-.cardsList > div {
-  margin-top: 16%;
-  width: 100px;
+  div {
+    margin-top: 16%;
+    width: 100px;
+  }
 }
 </style>

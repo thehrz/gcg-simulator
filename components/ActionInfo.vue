@@ -40,7 +40,7 @@ const card = getAction(props.action.cardID)
   </client-only>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .characterInfo {
   position: absolute;
   top: 8%;
@@ -63,10 +63,10 @@ const card = getAction(props.action.cardID)
   background-size: 100% 100%;
   padding: 2.5% 3%;
   position: relative;
-}
 
-.cardBoard > img {
-  width: 100%;
+  img {
+    width: 100%;
+  }
 }
 
 .info {
@@ -79,11 +79,11 @@ const card = getAction(props.action.cardID)
   width: 100%;
   max-height: 100%;
   overflow: auto;
-}
 
-.info > h1 {
-  font-size: 20px;
-  margin-bottom: 1%;
+  h1 {
+    font-size: 20px;
+    margin-bottom: 1%;
+  }
 }
 
 .info::-webkit-scrollbar {

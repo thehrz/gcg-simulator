@@ -91,7 +91,7 @@ const rules = reactive({
   </nuxt-layout>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .login {
   position: absolute;
   left: 50%;
@@ -100,9 +100,9 @@ const rules = reactive({
   border: rgba(0, 0, 0, 0.03) 2px solid;
   border-radius: 20px;
   padding: 3%;
-}
 
-.login > h1 {
-  margin-bottom: 5%;
+  h1 {
+    margin-bottom: 5%;
+  }
 }
 </style>

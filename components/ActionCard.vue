@@ -35,16 +35,16 @@ const card = getAction(cardID)
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .card {
   height: auto;
   position: relative;
   display: inline-block;
   cursor: pointer;
-}
 
-.card > img {
-  width: 100%;
+  img {
+    width: 100%;
+  }
 }
 
 .cardBoard {
@@ -52,12 +52,11 @@ const card = getAction(cardID)
   background-size: cover;
   padding: 2% 1%;
   position: relative;
-}
 
-.cardBoard > img {
-  width: 100%;
+  img {
+    width: 100%;
+  }
 }
-
 .cost {
   display: flex;
   flex-direction: column;
