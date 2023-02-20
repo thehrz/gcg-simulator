@@ -13,12 +13,11 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxt/image-edge": "^1.0.0-27840416.dc1ed65",
-    "nuxt": "^3.1.1"
+    "nuxt": "^3.2.2",
+    "sass": "^1.58.3"
   },
   "dependencies": {
     "@element-plus/nuxt": "^1.0.3",
-    "@nuxt/image": "^0.7.1",
     "@vueuse/components": "^9.10.0",
     "@vueuse/core": "^9.10.0",
     "element-plus": "^2.2.28"

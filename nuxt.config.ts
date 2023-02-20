@@ -9,7 +9,7 @@ export default defineNuxtConfig({
       meta: [{ name: "description", content: "gcg-simulator" }],
     },
   },
-  modules: ["@nuxt/image-edge", "@element-plus/nuxt"],
+  modules: ["@element-plus/nuxt"],
   typescript: {
     strict: true,
   },
