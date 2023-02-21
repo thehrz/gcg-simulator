@@ -29,7 +29,7 @@ const isSelected = ref(false)
   </transition>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .skillInfo {
   display: flex;
   border: grey 1.5px solid;
@@ -37,25 +37,25 @@ const isSelected = ref(false)
   padding: 3%;
   align-items: center;
   margin-bottom: 3%;
-}
 
-.skillInfo > img {
-  width: 27%;
-  border-radius: 50%;
-  border: grey 2px solid;
-}
+  img {
+    width: 27%;
+    border-radius: 50%;
+    border: grey 2px solid;
+  }
 
-.skillInfo > div {
-  margin-left: 10px;
-  width: 100%;
-}
+  div {
+    margin-left: 10px;
+    width: 100%;
 
-.costs {
-  display: flex;
-}
+    .costs {
+      display: flex;
 
-.costs > div {
-  width: 25%;
+      div {
+        width: 25%;
+      }
+    }
+  }
 }
 
 .desc {
