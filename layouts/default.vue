@@ -43,9 +43,3 @@ export default {
 
   <slot />
 </template>
-
-<style scoped>
-.flex-grow {
-  flex-grow: 1;
-}
-</style>
