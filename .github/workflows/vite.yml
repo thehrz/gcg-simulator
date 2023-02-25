@@ -1,8 +1,8 @@
-name: Build Nuxt
+name: Build Vite
 
 on:
   push:
-    branches: ["master"]
+    branches: ["master", "vite-vue3"]
 
 jobs:
   build:
@@ -13,6 +13,6 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
       - name: Install dependencies
-        run: yarn install
+        run: pnpm install
       - name: Static HTML export with Nuxt
-        run: yarn build
+        run: pnpm build
