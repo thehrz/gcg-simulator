@@ -18,22 +18,21 @@ const isDetailVisible = ref(false)
         <EnergyIcon :is-full="true" v-for="_ in card.energy" />
       </div>
     </div>
-    <client-only>
-      <el-dialog :title="card.name" v-model="isDetailVisible">
-        <el-card class="card" v-for="(skill, index) in card.skills">
-          <div class="skill">
-            <img
-              class="skillIcon image"
-              :src="`/images/skills/${card.id}/skill_${index + 1}.png`"
-            />
-            <div>
-              <p class="name">{{ skill.name }}</p>
-              <p class="desc" v-html="skill.desc"></p>
-            </div>
+
+    <el-dialog :title="card.name" v-model="isDetailVisible">
+      <el-card class="card" v-for="(skill, index) in card.skills">
+        <div class="skill">
+          <img
+            class="skillIcon image"
+            :src="`/images/skills/${card.id}/skill_${index + 1}.png`"
+          />
+          <div>
+            <p class="name">{{ skill.name }}</p>
+            <p class="desc" v-html="skill.desc"></p>
           </div>
-        </el-card>
-      </el-dialog>
-    </client-only>
+        </div>
+      </el-card>
+    </el-dialog>
   </div>
 </template>
 

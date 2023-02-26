@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ISummon from "~/common/interfaces/ISummon"
+import { ISummon } from "~/common/interfaces/ISummon"
 
 defineProps<{
   summon: ISummon

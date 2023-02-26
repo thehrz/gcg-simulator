@@ -12,4 +12,4 @@ interface ICharacterCard {
   skills: ISkill[]
 }
 
-export default ICharacterCard
+export { ICharacterCard }

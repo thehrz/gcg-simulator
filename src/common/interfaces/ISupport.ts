@@ -5,4 +5,4 @@ interface ISupport {
   heal?: number
 }
 
-export default ISupport
+export { ISupport }

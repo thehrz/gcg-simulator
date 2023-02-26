@@ -5,4 +5,4 @@ enum Table {
   Liyue = "liyue",
 }
 
-export default Table
+export { Table }

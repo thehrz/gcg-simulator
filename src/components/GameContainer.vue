@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import Table from "~/common/enums/Table"
-import ICharacter from "~/common/interfaces/ICharacter"
-import IPlayer from "~/common/interfaces/IPlayer"
+import { Table } from "~/common/enums/Table"
+import { ICharacter } from "~/common/interfaces/ICharacter"
+import { IPlayer } from "~/common/interfaces/IPlayer"
 import CharacterCard from "./CharacterCard.vue"
 import DicesNumber from "./DicesNumber.vue"
 
@@ -48,10 +48,7 @@ const backgroundUrl = computed(() => `url("/images/tables/${props.table}.png")`)
     <div class="dices">
       <DicesNumber :num="owner.dices.length" />
 
-      <img
-        v-for="dice in owner.dices"
-        :src="'images/icons/' + dice + '.png'"
-      />
+      <img v-for="dice in owner.dices" :src="'images/icons/' + dice + '.png'" />
     </div>
 
     <div class="owner_support">

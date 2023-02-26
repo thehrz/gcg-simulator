@@ -9,4 +9,4 @@ interface IActionCard {
   desc: string
 }
 
-export default IActionCard
+export { IActionCard }

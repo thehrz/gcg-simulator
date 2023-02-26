@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ICharacter from "~/common/interfaces/ICharacter"
+import { ICharacter } from "~/common/interfaces/ICharacter"
 
 const props = defineProps<{
   character: ICharacter
@@ -31,7 +31,6 @@ const card = getCharacter(cardID)
 }
 
 .skill > div {
-  width:  20%;
+  width: 20%;
 }
-
 </style>

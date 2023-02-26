@@ -12,4 +12,4 @@ enum Dice {
   Anemo = "anemo",
 }
 
-export default Dice
+export { Dice }

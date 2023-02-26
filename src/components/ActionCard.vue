@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import IAction from "~/common/interfaces/IAction"
+import { IAction } from "~/common/interfaces/IAction"
 
 const props = defineProps<{
   action: IAction
@@ -25,13 +25,7 @@ const card = getAction(cardID)
       </transition>
     </div>
 
-    <client-only>
-      <action-info
-        :show="selected"
-        :action="action"
-        @close="selected = false"
-      />
-    </client-only>
+    <action-info :show="selected" :action="action" @close="selected = false" />
   </div>
 </template>
 

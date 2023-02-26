@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ICharacter from "~/common/interfaces/ICharacter"
+import { ICharacter } from "~/common/interfaces/ICharacter"
 
 const props = defineProps<{
   character: ICharacter
@@ -33,13 +33,12 @@ const card = getCharacter(cardID)
         <selected-icon :selected="selected" />
       </transition>
     </div>
-    <client-only>
-      <character-info
-        :show="selected"
-        :character="character"
-        @close="selected = false"
-      />
-    </client-only>
+
+    <character-info
+      :show="selected"
+      :character="character"
+      @close="selected = false"
+    />
   </div>
 </template>
 

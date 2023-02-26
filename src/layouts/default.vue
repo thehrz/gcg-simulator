@@ -22,24 +22,22 @@ export default {
 </script>
 
 <template>
-  <client-only>
-    <el-menu
-      mode="horizontal"
-      :ellipsis="false"
-      :default-active="$route.path"
-      router
-    >
-      <nuxt-link to="/">
-        <el-menu-item index="/">主页</el-menu-item>
-      </nuxt-link>
+  <el-menu
+    mode="horizontal"
+    :ellipsis="false"
+    :default-active="$route.path"
+    router
+  >
+    <router-link to="/">
+      <el-menu-item index="/">主页</el-menu-item>
+    </router-link>
 
-      <div class="flex-grow" />
+    <div class="flex-grow" />
 
-      <nuxt-link :to="page.path" v-for="page in pages">
-        <el-menu-item :index="page.path">{{ page.name }}</el-menu-item>
-      </nuxt-link>
-    </el-menu>
-  </client-only>
+    <router-link :to="page.path" v-for="page in pages">
+      <el-menu-item :index="page.path">{{ page.name }}</el-menu-item>
+    </router-link>
+  </el-menu>
 
-  <slot />
+  <router-view />
 </template>

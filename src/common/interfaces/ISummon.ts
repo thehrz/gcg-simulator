@@ -3,4 +3,4 @@ interface ISummon {
   time?: number
 }
 
-export default ISummon
+export { ISummon }

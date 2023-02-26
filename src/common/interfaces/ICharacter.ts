@@ -1,7 +1,7 @@
-import Element from "../enums/Element"
-import IArtifact from "./IArtifact"
-import IWeapon from "./IWeapon"
-import ITalent from "./ITalent"
+import { Element } from "../enums/Element"
+import { IArtifact } from "./IArtifact"
+import { IWeapon } from "./IWeapon"
+import { ITalent } from "./ITalent"
 
 interface ICharacter {
   cardID: string
@@ -14,4 +14,4 @@ interface ICharacter {
   state?: Element[]
 }
 
-export default ICharacter
+export { ICharacter }

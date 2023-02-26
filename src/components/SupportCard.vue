@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ISupport from "~/common/interfaces/ISupport"
+import { ISupport } from "~/common/interfaces/ISupport"
 
 defineProps<{
   support: ISupport
@@ -26,13 +26,11 @@ const selected = ref(false)
       <selected-icon :selected="selected" />
     </transition>
 
-    <client-only>
-      <support-info
-        :show="selected"
-        :support="support"
-        @close="selected = false"
-      />
-    </client-only>
+    <support-info
+      :show="selected"
+      :support="support"
+      @close="selected = false"
+    />
   </div>
 </template>
 

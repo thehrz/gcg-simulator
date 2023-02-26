@@ -3,4 +3,4 @@ interface IAction {
   time?: number
 }
 
-export default IAction
+export { IAction }

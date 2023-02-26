@@ -7,4 +7,4 @@ enum Weapon {
   Sword = "sword",
 }
 
-export default Weapon
+export { Weapon }

@@ -59,36 +59,34 @@ const rules = reactive({
 </script>
 
 <template>
-  <nuxt-layout>
-    <div class="login">
-      <h1>gcg-simulator Demo</h1>
+  <div class="login">
+    <h1>gcg-simulator Demo</h1>
 
-      <el-form
-        :model="form"
-        :rules="rules"
-        status-icon
-        ref="formRef"
-        label-position="left"
-        label-width="120px"
-      >
-        <el-form-item label="昵称">
-          <el-input v-model="form.nickName" />
-        </el-form-item>
+    <el-form
+      :model="form"
+      :rules="rules"
+      status-icon
+      ref="formRef"
+      label-position="left"
+      label-width="120px"
+    >
+      <el-form-item label="昵称">
+        <el-input v-model="form.nickName" />
+      </el-form-item>
 
-        <el-form-item label="密码" prop="password">
-          <el-input v-model="form.password" />
-        </el-form-item>
+      <el-form-item label="密码" prop="password">
+        <el-input v-model="form.password" />
+      </el-form-item>
 
-        <el-form-item label="确认密码" prop="checkPassword">
-          <el-input v-model="form.checkPassword" />
-        </el-form-item>
+      <el-form-item label="确认密码" prop="checkPassword">
+        <el-input v-model="form.checkPassword" />
+      </el-form-item>
 
-        <el-form-item>
-          <el-button type="primary" @click="submit(formRef)">注册</el-button>
-        </el-form-item>
-      </el-form>
-    </div>
-  </nuxt-layout>
+      <el-form-item>
+        <el-button type="primary" @click="submit(formRef)">注册</el-button>
+      </el-form-item>
+    </el-form>
+  </div>
 </template>
 
 <style scoped lang="scss">

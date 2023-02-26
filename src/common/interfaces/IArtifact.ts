@@ -2,4 +2,4 @@ interface IArtifact {
   cardID: string
 }
 
-export default IArtifact
+export { IArtifact }

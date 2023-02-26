@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import IPlayer from "~/common/interfaces/IPlayer"
+import { IPlayer } from "~/common/interfaces/IPlayer"
 
 defineProps<{
   player: IPlayer

@@ -1,11 +1,9 @@
 <template>
-  <nuxt-layout>
-    <div class="title">
-      <h1>gcg-simulator <el-tag class="ml-2" type="warning">WIP</el-tag></h1>
-      <el-divider class="divider" />
-      <p>开源的七圣召唤模拟器</p>
-    </div>
-  </nuxt-layout>
+  <div class="title">
+    <h1>gcg-simulator <el-tag class="ml-2" type="warning">WIP</el-tag></h1>
+    <el-divider class="divider" />
+    <p>开源的七圣召唤模拟器</p>
+  </div>
 </template>
 
 <style scoped>

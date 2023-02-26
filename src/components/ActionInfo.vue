@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { onClickOutside } from "@vueuse/core"
-import IAction from "~/common/interfaces/IAction"
+import { IAction } from "~/common/interfaces/IAction"
 
 const props = defineProps<{
   show: boolean
@@ -19,25 +19,23 @@ const card = getAction(props.action.cardID)
 </script>
 
 <template>
-  <client-only>
-    <teleport to=".game">
-      <transition name="fade">
-        <div v-if="show" ref="contentRef" class="characterInfo">
-          <div class="card">
-            <div class="cardBoard">
-              <img :src="`images/cards/${action.cardID}.png`" />
-            </div>
-          </div>
-
-          <div class="info">
-            <h1>{{ card.name }}</h1>
-
-            <p v-html="card.desc"></p>
+  <teleport to=".game">
+    <transition name="fade">
+      <div v-if="show" ref="contentRef" class="characterInfo">
+        <div class="card">
+          <div class="cardBoard">
+            <img :src="`images/cards/${action.cardID}.png`" />
           </div>
         </div>
-      </transition>
-    </teleport>
-  </client-only>
+
+        <div class="info">
+          <h1>{{ card.name }}</h1>
+
+          <p v-html="card.desc"></p>
+        </div>
+      </div>
+    </transition>
+  </teleport>
 </template>
 
 <style scoped lang="scss">

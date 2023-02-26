@@ -4,4 +4,4 @@ interface ISummonCard {
   desc: string
 }
 
-export default ISummonCard
+export { ISummonCard }

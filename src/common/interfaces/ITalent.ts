@@ -2,4 +2,4 @@ interface ITalent {
   cardID: string
 }
 
-export default ITalent
+export { ITalent }

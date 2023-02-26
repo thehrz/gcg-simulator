@@ -8,4 +8,4 @@ enum Element {
   Anemo = "anemo",
 }
 
-export default Element
+export { Element }

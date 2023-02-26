@@ -1,4 +1,4 @@
-import Cost from "./Cost"
+import { Cost } from "./Cost"
 
 interface ISkill {
   type: Type
@@ -8,10 +8,10 @@ interface ISkill {
   subID?: string
 }
 
-export enum Type {
+enum Type {
   NormalAttack = "普通攻击",
   ElementalSkill = "元素战技",
   ElementalBurst = "元素爆发",
 }
 
-export default ISkill
+export { ISkill, Type }

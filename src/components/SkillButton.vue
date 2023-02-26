@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import Cost from "~/common/interfaces/Cost"
-import ISkill, { Type } from "~/common/interfaces/ISkill"
+import { Cost } from "~/common/interfaces/Cost"
+import { ISkill , Type } from "~/common/interfaces/ISkill"
 
 defineProps<{
   id: number

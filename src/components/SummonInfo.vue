@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ISummon from "~/common/interfaces/ISummon"
+import { ISummon } from "~/common/interfaces/ISummon"
 import { vOnClickOutside } from "@vueuse/components"
 
 const props = defineProps<{
@@ -17,25 +17,23 @@ const card = getSummon(props.summon.cardID)
 </script>
 
 <template>
-  <client-only>
-    <teleport to=".game">
-      <transition name="fade">
-        <div v-if="show" class="characterInfo" v-on-click-outside="close">
-          <div class="card">
-            <div class="cardBoard">
-              <img :src="`images/cards/${summon.cardID}.png`" />
-            </div>
-          </div>
-
-          <div class="info">
-            <h1>{{ card.name }}</h1>
-
-            <p v-html="card.desc"></p>
+  <teleport to=".game">
+    <transition name="fade">
+      <div v-if="show" class="characterInfo" v-on-click-outside="close">
+        <div class="card">
+          <div class="cardBoard">
+            <img :src="`images/cards/${summon.cardID}.png`" />
           </div>
         </div>
-      </transition>
-    </teleport>
-  </client-only>
+
+        <div class="info">
+          <h1>{{ card.name }}</h1>
+
+          <p v-html="card.desc"></p>
+        </div>
+      </div>
+    </transition>
+  </teleport>
 </template>
 
 <style scoped>

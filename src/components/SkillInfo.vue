@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ISkill from "~/common/interfaces/ISkill"
+import { ISkill } from "~/common/interfaces/ISkill"
 
 defineProps<{
   characterName: string

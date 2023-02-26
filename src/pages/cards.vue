@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ICharacterCard from '~/common/interfaces/cards/ICharacterCard';
+import { ICharacterCard } from "~/common/interfaces/cards/ICharacterCard"
 
 const cards: string[] = getAllCharacters().map((value: ICharacterCard) => {
   return value.id
@@ -7,11 +7,9 @@ const cards: string[] = getAllCharacters().map((value: ICharacterCard) => {
 </script>
 
 <template>
-  <nuxt-layout>
-    <div class="cardsList">
-      <preview-card v-for="id in cards" :id="id" :is-character="true" />
-    </div>
-  </nuxt-layout>
+  <div class="cardsList">
+    <preview-card v-for="id in cards" :id="id" :is-character="true" />
+  </div>
 </template>
 
 <style scoped lang="scss">

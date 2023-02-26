@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ISupport from "~/common/interfaces/ISupport"
+import { ISupport } from "~/common/interfaces/ISupport"
 import { vOnClickOutside } from "@vueuse/components"
 
 const props = defineProps<{
@@ -17,31 +17,29 @@ const card = getAction(props.support.cardID)
 </script>
 
 <template>
-  <client-only>
-    <teleport to=".game">
-      <transition name="fade">
-        <div v-if="show" class="supportInfo" v-on-click-outside="close">
-          <div class="card">
-            <div class="cardBoard">
-              <img :src="`/images/cards/${support.cardID}.png`" />
-            </div>
-          </div>
-
-          <div class="info">
-            <h1>{{ card.name }}</h1>
-
-            <div class="costs">
-              <div v-for="cost in card.cost">
-                <cost-icon :cost="cost" />
-              </div>
-            </div>
-
-            <p v-html="card.desc"></p>
+  <teleport to=".game">
+    <transition name="fade">
+      <div v-if="show" class="supportInfo" v-on-click-outside="close">
+        <div class="card">
+          <div class="cardBoard">
+            <img :src="`/images/cards/${support.cardID}.png`" />
           </div>
         </div>
-      </transition>
-    </teleport>
-  </client-only>
+
+        <div class="info">
+          <h1>{{ card.name }}</h1>
+
+          <div class="costs">
+            <div v-for="cost in card.cost">
+              <cost-icon :cost="cost" />
+            </div>
+          </div>
+
+          <p v-html="card.desc"></p>
+        </div>
+      </div>
+    </transition>
+  </teleport>
 </template>
 
 <style scoped>

@@ -1,8 +1,8 @@
-import Dice from "~/common/enums/Dice"
-import IAction from "./IAction"
-import ICharacter from "./ICharacter"
-import ISupport from "./ISupport"
-import ISummon from "./ISummon"
+import { Dice } from "~/common/enums/Dice"
+import { IAction } from "./IAction"
+import { ICharacter } from "./ICharacter"
+import { ISupport } from "./ISupport"
+import { ISummon } from "./ISummon"
 
 interface IPlayer {
   name: string
@@ -15,4 +15,4 @@ interface IPlayer {
   thisRound?: boolean
 }
 
-export default IPlayer
+export { IPlayer }

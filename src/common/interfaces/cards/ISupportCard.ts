@@ -4,4 +4,4 @@ interface ISupportCard {
   desc: string
 }
 
-export default ISupportCard
+export { ISupportCard }
