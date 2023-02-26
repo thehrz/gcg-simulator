@@ -10,11 +10,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+
       - name: Setup pnpm
         uses: pnpm/action-setup@v2
         with:
           version: 6.0.2
+
       - name: Install dependencies
         run: pnpm install
-      - name: Static HTML export with Nuxt
+
+      - name: Build Vite
         run: pnpm build
