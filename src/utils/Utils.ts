@@ -1,9 +1,9 @@
 import _characters from "~/assets/data/characters.json"
 import _actions from "~/assets/data/actions.json"
 import _summons from "~/assets/data/subs.json"
-import IActionCard from "~/common/interfaces/cards/IActionCard"
-import ICharacterCard from "~/common/interfaces/cards/ICharacterCard"
-import ISummonCard from "~/common/interfaces/cards/ISummonCard"
+import { IActionCard } from "~/common/interfaces/cards/IActionCard"
+import { ICharacterCard } from "~/common/interfaces/cards/ICharacterCard"
+import { ISummonCard } from "~/common/interfaces/cards/ISummonCard"
 
 const characters = new Map<string, ICharacterCard>()
 
