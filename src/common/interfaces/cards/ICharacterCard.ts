@@ -1,6 +1,6 @@
-import Element from "~/common/enums/Element"
-import Weapon from "~/common/enums/Weapon"
-import ISkill from "../ISkill"
+import { Element } from "~/common/enums/Element"
+import { Weapon } from "~/common/enums/Weapon"
+import { ISkill } from "../ISkill"
 
 interface ICharacterCard {
   id: string

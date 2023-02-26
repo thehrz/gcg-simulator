@@ -1,5 +1,5 @@
-import Dice from "~/common/enums/Dice"
-import Cost from "../Cost"
+import { Dice } from "~/common/enums/Dice"
+import { Cost } from "../Cost"
 
 interface IActionCard {
   id: string
