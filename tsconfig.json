@@ -18,7 +18,6 @@
     "types": ["vite-plugin-pages/client", "vite-plugin-vue-layouts/client"],
     "paths": {
       "~/*": ["src/*"],
-      "~~/*": ["./*"]
     }
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
