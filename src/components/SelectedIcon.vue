@@ -6,7 +6,7 @@ defineProps<{
 
 <template>
   <div class="selected">
-    <img v-if="selected" src="/images/icons/card_select.png" />
+    <img v-if="selected" :src="getIcon('card_select')" />
   </div>
 </template>
 

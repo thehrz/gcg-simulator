@@ -22,9 +22,9 @@ const card = getCharacter(cardID)
       <img :src="`/images/cards/${cardID}.png`" />
       <div class="hp font_shadow">{{ hp }}</div>
       <div class="actionIcons">
-        <img src="/images/icons/weapon.png" v-if="weapon" />
-        <img src="/images/icons/artifact.png" v-if="artifact" />
-        <img src="/images/icons/talent.png" v-if="talent" />
+        <img :src="getIcon('weapon')" v-if="weapon" />
+        <img :src="getIcon('artifact')" v-if="artifact" />
+        <img :src="getIcon('talent')" v-if="talent" />
       </div>
       <div class="energyIcons">
         <EnergyIcon :is-full="index <= energy" v-for="index in card.energy" />

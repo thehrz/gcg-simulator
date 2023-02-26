@@ -6,7 +6,7 @@ defineProps<{
 
 <template>
   <div class="switchRoundButton">
-    <img class="background" src="/images/icons/switch_round.png" />
+    <img class="background" :src="'/images/icons/switch_round.png'" />
 
     <button
       v-if="thisRound !== undefined"
@@ -40,12 +40,12 @@ defineProps<{
 
     <img
       class="round_owner"
-      src="/images/icons/switch_round_owner.png"
+      :src="'/images/icons/switch_round_owner.png'"
       v-if="thisRound"
     />
     <img
       class="round_enemy"
-      src="/images/icons/switch_round_enemy.png"
+      :src="'/images/icons/switch_round_enemy.png'"
       v-else-if="thisRound !== undefined"
     />
   </div>

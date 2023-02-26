@@ -11,14 +11,14 @@ defineProps<{
   <div class="playerid">
     <img
       class="thisround"
-      :src="`images/icons/playerid_thisround_${type}.png`"
+      :src="`/images/icons/playerid_thisround_${type}.png`"
       v-if="player.thisRound"
     />
     <img
       class="avatar"
-      :src="`images/characters/${player.avatar ?? 'traveler'}.png`"
+      :src="`/images/characters/${player.avatar ?? 'traveler'}.png`"
     />
-    <img class="id" :src="`images/icons/playerid_${type}.png`" />
+    <img class="id" :src="`/images/icons/playerid_${type}.png`" />
     <a class="name font">{{ player.name }}</a>
   </div>
 </template>

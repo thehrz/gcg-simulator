@@ -12,7 +12,7 @@ const isDetailVisible = ref(false)
 <template>
   <div class="previewCard" @click="isDetailVisible = true">
     <div class="cardBoard">
-      <img :src="`images/cards/${id}.png`" />
+      <img :src="`/images/cards/${id}.png`" />
       <div class="hp font_shadow" v-if="isCharacter">{{ card.hp }}</div>
       <div class="energyIcons">
         <EnergyIcon :is-full="true" v-for="_ in card.energy" />
@@ -24,7 +24,7 @@ const isDetailVisible = ref(false)
           <div class="skill">
             <img
               class="skillIcon image"
-              :src="`./images/skills/${card.id}/skill_${index + 1}.png`"
+              :src="`/images/skills/${card.id}/skill_${index + 1}.png`"
             />
             <div>
               <p class="name">{{ skill.name }}</p>

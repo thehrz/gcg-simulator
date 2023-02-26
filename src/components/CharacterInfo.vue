@@ -25,7 +25,7 @@ const card = getCharacter(props.character.cardID)
         <div v-if="show" ref="contentRef" class="characterInfo">
           <div class="card">
             <div class="cardBoard">
-              <img :src="`images/cards/${character.cardID}.png`" />
+              <img :src="`/images/cards/${character.cardID}.png`" />
             </div>
           </div>
 
