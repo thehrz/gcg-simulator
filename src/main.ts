@@ -1,8 +1,10 @@
-import { createApp } from 'vue'
-import { createRouter, createWebHistory } from 'vue-router'
-import { setupLayouts } from 'virtual:generated-layouts'
+import { createApp } from "vue"
+import { createRouter, createWebHistory } from "vue-router"
+import { setupLayouts } from "virtual:generated-layouts"
 import generatedRoutes from "~pages"
-import App from './App.vue'
+import App from "./App.vue"
+
+import "~/assets/styles/main.scss"
 
 const routes = setupLayouts(generatedRoutes)
 
