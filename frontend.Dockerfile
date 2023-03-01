@@ -1,12 +1,11 @@
 FROM node:19-alpine as frontend
 WORKDIR /frontend
 COPY package.json ./
-RUN npm install
+RUN pnpm install
 COPY . .
-RUN npm run build
+RUN pnpm run build
 
-FROM node:19-alpine
-WORKDIR /frontend
-COPY --from=frontend /frontend/.output .
+FROM nginx:1.19
+COPY --from=frontend /frontend/dist /usr/local/nginx/html
 
 ENTRYPOINT  [ "node", "./server/index.mjs" ]

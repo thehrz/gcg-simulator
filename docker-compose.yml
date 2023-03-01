@@ -12,15 +12,3 @@ services:
       dockerfile: backend.Dockerfile
     container_name: backend
     restart: always
-
-  nginx:
-    image: nginx:1.19
-    restart: always
-    ports:
-      - "80:80"
-    volumes:
-      - ./nginx.default.conf:/etc/nginx/conf.d/default.conf
-      - ./assets:/usr/local/nginx/html
-    depends_on:
-      - frontend
-      - backend
