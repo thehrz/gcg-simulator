@@ -5,6 +5,7 @@ import generatedRoutes from "~pages"
 import App from "./App.vue"
 
 import "~/assets/styles/main.scss"
+import "uno.css"
 
 const routes = setupLayouts(generatedRoutes)
 

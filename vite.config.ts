@@ -4,6 +4,7 @@ import Vue from "@vitejs/plugin-vue"
 import Pages from "vite-plugin-pages"
 import AutoImport from "unplugin-auto-import/vite"
 import Layouts from "vite-plugin-vue-layouts"
+import UnoCSS from "unocss/vite"
 import Components from "unplugin-vue-components/vite"
 import { ElementPlusResolver } from "unplugin-vue-components/resolvers"
 import { mockDevServerPlugin as MockDevServerPlugin } from "vite-plugin-mock-dev-server"
@@ -36,6 +37,8 @@ export default defineConfig(({ command }) => {
       Layouts(),
 
       MockDevServerPlugin(),
+
+      UnoCSS(),
 
       Vue(),
     ],
