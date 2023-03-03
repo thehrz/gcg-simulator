@@ -6,7 +6,7 @@
 
 ![gcg-simulator](https://s2.loli.net/2023/01/17/MRPIGXvZ2UlBKcD.png)
 
-An open-source front-end simulator for the Genius Invokation TCG. Using Nuxt3.
+An open-source front-end simulator for the Genius Invokation TCG. Using Vue3.
 
 ## Demo
 

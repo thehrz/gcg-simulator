@@ -4,7 +4,9 @@
 
 ![gcg-simulator.png](https://s2.loli.net/2023/01/13/8vJ3lHuGptqrQa9.png)
 
-一个开源的七圣召唤前端模拟器。使用 Nuxt3 开发。
+一个开源的七圣召唤模拟器前端实现。使用 Vue3 开发。
+
+使用后端项目: ![genius-invokation-simulator-backend](https://github.com/sunist-c/genius-invokation-simulator-backend)
 
 ## Demo
 
