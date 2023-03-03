@@ -6,7 +6,7 @@ import AutoImport from "unplugin-auto-import/vite"
 import Layouts from "vite-plugin-vue-layouts"
 import Components from "unplugin-vue-components/vite"
 import { ElementPlusResolver } from "unplugin-vue-components/resolvers"
-import { viteMockServe as ViteMockServe } from "vite-plugin-mock"
+import { mockDevServerPlugin as MockDevServerPlugin } from "vite-plugin-mock-dev-server"
 
 // https://vitejs.dev/config/
 export default defineConfig(({ command }) => {
@@ -35,12 +35,16 @@ export default defineConfig(({ command }) => {
 
       Layouts(),
 
-      ViteMockServe({
-        mockPath: "mock",
-        localEnabled: command === "serve",
-      }),
+      MockDevServerPlugin(),
 
       Vue(),
     ],
+    server: {
+      proxy: {
+        "^/api": {
+          target: "",
+        },
+      },
+    },
   }
 })
