@@ -2,7 +2,7 @@
 import { Table } from "~/common/enums/Table"
 import { IPlayer } from "~/common/interfaces/IPlayer"
 
-type Room = {
+interface Room {
   id: number
   players: {
     enemy: IPlayer
@@ -10,16 +10,21 @@ type Room = {
   }
 }
 
-const { data } = await useFetch<Room>("/api/game")
+const { data } = useFetch("/api/game").json<Room>()
 </script>
 
 <template>
   <div class="container">
     <GameContainer
       :table="Table.Mondstadt"
-      :owner="data?.players.owner!"
-      :enemy="data?.players.enemy!"
+      :owner="data!.players.owner"
+      :enemy="data!.players.enemy"
       :rounds="1"
     />
   </div>
 </template>
+
+<route lang="yaml">
+meta:
+  layout: "game"
+</route>
