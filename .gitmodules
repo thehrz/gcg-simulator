@@ -1,4 +1,4 @@
 [submodule "backend"]
 	path = backend
-	url = git@github.com:Thehrz/genius-invokation-simulator-backend.git
+	url = https://github.com/Thehrz/genius-invokation-simulator-backend.git
 	branch = dev
