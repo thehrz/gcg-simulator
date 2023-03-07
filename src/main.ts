@@ -6,7 +6,7 @@ import App from "./App.vue"
 
 import "~/assets/styles/main.scss"
 import "uno.css"
-import { done, start } from "./utils/Porgress"
+import { initPorgress } from "./utils/Porgress"
 
 const routes = setupLayouts(generatedRoutes)
 
@@ -15,12 +15,6 @@ const router = createRouter({
   routes,
 })
 
-router.beforeEach((pre, next) => {
-  start()
-})
-
-router.afterEach(() => {
-  done()
-})
+initPorgress(router)
 
 createApp(App).use(router).mount("#app")

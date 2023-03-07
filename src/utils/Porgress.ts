@@ -1,10 +1,15 @@
 import NProgress from "nprogress"
 import "nprogress/nprogress.css"
+import { Router } from "vue-router"
 
-export function start() {
-  NProgress.start()
-}
+export function initPorgress(router: Router) {
+  router.beforeEach((pre, next) => {
+    NProgress.start()
+  })
+  
+  router.afterEach(() => {
+    NProgress.done()
+  })
 
-export function done() {
-  NProgress.done()
+  NProgress.configure({ showSpinner: false })
 }
