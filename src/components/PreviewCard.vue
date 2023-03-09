@@ -36,17 +36,19 @@ const isDetailVisible = ref(false)
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .cardBoard {
   background: url("/images/icons/card_border.png");
   background-size: 100% 100%;
   padding: 2.5% 3%;
   position: relative;
+
+  img {
+    width: 100%;
+  }
 }
 
-.cardBoard > img {
-  width: 100%;
-}
+// .cardBoard >
 
 .hp {
   display: flex;
@@ -71,11 +73,11 @@ const isDetailVisible = ref(false)
   flex: 1;
   right: -16%;
   top: 3%;
-}
 
-.energyIcons > div {
-  width: 100%;
-  margin-bottom: -30%;
+  div {
+    width: 100%;
+    margin-bottom: -30%;
+  }
 }
 
 .card img {
@@ -91,9 +93,9 @@ const isDetailVisible = ref(false)
 
 .skill {
   display: flex;
-}
 
-.skill > div {
-  margin-left: 10px;
+  div {
+    margin-left: 10px;
+  }
 }
 </style>
