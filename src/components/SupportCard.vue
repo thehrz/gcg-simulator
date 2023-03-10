@@ -11,7 +11,7 @@ const selected = ref(false)
 <template>
   <div class="supportCard" @click="selected = true">
     <div>
-      <img :src="`/images/cards/${support.cardID}.png`" />
+      <img :src="getCard(support.cardID)" />
     </div>
     <div class="count font_shadow" v-if="support.count">
       {{ support.count }}

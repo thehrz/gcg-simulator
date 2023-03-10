@@ -52,6 +52,7 @@ declare global {
   const getAllActions: typeof import('./utils/Utils')['getAllActions']
   const getAllCharacters: typeof import('./utils/Utils')['getAllCharacters']
   const getAllSummons: typeof import('./utils/Utils')['getAllSummons']
+  const getCard: typeof import('./utils/Images')['getCard']
   const getCharacter: typeof import('./utils/Utils')['getCharacter']
   const getCurrentInstance: typeof import('vue')['getCurrentInstance']
   const getCurrentScope: typeof import('vue')['getCurrentScope']
@@ -354,6 +355,7 @@ declare module 'vue' {
     readonly getAllActions: UnwrapRef<typeof import('./utils/Utils')['getAllActions']>
     readonly getAllCharacters: UnwrapRef<typeof import('./utils/Utils')['getAllCharacters']>
     readonly getAllSummons: UnwrapRef<typeof import('./utils/Utils')['getAllSummons']>
+    readonly getCard: UnwrapRef<typeof import('./utils/Images')['getCard']>
     readonly getCharacter: UnwrapRef<typeof import('./utils/Utils')['getCharacter']>
     readonly getCurrentInstance: UnwrapRef<typeof import('vue')['getCurrentInstance']>
     readonly getCurrentScope: UnwrapRef<typeof import('vue')['getCurrentScope']>

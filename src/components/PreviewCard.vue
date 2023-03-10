@@ -12,7 +12,7 @@ const isDetailVisible = ref(false)
 <template>
   <div class="previewCard" @click="isDetailVisible = true">
     <div class="cardBoard">
-      <img :src="`/images/cards/${id}.png`" />
+      <img :src="getCard(id)" />
       <div class="hp font_shadow" v-if="isCharacter">{{ card.hp }}</div>
       <div class="energyIcons">
         <EnergyIcon :is-full="true" v-for="_ in card.energy" />

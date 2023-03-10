@@ -19,7 +19,7 @@ const card = getCharacter(cardID)
     </div>
 
     <div class="cardBoard">
-      <img :src="`/images/cards/${cardID}.png`" />
+      <img :src="getCard(cardID)" />
       <div class="hp font_shadow">{{ hp }}</div>
       <div class="actionIcons">
         <img :src="getIcon('weapon')" v-if="weapon" />

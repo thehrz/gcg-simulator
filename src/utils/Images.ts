@@ -1,3 +1,7 @@
 export const getIcon = (id: string) => {
-  return new URL(`../images/icons/${id}.png`, import.meta.url).href
+  return `/images/icons/${id}.png`
+}
+
+export const getCard = (id: string) => {
+  return `/images/cards/${id}.png`
 }

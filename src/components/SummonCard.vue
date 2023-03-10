@@ -11,7 +11,7 @@ const selected = ref(false)
 <template>
   <div class="summonCard" @click="selected = true">
     <div>
-      <img :src="`/images/cards/${summon.cardID}.png`" />
+      <img :src="getCard(summon.cardID)" />
     </div>
     <div class="time font_shadow" v-if="summon.time">
       {{ summon.time }}

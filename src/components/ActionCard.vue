@@ -18,7 +18,7 @@ const card = getAction(cardID)
       <CostIcon :cost="cost" v-for="cost in card.cost" />
     </div>
     <div class="cardBoard">
-      <img :src="`/images/cards/${cardID}.png`" />
+      <img :src="getCard(cardID)" />
 
       <transition name="fade">
         <selected-icon :selected="selected" />
