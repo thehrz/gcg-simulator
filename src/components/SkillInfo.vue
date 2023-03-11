@@ -44,14 +44,14 @@ const isSelected = ref(false)
     border: grey 2px solid;
   }
 
-  div {
+  > div {
     margin-left: 10px;
     width: 100%;
 
     .costs {
       display: flex;
 
-      div {
+      > div {
         width: 25%;
       }
     }
