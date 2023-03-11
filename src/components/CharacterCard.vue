@@ -42,81 +42,76 @@ const card = getCharacter(cardID)
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .card {
   margin: 4%;
-}
 
-.cardBoard {
-  background: url("/images/icons/card_border.png");
-  background-size: 100% 100%;
-  padding: 2.5% 3%;
-  position: relative;
-  cursor: pointer;
-}
+  .elementIcons {
+    display: flex;
+    justify-content: center;
 
-.cardBoard > img:first-child {
-  width: 100%;
-}
+    > img {
+      width: 25%;
+    }
+  }
 
-.hp {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20.5% 0;
-  height: 0;
-  width: 34%;
-  background-image: url("/images/icons/hp.png");
-  background-size: 100% 100%;
-  position: absolute;
-  top: -8%;
-  left: -12%;
-}
+  .cardBoard {
+    background: url("/images/icons/card_border.png");
+    background-size: 100% 100%;
+    padding: 2.5% 3%;
+    position: relative;
+    cursor: pointer;
 
-.actionIcons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: absolute;
-  width: 28%;
-  left: -9%;
-  top: 20%;
-}
+    > img:first-child {
+      width: 100%;
+    }
 
-.actionIcons > img {
-  width: 100%;
-}
+    .hp {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20.5% 0;
+      height: 0;
+      width: 34%;
+      background-image: url("/images/icons/hp.png");
+      background-size: 100% 100%;
+      position: absolute;
+      top: -8%;
+      left: -12%;
+    }
 
-.energyIcons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 35%;
-  position: absolute;
-  flex: 1;
-  right: -16%;
-  top: 3%;
-}
+    .actionIcons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      width: 28%;
+      left: -9%;
+      top: 20%;
 
-.energyIcons > div {
-  width: 100%;
-  margin-bottom: -30%;
-}
+      > img {
+        width: 100%;
+      }
+    }
 
-.energyIcons .null {
-  padding: 15%;
-}
+    .energyIcons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 35%;
+      position: absolute;
+      right: -16%;
+      top: 3%;
 
-.elementIcons {
-  display: flex;
-  justify-content: center;
-}
+      > div {
+        width: 100%;
+        margin-bottom: -30%;
+      }
 
-.elementIcons > img {
-  width: 25%;
-}
-
-.fighting {
-  margin-top: 10%;
+      .null {
+        padding: 15%;
+      }
+    }
+  }
 }
 </style>
