@@ -7,17 +7,23 @@ const props = defineProps<{
   support: ISupport
 }>()
 
+const isMounted = ref(false)
+
 const emits = defineEmits(["close"])
 
 function close() {
   emits("close")
 }
 
+onMounted(() => {
+  isMounted.value = true
+})
+
 const card = getAction(props.support.cardID)
 </script>
 
 <template>
-  <teleport to=".game">
+  <teleport to=".game" v-if="isMounted">
     <transition name="fade">
       <div v-if="show" class="supportInfo" v-on-click-outside="close">
         <div class="card">

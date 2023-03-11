@@ -13,11 +13,17 @@ function close() {
   emits("close")
 }
 
+const isMounted = ref(false)
+
+onMounted(() => {
+  isMounted.value = true
+})
+
 const card = getSummon(props.summon.cardID)
 </script>
 
 <template>
-  <teleport to=".game">
+  <teleport to=".game" v-if="isMounted">
     <transition name="fade">
       <div v-if="show" class="characterInfo" v-on-click-outside="close">
         <div class="card">

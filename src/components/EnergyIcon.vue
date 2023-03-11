@@ -6,8 +6,8 @@ defineProps<{
 
 <template>
   <div class="energyIcon" :class="{ null: !isFull }">
-    <!-- <img :src="getIcon('energy_full')" v-if="isFull" />
-    <img :src="getIcon('energy_card')" v-else /> -->
+    <img :src="getIcon('energy_full')" v-if="isFull" />
+    <img :src="getIcon('energy_card')" v-else />
   </div>
 </template>
 

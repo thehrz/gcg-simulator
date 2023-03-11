@@ -10,16 +10,21 @@ const props = defineProps<{
 const emits = defineEmits(["close"])
 
 const contentRef = ref(null)
+const isMounted = ref(false)
 
 onClickOutside(contentRef, () => {
   emits("close")
+})
+
+onMounted(() => {
+  isMounted.value = true
 })
 
 const card = getCharacter(props.character.cardID)
 </script>
 
 <template>
-  <teleport to=".game">
+  <teleport to=".game" v-if="isMounted">
     <transition name="fade">
       <div v-if="show" ref="contentRef" class="characterInfo">
         <div class="card">
