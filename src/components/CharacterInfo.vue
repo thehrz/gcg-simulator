@@ -26,7 +26,7 @@ const card = getCharacter(props.character.cardID)
   <teleport to=".game" v-if="isMounted">
     <transition name="fade">
       <div v-if="show" class="characterInfo">
-        <div class="card" v-on-click-outside="close">
+        <div class="card">
           <div class="cardBoard">
             <img :src="getCard(character.cardID)" />
           </div>
