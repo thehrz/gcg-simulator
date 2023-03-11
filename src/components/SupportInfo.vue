@@ -25,14 +25,14 @@ const card = getAction(props.support.cardID)
 <template>
   <teleport to=".game" v-if="isMounted">
     <transition name="fade">
-      <div v-if="show" class="supportInfo" v-on-click-outside="close">
-        <div class="card">
+      <div v-if="show" class="supportInfo">
+        <div class="card" v-on-click-outside="close">
           <div class="cardBoard">
             <img :src="getCard(support.cardID)" />
           </div>
         </div>
 
-        <div class="info">
+        <div class="info" v-on-click-outside="close">
           <h1>{{ card.name }}</h1>
 
           <div class="costs">

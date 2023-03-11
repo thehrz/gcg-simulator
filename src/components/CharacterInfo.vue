@@ -1,20 +1,19 @@
 <script setup lang="ts">
-import { onClickOutside } from "@vueuse/core"
 import { ICharacter } from "~/common/interfaces/ICharacter"
+import { vOnClickOutside } from "@vueuse/components"
 
 const props = defineProps<{
   show: boolean
   character: ICharacter
 }>()
 
-const emits = defineEmits(["close"])
-
-const contentRef = ref(null)
 const isMounted = ref(false)
 
-onClickOutside(contentRef, () => {
+const emits = defineEmits(["close"])
+
+function close() {
   emits("close")
-})
+}
 
 onMounted(() => {
   isMounted.value = true
@@ -26,14 +25,14 @@ const card = getCharacter(props.character.cardID)
 <template>
   <teleport to=".game" v-if="isMounted">
     <transition name="fade">
-      <div v-if="show" ref="contentRef" class="characterInfo">
-        <div class="card">
+      <div v-if="show" class="characterInfo">
+        <div class="card" v-on-click-outside="close">
           <div class="cardBoard">
             <img :src="getCard(character.cardID)" />
           </div>
         </div>
 
-        <div class="info">
+        <div class="info" v-on-click-outside="close">
           <h1>{{ card.name }}</h1>
 
           <div class="icons">

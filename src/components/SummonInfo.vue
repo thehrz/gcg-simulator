@@ -25,14 +25,14 @@ const card = getSummon(props.summon.cardID)
 <template>
   <teleport to=".game" v-if="isMounted">
     <transition name="fade">
-      <div v-if="show" class="characterInfo" v-on-click-outside="close">
-        <div class="card">
+      <div v-if="show" class="characterInfo">
+        <div class="card" v-on-click-outside="close">
           <div class="cardBoard">
             <img :src="`images/cards/${summon.cardID}.png`" />
           </div>
         </div>
 
-        <div class="info">
+        <div class="info" v-on-click-outside="close">
           <h1>{{ card.name }}</h1>
 
           <p v-html="card.desc"></p>
