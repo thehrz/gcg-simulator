@@ -56,7 +56,9 @@ declare global {
   const getCharacter: typeof import('./utils/Utils')['getCharacter']
   const getCurrentInstance: typeof import('vue')['getCurrentInstance']
   const getCurrentScope: typeof import('vue')['getCurrentScope']
+  const getElement: typeof import('./utils/Images')['getElement']
   const getIcon: typeof import('./utils/Images')['getIcon']
+  const getSkill: typeof import('./utils/Images')['getSkill']
   const getSummon: typeof import('./utils/Utils')['getSummon']
   const h: typeof import('vue')['h']
   const ignorableWatch: typeof import('@vueuse/core')['ignorableWatch']
@@ -359,7 +361,9 @@ declare module 'vue' {
     readonly getCharacter: UnwrapRef<typeof import('./utils/Utils')['getCharacter']>
     readonly getCurrentInstance: UnwrapRef<typeof import('vue')['getCurrentInstance']>
     readonly getCurrentScope: UnwrapRef<typeof import('vue')['getCurrentScope']>
+    readonly getElement: UnwrapRef<typeof import('./utils/Images')['getElement']>
     readonly getIcon: UnwrapRef<typeof import('./utils/Images')['getIcon']>
+    readonly getSkill: UnwrapRef<typeof import('./utils/Images')['getSkill']>
     readonly getSummon: UnwrapRef<typeof import('./utils/Utils')['getSummon']>
     readonly h: UnwrapRef<typeof import('vue')['h']>
     readonly ignorableWatch: UnwrapRef<typeof import('@vueuse/core')['ignorableWatch']>

@@ -7,5 +7,5 @@ defineProps<{
 </script>
 
 <template>
-  <img :src="`/images/icons/elements/${element}.png`" />
+  <img :src="getElement(element)" />
 </template>

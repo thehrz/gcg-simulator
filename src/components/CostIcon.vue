@@ -5,7 +5,7 @@ const props = defineProps<{
   cost: Cost
 }>()
 
-const iconUrl = computed(() => `url("/images/icons/${props.cost.type}.png")`)
+const iconUrl = computed(() => `url("${getIcon(props.cost.type)}")`)
 </script>
 
 <template>

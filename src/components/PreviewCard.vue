@@ -24,7 +24,7 @@ const isDetailVisible = ref(false)
         <div class="skill">
           <img
             class="skillIcon image"
-            :src="`/images/skills/${card.id}/skill_${index + 1}.png`"
+            :src="getSkill(card.id, index + 1)"
           />
           <div>
             <p class="name">{{ skill.name }}</p>

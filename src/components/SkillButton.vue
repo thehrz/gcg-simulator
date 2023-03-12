@@ -17,7 +17,7 @@ defineProps<{
       <button
         :class="{ disable: disable, burst: skill.type == Type.ElementalBurst }"
       >
-        <img :src="`./images/skills/${name}/skill_${id}.png`" />
+        <img :src="getSkill(name, id)" />
       </button>
     </div>
 
