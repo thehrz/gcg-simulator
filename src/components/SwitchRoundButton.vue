@@ -40,12 +40,12 @@ defineProps<{
 
     <img
       class="round_owner"
-      :src="'/images/icons/switch_round_owner.png'"
+      :src="getIcon('switch_round_owner')"
       v-if="thisRound"
     />
     <img
       class="round_enemy"
-      :src="'/images/icons/switch_round_enemy.png'"
+      :src="getIcon('switch_round_enemy')"
       v-else-if="thisRound !== undefined"
     />
   </div>
