@@ -62,7 +62,6 @@ declare global {
   const getSummon: typeof import('./utils/Utils')['getSummon']
   const h: typeof import('vue')['h']
   const ignorableWatch: typeof import('@vueuse/core')['ignorableWatch']
-  const initPorgress: typeof import('./utils/Porgress')['initPorgress']
   const inject: typeof import('vue')['inject']
   const isDefined: typeof import('@vueuse/core')['isDefined']
   const isProxy: typeof import('vue')['isProxy']
@@ -367,7 +366,6 @@ declare module 'vue' {
     readonly getSummon: UnwrapRef<typeof import('./utils/Utils')['getSummon']>
     readonly h: UnwrapRef<typeof import('vue')['h']>
     readonly ignorableWatch: UnwrapRef<typeof import('@vueuse/core')['ignorableWatch']>
-    readonly initPorgress: UnwrapRef<typeof import('./utils/Porgress')['initPorgress']>
     readonly inject: UnwrapRef<typeof import('vue')['inject']>
     readonly isDefined: UnwrapRef<typeof import('@vueuse/core')['isDefined']>
     readonly isProxy: UnwrapRef<typeof import('vue')['isProxy']>

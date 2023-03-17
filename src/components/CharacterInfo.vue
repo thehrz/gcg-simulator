@@ -32,20 +32,22 @@ const card = getCharacter(props.character.cardID)
           </div>
         </div>
 
-        <div class="info" v-on-click-outside="close">
-          <h1>{{ card.name }}</h1>
+        <el-scrollbar>
+          <div class="info" v-on-click-outside="close">
+            <h1>{{ card.name }}</h1>
 
-          <div class="icons">
-            <element-icon :element="card.element" />
+            <div class="icons">
+              <element-icon :element="card.element" />
+            </div>
+
+            <skill-info
+              :character-name="card.id"
+              :skill="skill"
+              :index="index + 1"
+              v-for="(skill, index) in card.skills"
+            />
           </div>
-
-          <skill-info
-            :character-name="card.id"
-            :skill="skill"
-            :index="index + 1"
-            v-for="(skill, index) in card.skills"
-          />
-        </div>
+        </el-scrollbar>
       </div>
     </transition>
   </teleport>
@@ -81,7 +83,6 @@ const card = getCharacter(props.character.cardID)
 }
 
 .info {
-  margin-left: 2%;
   border-radius: 10px;
   display: flex;
   background-color: #2e3741;
@@ -95,20 +96,6 @@ const card = getCharacter(props.character.cardID)
 .info > h1 {
   font-size: 20px;
   margin-bottom: 1%;
-}
-
-.info::-webkit-scrollbar {
-  width: 4px;
-}
-
-.info::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.3);
-}
-
-.info::-webkit-scrollbar-track {
-  border-radius: 0;
-  background: rgba(0, 0, 0, 0.1);
 }
 
 .icons {
