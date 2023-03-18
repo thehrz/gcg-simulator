@@ -50,7 +50,7 @@ const card = getAction(props.support.cardID)
   </teleport>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .supportInfo {
   position: absolute;
   top: 8%;
@@ -61,45 +61,53 @@ const card = getAction(props.support.cardID)
   display: flex;
   color: #cad8ea;
   align-items: flex-start;
-}
 
-.card {
-  width: 40%;
-  flex-shrink: 0;
-}
+  .card {
+    width: 40%;
+    flex-shrink: 0;
 
-.cardBoard {
-  background: url("/images/icons/card_border.png");
-  background-size: 100% 100%;
-  padding: 2.5% 3%;
-  position: relative;
-}
+    > .cardBoard {
+      background: url("/images/icons/card_border.png");
+      background-size: 100% 100%;
+      padding: 2.5% 3%;
+      position: relative;
 
-.cardBoard > img {
-  width: 100%;
-}
+      > img {
+        width: 100%;
+      }
+    }
+  }
 
-.info {
-  border-radius: 10px;
-  display: flex;
-  background-color: #2e3741;
-  flex-direction: column;
-  padding: 2%;
-  width: 100%;
-  max-height: 100%;
-  overflow: auto;
-}
+  > .el-scrollbar {
+    width: 100%;
 
-.info > h1 {
-  font-size: 20px;
-  margin-bottom: 1%;
-}
+    .info {
+      border-radius: 10px;
+      display: flex;
+      background-color: #2e3741;
+      flex-direction: column;
+      padding: 3%;
+      width: 100%;
+      max-height: 100%;
+      overflow: auto;
 
-.costs {
-  margin-bottom: 3%;
-}
+      > h1 {
+        font-size: 40px;
+        margin-bottom: 1%;
+      }
 
-.costs > div {
-  width: 20%;
+      > .costs {
+        margin-bottom: 3%;
+
+        > div {
+          width: 20%;
+        }
+      }
+
+      > p {
+        font-size: 30px;
+      }
+    }
+  }
 }
 </style>

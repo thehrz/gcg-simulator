@@ -45,7 +45,7 @@ const selected = ref(false)
   overflow: hidden;
   display: flex;
   align-items: center;
-  border: 2px solid #6c7364;
+  border: 4px solid #6c7364;
   border-radius: 15%;
 }
 
