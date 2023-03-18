@@ -48,6 +48,10 @@ const isSelected = ref(false)
     margin-left: 10px;
     width: 100%;
 
+    > p {
+      font-size: 30px;
+    }
+
     .costs {
       display: flex;
 
@@ -61,6 +65,7 @@ const isSelected = ref(false)
 .desc {
   border: grey 2px solid;
   border-radius: 8px;
+  font-size: 30px;
   padding: 0 3%;
   margin: 0 3%;
   margin-bottom: 3%;

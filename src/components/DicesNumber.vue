@@ -14,12 +14,12 @@ defineProps<{ num: number }>()
         stroke-width="5"
       />
       <text
-        font-size="60"
         x="55"
         y="75"
         text-anchor="middle"
         fill="white"
         class="font"
+        style="font-size: 60px;"
       >
         {{ num }}
       </text>
