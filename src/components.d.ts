@@ -19,6 +19,7 @@ declare module '@vue/runtime-core' {
     ElementIcon: typeof import('./components/ElementIcon.vue')['default']
     ElMenu: typeof import('element-plus/es')['ElMenu']
     ElMenuItem: typeof import('element-plus/es')['ElMenuItem']
+    ElScrollbar: typeof import('element-plus/es')['ElScrollbar']
     ElTag: typeof import('element-plus/es')['ElTag']
     EnergyIcon: typeof import('./components/EnergyIcon.vue')['default']
     GameContainer: typeof import('./components/GameContainer.vue')['default']

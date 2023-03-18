@@ -32,17 +32,19 @@ const card = getAction(props.support.cardID)
           </div>
         </div>
 
-        <div class="info" v-on-click-outside="close">
-          <h1>{{ card.name }}</h1>
+        <el-scrollbar>
+          <div class="info" v-on-click-outside="close">
+            <h1>{{ card.name }}</h1>
 
-          <div class="costs">
-            <div v-for="cost in card.cost">
-              <cost-icon :cost="cost" />
+            <div class="costs">
+              <div v-for="cost in card.cost">
+                <cost-icon :cost="cost" />
+              </div>
             </div>
-          </div>
 
-          <p v-html="card.desc"></p>
-        </div>
+            <p v-html="card.desc"></p>
+          </div>
+        </el-scrollbar>
       </div>
     </transition>
   </teleport>
@@ -78,7 +80,6 @@ const card = getAction(props.support.cardID)
 }
 
 .info {
-  margin-left: 2%;
   border-radius: 10px;
   display: flex;
   background-color: #2e3741;
@@ -92,20 +93,6 @@ const card = getAction(props.support.cardID)
 .info > h1 {
   font-size: 20px;
   margin-bottom: 1%;
-}
-
-.info::-webkit-scrollbar {
-  width: 4px;
-}
-
-.info::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.3);
-}
-
-.info::-webkit-scrollbar-track {
-  border-radius: 0;
-  background: rgba(0, 0, 0, 0.1);
 }
 
 .costs {
