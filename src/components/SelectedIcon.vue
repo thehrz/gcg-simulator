@@ -21,6 +21,6 @@ defineProps<{
 
 .selected > img {
   width: 100%;
-  animation: rotate 6s linear infinite;
+  animation: rotate 20s linear infinite;
 }
 </style>
