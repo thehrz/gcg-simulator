@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Cost } from "~/common/interfaces/Cost"
-import { ISkill , Type } from "~/common/interfaces/ISkill"
+import { ISkill, Type } from "~/common/interfaces/ISkill"
 
 defineProps<{
   id: number
@@ -38,7 +38,6 @@ img {
 .skillButton {
   width: 20%;
   margin: 0 1%;
-  cursor: pointer;
 }
 
 .skillButton button {
@@ -50,6 +49,7 @@ img {
   border-radius: 50%;
   border: 2px solid #544e3b;
   margin: 0 1%;
+  cursor: pointer;
 }
 
 .skillButton button:hover {
