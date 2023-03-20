@@ -73,6 +73,7 @@ const card = getSummon(props.summon.cardID)
   }
 
   > .el-scrollbar {
+    margin-left: 1%;
     width: 100%;
 
     .info {

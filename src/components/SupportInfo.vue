@@ -79,6 +79,7 @@ const card = getAction(props.support.cardID)
   }
 
   > .el-scrollbar {
+    margin-left: 1%;
     width: 100%;
 
     .info {
