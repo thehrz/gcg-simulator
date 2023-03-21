@@ -51,67 +51,73 @@ defineProps<{
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .switchRoundButton {
   position: relative;
   width: 92%;
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
-}
 
-.switchRoundButton > img.background {
-  width: 100%;
-}
+  > img.background {
+    width: 100%;
+  }
 
-button {
-  position: absolute;
-  width: 55%;
-  background-color: rgb(0 0 0 / 0%);
-  border-color: rgb(0 0 0 / 0%);
-  border: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  > button {
+    position: absolute;
+    width: 55%;
+    background-color: rgb(0 0 0 / 0%);
+    border-color: rgb(0 0 0 / 0%);
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 
-.highlight {
-  width: 100%;
-}
+    > .highlight {
+      width: 100%;
+    }
 
-button.enable .countDown,
-button.enable .highlight {
-  fill: #af7e29;
-}
+    > .countDown {
+      position: absolute;
+      width: 55%;
+    }
+  }
 
-button.enable path.border {
-  fill: #e5af46;
-}
+  button.enable {
+    .highlight {
+      fill: #af7e29;
+    }
 
-button .countDown {
-  position: absolute;
-  width: 55%;
-}
+    .countDown {
+      fill: #af7e29;
+    }
 
-button.disable .highlight {
-  fill: none;
-}
+    path.border {
+      fill: #e5af46;
+    }
+  }
 
-button.disable .countDown {
-  fill: #96c1fa;
-}
+  button.disable {
+    .highlight {
+      fill: none;
+    }
+    .countDown {
+      fill: #96c1fa;
+    }
+  }
 
-.round_enemy {
-  position: absolute;
-  width: 80%;
-  top: -11%;
-}
+  > .round_enemy {
+    position: absolute;
+    width: 80%;
+    top: -11%;
+  }
 
-.round_owner {
-  position: absolute;
-  width: 80%;
-  bottom: -11%;
-  transform: rotateX(180deg);
+  > .round_owner {
+    position: absolute;
+    width: 80%;
+    bottom: -11%;
+    transform: rotateX(180deg);
+  }
 }
 </style>
