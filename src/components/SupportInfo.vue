@@ -97,7 +97,7 @@ const card = getAction(props.support.cardID)
         margin-bottom: 1%;
       }
 
-      > .costs {
+      .costs {
         margin-bottom: 3%;
 
         > div {
