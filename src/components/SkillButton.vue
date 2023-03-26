@@ -47,17 +47,17 @@ img {
   background-size: 120%;
   background-position: center;
   border-radius: 50%;
-  border: 2px solid #544e3b;
+  border: 5px solid #544e3b;
   margin: 0 1%;
   cursor: pointer;
 }
 
 .skillButton button:hover {
-  border: 2px solid #ccb15a;
+  border: 5px solid #ccb15a;
 }
 
 .skillButton button:active {
-  border: 2px solid #888476;
+  border: 5px solid #888476;
 }
 
 .costs {
