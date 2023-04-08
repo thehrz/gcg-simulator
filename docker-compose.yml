@@ -5,12 +5,12 @@ services:
     ports:
       - 80:80
     build:
-      dockerfile: frontend.Dockerfile
+      dockerfile: ./docker/frontend.Dockerfile
     container_name: frontend
     restart: always
 
   backend:
     build:
-      dockerfile: backend.Dockerfile
+      dockerfile: ./docker/backend.Dockerfile
     container_name: backend
     restart: always
