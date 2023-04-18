@@ -52,7 +52,7 @@
   {
     "id": "rainbow_bladework",
     "name": "虹剑势",
-    "desc": "<span style=\"color: #FFFFFFFF;\">我方角色普通攻击后：</span>造成2点<span style=\"color: #80C0FFFF;\">水元素伤害</span>。<br/><span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：3</span>"
+    "desc": "<span style=\"color: #FFFFFFFF;\">我方角色普通攻击后：</span>造成1点<span style=\"color: #80C0FFFF;\">水元素伤害</span>。<br/><span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：3</span>"
   },
   {
     "id": "reflection",
@@ -63,6 +63,26 @@
     "id": "illusory_bubble",
     "name": "泡影",
     "desc": "<span style=\"color: #FFFFFFFF;\">我方造成技能伤害时：</span>移除此状态，使本次伤害加倍。"
+  },
+  {
+    "id": "bake-kurage",
+    "name": "化海月",
+    "desc": "<span style=\"color: #FFFFFFFF;\">结束阶段：</span>造成1点<span style=\"color: #80C0FFFF;\">水元素伤害</span>，治疗我方出战角色1点。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：2</span>"
+  },
+  {
+    "id": "ceremonial_garment",
+    "name": "仪来羽衣",
+    "desc": "所附属角色<span style=\"color: #FFFFFFFF;\">普通攻击</span>造成的伤害+1。\\n<span style=\"color: #FFFFFFFF;\">所附属角色普通攻击后：</span>治疗所有我方角色1点。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">持续回合</span>：2</span>"
+  },
+  {
+    "id": "takimeguri_kanka",
+    "name": "泷廻鉴花",
+    "desc": "所附属角色<span style=\"color: #FFFFFFFF;\">普通攻击</span>造成的伤害+1，造成的<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理伤害</span>变为<span style=\"color: #80C0FFFF;\">水元素伤害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：2</span>"
+  },
+  {
+    "id": "garden_of_purity",
+    "name": "清净之园囿",
+    "desc": "<span style=\"color: #FFFFFFFF;\">结束阶段：</span>造成2点<span style=\"color: #80C0FFFF;\">水元素伤害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：2</span>\\n\\n<span style=\"color: #FFFFFFFF;\">此召唤物在场时：</span>我方角色「普通攻击」造成的伤害+1。"
   },
   {
     "id": "pyro_infusion",
@@ -102,7 +122,7 @@
   {
     "id": "sparks_n_splash",
     "name": "轰轰火花",
-    "desc": "<span style=\"color: #FFFFFFFF;\">我方角色使用技能后：</span>对我方出战角色造成2点<span style=\"color: #FF9999FF;\">火元素伤害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：2</span>"
+    "desc": "<span style=\"color: #FFFFFFFF;\">所在阵营的角色使用技能后：</span>对所在阵营的出战角色造成2点<span style=\"color: #FF9999FF;\">火元素伤害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：2</span>"
   },
   {
     "id": "oz",
@@ -138,6 +158,16 @@
     "id": "thunderbeasts_targe",
     "name": "雷兽之盾",
     "desc": "<span style=\"color: #FFFFFFFF;\">我方角色普通攻击后：</span>造成1点<span style=\"color: #FFACFFFF;\">雷元素伤害</span>。\\n<span style=\"color: #FFFFFFFF;\">我方角色受到至少为3的伤害时：</span>抵消其中1点伤害。\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">持续回合</span>：2"
+  },
+  {
+    "id": "tengu_juurai_ambush",
+    "name": "天狗咒雷·伏",
+    "desc": "<span style=\"color: #FFFFFFFF;\">结束阶段：</span>造成1点<span style=\"color: #FFACFFFF;\">雷元素伤害</span>，我方出战角色附属<span style=\"color: #FFFFFFFF; text-decoration: underline;\">鸣煌护持</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：1</span>"
+  },
+  {
+    "id": "tengu_juurai_stormcluster",
+    "name": "天狗咒雷·雷砾",
+    "desc": "<span style=\"color: #FFFFFFFF;\">结束阶段：</span>造成2点<span style=\"color: #FFACFFFF;\">雷元素伤害</span>，我方出战角色附属<span style=\"color: #FFFFFFFF; text-decoration: underline;\">鸣煌护持</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：2</span>"
   },
   {
     "id": "large_wind_spirit",

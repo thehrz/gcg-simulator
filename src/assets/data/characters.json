@@ -280,6 +280,68 @@
     ]
   },
   {
+    "id": "eula",
+    "type": "character",
+    "name": "优菈",
+    "hp": 10,
+    "energy": 2,
+    "element": "cryo",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "type": "普通攻击",
+        "name": "西风剑术·宗室",
+        "desc": "造成2点<span style=\"color: #FFFFFFFF;\">物理伤害</span>。",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "type": "元素战技",
+        "name": "冰潮的涡旋",
+        "desc": "造成2点<span style=\"color: #99FFFFFF;\">冰元素伤害</span>，如果本角色未附属<span style=\"color: #FFFFFFFF;\">冷酷之心</span>，则使其附属<span style=\"color: #FFFFFFFF;\">冷酷之心</span>。",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "id": "grimheart",
+          "name": "冷酷之心",
+          "desc": "<span style=\"color: #FFFFFFFF;\">所附属角色使用冰潮的涡旋时：</span>移除此状态，使本次伤害+2。"
+        }
+      },
+      {
+        "type": "元素爆发",
+        "name": "凝浪之光剑",
+        "desc": "造成2点<span style=\"color: #99FFFFFF;\">冰元素伤害</span>，召唤<span style=\"color: #FFFFFFFF;\">光降之剑</span>。",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "id": "lightfall_sword",
+          "name": "光降之剑",
+          "desc": "<span style=\"color: #FFFFFFFF;\">优菈使用「普通攻击」或「元素战技」时：</span>此牌累积2点「能量层数」，但是优菈不会获得充能。\\n<span style=\"color: #FFFFFFFF;\">结束阶段：</span>弃置此牌，造成2点<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理伤害</span>；每有1点「能量层数」，都使此伤害+1。\\n（影响此牌「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>」的效果会作用于「<span style=\"color: #FFFFFFFF;\">能量层数</span>」。）"
+        }
+      }
+    ]
+  },
+  {
     "id": "barbara",
     "name": "芭芭拉",
     "hp": 10,
@@ -440,6 +502,114 @@
         "name": "虚实流动",
         "desc": "【被动】<span style=\"color: #FFFFFFFF;\">此角色为出战角色，我方执行「切换角色」行动时：</span>将此次切换视为「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">快速行动</span>」而非「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>」。（每回合1次）",
         "cost": []
+      }
+    ]
+  },
+  {
+    "id": "sangonomiya_kokomi",
+    "type": "character",
+    "name": "珊瑚宫心海",
+    "hp": 10,
+    "energy": 2,
+    "element": "hydro",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "type": "普通攻击",
+        "name": "水有常形",
+        "desc": "造成1点<span style=\"color: #80C0FFFF;\">水元素伤害</span>。",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "type": "元素战技",
+        "name": "海月之誓",
+        "desc": "本角色<span style=\"color: #80C0FFFF;\">附着水元素</span>，召唤<span style=\"color: #FFFFFFFF;\">化海月</span>。",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "subID": "bake-kurage"
+      },
+      {
+        "type": "元素爆发",
+        "name": "海人化羽",
+        "desc": "造成3点<span style=\"color: #80C0FFFF;\">水元素伤害</span>，治疗所有我方角色1点，本角色附属<span style=\"color: #FFFFFFFF;\">仪来羽衣</span>。",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "subID": "ceremonial_garment"
+      }
+    ]
+  },
+  {
+    "id": "kamisato_ayato",
+    "type": "character",
+    "name": "神里绫人",
+    "hp": 10,
+    "energy": 3,
+    "element": "hydro",
+    "weapon": "sword",
+    "skills": [
+      {
+        "type": "普通攻击",
+        "name": "神里流·转",
+        "desc": "造成2点<span style=\"color: #FFFFFFFF;\">物理伤害</span>。",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "type": "元素战技",
+        "name": "神里流·镜花",
+        "desc": "造成2点<span style=\"color: #80C0FFFF;\">水元素伤害</span>，本角色附属<span style=\"color: #FFFFFFFF;\">泷廻鉴花</span>。",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "subID": "takimeguri_kanka"
+      },
+      {
+        "type": "元素爆发",
+        "name": "神里流·水囿",
+        "desc": "造成3点<span style=\"color: #80C0FFFF;\">水元素伤害</span>，召唤<span style=\"color: #FFFFFFFF;\">清净之园囿</span>。",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "subID": "garden_of_purity"
       }
     ]
   },
@@ -979,6 +1149,60 @@
         "name": "踏潮",
         "desc": "（需准备1个行动轮）\\n造成2点<span style=\"color: #FFACFFFF;\">雷元素伤害</span>。",
         "cost": []
+      }
+    ]
+  },
+  {
+    "id": "kujou_sara",
+    "type": "character",
+    "name": "九条裟罗",
+    "hp": 10,
+    "energy": 2,
+    "element": "electro",
+    "weapon": "bow",
+    "skills": [
+      {
+        "type": "普通攻击",
+        "name": "天狗传弓术",
+        "desc": "造成2点<span style=\"color: #FFFFFFFF;\">物理伤害</span>。",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "type": "元素战技",
+        "name": "鸦羽天狗霆雷召咒",
+        "desc": "造成1点<span style=\"color: #FFACFFFF;\">雷元素伤害</span>，召唤<span style=\"color: #FFFFFFFF;\">天狗咒雷·伏</span>。",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ],
+        "subID": "tengu_juurai_ambush"
+      },
+      {
+        "type": "元素爆发",
+        "name": "煌煌千道镇式",
+        "desc": "造成1点<span style=\"color: #FFACFFFF;\">雷元素伤害</span>，召唤<span style=\"color: #FFFFFFFF;\">天狗咒雷·雷砾</span>。",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "subID": "tengu_juurai_stormcluster"
       }
     ]
   },
