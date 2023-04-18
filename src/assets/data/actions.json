@@ -108,6 +108,40 @@
     "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">莫娜</span>时，装备此牌。<br/>莫娜装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">沉没的预言</span>。<br/>装备有此牌的莫娜出战期间，我方引发的<span style=\"color: #80C0FFFF;\">水元素相关反应</span>伤害额外+2。<br/>（牌组中包含莫娜，才能加入牌组）"
   },
   {
+    "id": "tamanooyas_casket",
+    "type": "talent",
+    "name": "匣中玉栉",
+    "requirement": "sangonomiya_kokomi",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 3
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">珊瑚宫心海</span>时，装备此牌。\\n珊瑚宫心海装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">匣中玉栉</span>。\\n装备有此牌的珊瑚宫心海使用<span style=\"color: #FFFFFFFF;\">匣中玉栉</span>时：如果<span style=\"color: #FFFFFFFF;\">化海月</span>在场，则刷新其<span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>。\\n<span style=\"color: #FFFFFFFF;\">仪来羽衣</span>存在期间，<span style=\"color: #FFFFFFFF;\">化海月</span>造成的伤害+1。\\n（牌组中包含珊瑚宫心海，才能加入牌组）"
+    }
+  },
+  {
+    "id": "kyouka_fuushi",
+    "type": "talent",
+    "name": "镜华风姿",
+    "requirement": "kamisato_ayato",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">神里绫人</span>时，装备此牌。\\n神里绫人装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">镜华风姿</span>。\\n装备有此牌的神里绫人触发<span style=\"color: #FFFFFFFF;\">泷廻鉴花</span>的效果时，对于生命值不多于6的敌人伤害额外+1。\\n（牌组中包含神里绫人，才能加入牌组）"
+    }
+  },
+  {
     "id": "flowing_flame",
     "type": "talent",
     "name": "流火焦灼",
@@ -246,6 +280,25 @@
     }
   },
   {
+    "id": "sin_of_pride",
+    "type": "talent",
+    "name": "我界",
+    "requirement": "kujou_sara",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 4
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">九条裟罗</span>时，装备此牌。\\n九条裟罗装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">我界</span>。\\n装备有此牌的九条裟罗在场时，我方附属有<span style=\"color: #FFFFFFFF;\">鸣煌护持</span>的<span style=\"color: #FFACFFFF;\">雷元素</span>角色，<span style=\"color: #FFFFFFFF;\">元素战技</span>和<span style=\"color: #FFFFFFFF;\">元素爆发</span>造成的伤害额外+1。\\n（牌组中包含九条裟罗，才能加入牌组）"
+    }
+  },
+  {
     "id": "chaotic_entropy",
     "type": "talent",
     "name": "混元熵增论",
@@ -306,6 +359,25 @@
     "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">诺艾尔</span>时，装备此牌。<br/>诺艾尔装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">支援就交给我吧</span>。<br/>装备有此牌的诺艾尔生成的<span style=\"color: #FFFFFFFF;\">护体岩铠</span>，会在诺艾尔使用<span style=\"color: #FFFFFFFF;\">普通攻击</span>后，治疗我方所有角色1点。（每回合1次）<br/>（牌组中包含诺艾尔，才能加入牌组）"
   },
   {
+    "id": "arataki_ichiban",
+    "type": "talent",
+    "name": "荒泷第一",
+    "requirement": "arataki_itto",
+    "skills": {
+      "cost": [
+        {
+          "type": "geo",
+          "count": 1
+        },
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">荒泷一斗</span>时，装备此牌。\\n荒泷一斗装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">荒泷第一</span>。\\n装备有此牌的荒泷一斗每回合第2次及以后使用<span style=\"color: #FFFFFFFF;\">荒泷第一</span>时：如果触发<span style=\"color: #FFFFFFFF; text-decoration: underline;\">乱神之怪力</span>，伤害额外+1。\\n（牌组中包含荒泷一斗，才能加入牌组）"
+    }
+  },
+  {
     "id": "floral_sidewinder",
     "type": "talent",
     "name": "飞叶迴斜",
@@ -317,6 +389,21 @@
       }
     ],
     "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">柯莱</span>时，装备此牌。<br/>柯莱装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">飞叶迴斜</span>。<br/>装备有此牌的柯莱使用了<span style=\"color: #FFFFFFFF;\">飞叶迴斜</span>的回合中，我方角色的技能引发<span style=\"color: #7EC236FF;\">草元素相关反应</span>后：造成1点<span style=\"color: #7EC236FF;\">草元素伤害</span>。（每回合1次）<br/>（牌组中包含柯莱，才能加入牌组）"
+  },
+  {
+    "id": "keen_sight",
+    "type": "talent",
+    "name": "眼识殊明",
+    "requirement": "tighnari",
+    "skills": {
+      "cost": [
+        {
+          "type": "dendro",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">提纳里</span>时，装备此牌。\\n提纳里装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">眼识殊明</span>。\\n装备有此牌的提纳里在附属<span style=\"color: #FFFFFFFF;\">通塞识</span>状态期间，进行<span style=\"color: #FFFFFFFF; text-decoration: underline;\">重击</span>时少花费1个<span style=\"color: #FFFFFFFF; text-decoration: underline;\">无色元素</span>。\\n（牌组中包含提纳里，才能加入牌组）"
+    }
   },
   {
     "id": "streaming_surge",
@@ -585,6 +672,20 @@
     "desc": "<span style=\"color: #FFFFFFFF;\">角色造成的伤害+1</span>。<br/><span style=\"color: #FFFFFFFF;\">对方使用技能后：</span>如果所附属角色为「出战角色」，则治疗该角色1点。（每回合至多2次）<br/>（<span style=\"color: #FFFFFFFF;\">「单手剑」角色</span>才能装备。角色最多装备1件「武器」）"
   },
   {
+    "id": "favonius_sword",
+    "type": "weapon",
+    "name": "西风剑",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">角色造成的伤害+1</span>。\\n<span style=\"color: #FFFFFFFF;\">角色使用「元素战技」后：</span>角色额外获得1点<span style=\"color: #FFFFFFFF; text-decoration: underline;\">充能</span>。（每回合1次）\\n（<span style=\"color: #FFFFFFFF;\">「单手剑」角色</span>才能装备。角色最多装备1件「武器」）"
+    }
+  },
+  {
     "id": "adventurers_bandana",
     "type": "artifact",
     "name": "冒险家头带",
@@ -657,6 +758,34 @@
     "desc": "<span style=\"color: #FFFFFFFF;\">角色使用元素爆发后：</span>所有我方后台角色获得1点<span style=\"color: #FFFFFFFF; text-decoration: underline;\">充能</span>。（每回合1次）<br/>（角色最多装备1件「圣遗物」）"
   },
   {
+    "id": "ornate_kabuto",
+    "type": "artifact",
+    "name": "华饰之兜",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">其他我方角色使用元素爆发后：</span>所附属角色获得1点<span style=\"color: #FFFFFFFF; text-decoration: underline;\">充能</span>。\\n（角色最多装备1件「圣遗物」）"
+    }
+  },
+  {
+    "id": "generals_ancient_helm",
+    "type": "artifact",
+    "name": "将帅兜鍪",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">行动阶段开始时：</span>为角色附属<span style=\"color: #FFFFFFFF;\">「重嶂不移」</span>。（提供2点<span style=\"color: #FFFFFFFF; text-decoration: underline;\">护盾</span>，保护该角色。）\\n（角色最多装备1件「圣遗物」）"
+    }
+  },
+  {
     "id": "broken_rimes_echo",
     "type": "artifact",
     "name": "破冰踏雪的回音",
@@ -674,7 +803,7 @@
     "name": "冰风迷途的勇士",
     "cost": [
       {
-        "type": "same",
+        "type": "void",
         "count": 3
       }
     ],
@@ -698,7 +827,7 @@
     "name": "沉沦之心",
     "cost": [
       {
-        "type": "same",
+        "type": "void",
         "count": 3
       }
     ],
@@ -722,7 +851,7 @@
     "name": "炽烈的炎之魔女",
     "cost": [
       {
-        "type": "same",
+        "type": "void",
         "count": 3
       }
     ],
@@ -746,7 +875,7 @@
     "name": "如雷的盛怒",
     "cost": [
       {
-        "type": "same",
+        "type": "void",
         "count": 3
       }
     ],
@@ -758,7 +887,7 @@
     "name": "翠绿的猎人之冠",
     "cost": [
       {
-        "type": "same",
+        "type": "void",
         "count": 2
       }
     ],
@@ -794,7 +923,7 @@
     "name": "悠古的磐岩",
     "cost": [
       {
-        "type": "same",
+        "type": "void",
         "count": 3
       }
     ],
@@ -818,7 +947,7 @@
     "name": "深林的记忆",
     "cost": [
       {
-        "type": "same",
+        "type": "void",
         "count": 3
       }
     ],
@@ -897,6 +1026,20 @@
     "desc": "<span style=\"color: #FFFFFFFF;\">结束阶段：</span>治疗我方出战角色2点。<br/><span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：2</span>"
   },
   {
+    "id": "grand_narukami_shrine",
+    "type": "place",
+    "name": "鸣神大社",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">每回合自动触发1次：</span>生成1个随机的基础元素骰。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：3</span>"
+    }
+  },
+  {
     "id": "paimon",
     "type": "ally",
     "name": "派蒙",
@@ -914,8 +1057,8 @@
     "name": "凯瑟琳",
     "cost": [
       {
-        "type": "void",
-        "count": 2
+        "type": "same",
+        "count": 1
       }
     ],
     "desc": "<span style=\"color: #FFFFFFFF;\">我方执行「切换角色」行动时：</span>将此次切换视为「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">快速行动</span>」而非「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>」。（每回合1次）"
