@@ -51,13 +51,14 @@ const card = getAction(cardID)
     width: 100%;
   }
 }
+
 .cost {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: -20%;
-  left: -20%;
-  width: 40%;
+  top: -23%;
+  left: -16%;
+  width: 35%;
   z-index: 1;
 }
 </style>
