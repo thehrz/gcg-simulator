@@ -26,26 +26,24 @@ const selected = ref(false)
       <selected-icon :selected="selected" />
     </transition>
 
-    <support-info
-      :show="selected"
-      :support="support"
-      @close="selected = false"
-    />
+    <support-info :show="selected" :support="support" @close="selected = false" />
   </div>
 </template>
 
 <style scoped>
 .supportCard {
   position: relative;
+  background-image: url("/images/icons/card_border_small.png");
+  background-size: 100% 100%;
+  padding: 3%;
   cursor: pointer;
 }
 
-.supportCard > div:first-child {
+.supportCard>div:first-child {
   height: 100%;
   overflow: hidden;
   display: flex;
   align-items: center;
-  border: 4px solid #6c7364;
   border-radius: 15%;
 }
 
