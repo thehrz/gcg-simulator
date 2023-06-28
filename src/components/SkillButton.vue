@@ -50,11 +50,11 @@ defineProps<{
     margin: 0 1%;
     cursor: pointer;
 
-    :hover {
+    &:hover {
       border: 5px solid #ccb15a;
     }
 
-    :active {
+    &:active {
       border: 5px solid #888476;
     }
 
