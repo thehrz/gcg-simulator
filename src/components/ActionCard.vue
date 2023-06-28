@@ -44,12 +44,8 @@ const card = getAction(cardID)
 .cardBoard {
   background: url("/images/icons/card_border.png");
   background-size: cover;
-  padding: 2% 1%;
+  padding: 3%;
   position: relative;
-
-  img {
-    width: 100%;
-  }
 }
 
 .cost {
