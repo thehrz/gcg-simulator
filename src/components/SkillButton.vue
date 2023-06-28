@@ -14,14 +14,12 @@ defineProps<{
 <template>
   <div class="skillButton">
     <div :class="{ burst: skill.type == Type.ElementalBurst }">
-      <button
-        :class="{ disable: disable, burst: skill.type == Type.ElementalBurst }"
-      >
+      <button :class="{ disable: disable, burst: skill.type == Type.ElementalBurst }">
         <img :src="getSkill(name, id)" />
       </button>
     </div>
 
-    <div class="costs">
+    <div class="costs" :class="{ disable: disable }">
       <div v-for="cost in costs">
         <CostIcon :cost="cost" />
       </div>
@@ -29,59 +27,55 @@ defineProps<{
   </div>
 </template>
 
-<style scoped>
-img {
-  width: 100%;
-  height: auto;
-}
-
+<style scoped lang="scss">
 .skillButton {
   width: 20%;
   margin: 0 1%;
-}
 
-.skillButton button {
-  display: block;
-  width: 100%;
-  background-image: url("/images/icons/skill_background.png");
-  background-size: 120%;
-  background-position: center;
-  border-radius: 50%;
-  border: 5px solid #544e3b;
-  margin: 0 1%;
-  cursor: pointer;
-}
+  .burst {
+    background-image: url("/images/icons/skill_background_burst.png");
+    background-size: 110%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
-.skillButton button:hover {
-  border: 5px solid #ccb15a;
-}
+  button {
+    display: block;
+    width: 100%;
+    background-image: url("/images/icons/skill_background.png");
+    background-size: 120%;
+    background-position: center;
+    border-radius: 50%;
+    border: 5px solid #544e3b;
+    margin: 0 1%;
+    cursor: pointer;
 
-.skillButton button:active {
-  border: 5px solid #888476;
+    :hover {
+      border: 5px solid #ccb15a;
+    }
+
+    :active {
+      border: 5px solid #888476;
+    }
+
+    >img {
+      width: 100%;
+    }
+  }
 }
 
 .costs {
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
 
-.costs > div {
-  width: 50%;
-}
-
-.burst {
-  background-image: url("/images/icons/skill_background_burst.png");
-  background-size: 110%;
-  background-position: center;
-  background-repeat: no-repeat;
+  >div {
+    width: 50%;
+  }
 }
 
 .disable {
   pointer-events: none;
-}
-
-.disable > img {
-  opacity: 50%;
+  opacity: 70%;
 }
 </style>
