@@ -15,8 +15,6 @@ declare module '@vue/runtime-core' {
     CharacterInfo: typeof import('./components/CharacterInfo.vue')['default']
     CostIcon: typeof import('./components/CostIcon.vue')['default']
     DicesNumber: typeof import('./components/DicesNumber.vue')['default']
-    ElCard: typeof import('element-plus/es')['ElCard']
-    ElDialog: typeof import('element-plus/es')['ElDialog']
     ElDivider: typeof import('element-plus/es')['ElDivider']
     ElementIcon: typeof import('./components/ElementIcon.vue')['default']
     ElMenu: typeof import('element-plus/es')['ElMenu']
