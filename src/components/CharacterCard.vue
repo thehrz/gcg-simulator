@@ -58,7 +58,7 @@ const card = getCharacter(cardID)
   .cardBoard {
     background: url("/images/icons/card_border.png");
     background-size: 100% 100%;
-    padding: 2.5% 3%;
+    padding: 3%;
     position: relative;
     cursor: pointer;
 
