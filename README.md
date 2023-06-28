@@ -4,7 +4,7 @@
 
 > Disclaimer: This project is fully compliant with the [Genshin Impact Terms of Service](https://genshin.hoyoverse.com/en/company/terms), this git repository (Thehrz/gcg-simulator) does not include Genshin Impact assets, no distribution of Genshin Impact assets.
 
-![gcg-simulator](https://s2.loli.net/2023/01/17/MRPIGXvZ2UlBKcD.png)
+![gcg-simulator](https://s2.loli.net/2023/06/28/a7uclbAWYFnCTXh.png)
 
 An open-source front-end simulator for the Genius Invokation TCG. Using Vue3.
 
