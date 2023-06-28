@@ -1,23 +1,24 @@
 <script setup lang="ts">
 import { IPlayer } from "~/common/interfaces/IPlayer"
 
-defineProps<{
+const props = defineProps<{
   player: IPlayer
   type: "enemy" | "owner"
 }>()
+
+const borderColor = computed(() => {
+  return props.type == "enemy" ? "#dae4f2" : "#f1d09e"
+})
 </script>
 
 <template>
   <div class="playerid">
-    <img
-      class="thisround"
-      :src="`/images/icons/playerid_thisround_${type}.png`"
-      v-if="player.thisRound"
-    />
-    <img
-      class="avatar"
-      :src="`/images/characters/${player.avatar ?? 'traveler'}.png`"
-    />
+    <img class="thisround" :src="`/images/icons/playerid_thisround_${type}.png`" v-if="player.thisRound" />
+
+    <div class="avatar">
+      <img :src="`/images/characters/${player.avatar ?? 'traveler'}.png`" />
+    </div>
+
     <img class="id" :src="`/images/icons/playerid_${type}.png`" />
     <a class="name font">{{ player.name }}</a>
   </div>
@@ -39,10 +40,20 @@ defineProps<{
 
   .avatar {
     position: absolute;
-    width: 29.65%;
-    left: 10.8%;
-    top: 7%;
-    clip-path: circle(50%);
+    width: 24%;
+    left: 13.6%;
+    top: 14.8%;
+    border: v-bind(borderColor) 4px solid;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0px 0px 3px 0px black;
+
+    >img {
+      width: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      transform: scale(1.15);
+    }
   }
 
   .id {
