@@ -25,41 +25,38 @@ const selected = ref(false)
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .summonCard {
   position: relative;
   background-image: url("/images/icons/card_border_small.png");
   background-size: 100% 100%;
   padding: 2%;
   cursor: pointer;
-}
 
-.summonCard>div:first-child {
-  height: 100%;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  border-radius: 10%;
-}
+  img {
+    width: 100%;
+  }
 
-.time {
-  position: absolute;
-  top: -12%;
-  right: -16%;
-  display: flex;
-  background-size: 100% 100%;
-  padding: 20%;
-  width: 40%;
-  height: 0;
-  align-items: center;
-  justify-content: center;
-}
+  >div:first-child {
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border-radius: 10%;
+  }
 
-.time {
-  background-image: url("/images/icons/time.png");
-}
-
-img {
-  width: 100%;
+  >.time {
+    position: absolute;
+    top: -12%;
+    right: -16%;
+    display: flex;
+    background-size: 100% 100%;
+    padding: 20%;
+    width: 40%;
+    height: 0;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/images/icons/time.png");
+  }
 }
 </style>
