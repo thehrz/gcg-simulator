@@ -6,11 +6,11 @@ const props = defineProps<{
 
 const card = getCharacter(props.id)
 
-const isDetailVisible = ref(false)
+const [isDetailVisible, toggle] = useToggle()
 </script>
 
 <template>
-  <div class="previewCard" @click="isDetailVisible = true">
+  <div @click="toggle()">
     <div class="cardBoard">
       <img :src="getCard(id)" />
       <div class="hp font_shadow" v-if="isCharacter">{{ card.hp }}</div>
@@ -22,13 +22,10 @@ const isDetailVisible = ref(false)
     <el-dialog :title="card.name" v-model="isDetailVisible">
       <el-card class="card" v-for="(skill, index) in card.skills">
         <div class="skill">
-          <img
-            class="skillIcon image"
-            :src="getSkill(card.id, index + 1)"
-          />
+          <img :src="getSkill(card.id, index + 1)" />
           <div>
-            <p class="name">{{ skill.name }}</p>
-            <p class="desc" v-html="skill.desc"></p>
+            <p>{{ skill.name }}</p>
+            <p v-html="skill.desc"></p>
           </div>
         </div>
       </el-card>
@@ -48,8 +45,6 @@ const isDetailVisible = ref(false)
   }
 }
 
-// .cardBoard >
-
 .hp {
   display: flex;
   align-items: center;
@@ -62,6 +57,7 @@ const isDetailVisible = ref(false)
   position: absolute;
   top: -8%;
   left: -12%;
+  font-size: 23px;
 }
 
 .energyIcons {
@@ -80,15 +76,15 @@ const isDetailVisible = ref(false)
   }
 }
 
-.card img {
-  width: 65px;
-}
-
 .card {
   --el-card-padding: 10px;
   margin-bottom: 3%;
   background: #909399;
   color: white;
+
+  img {
+    width: 65px;
+  }
 }
 
 .skill {
