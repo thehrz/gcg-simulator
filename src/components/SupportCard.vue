@@ -35,7 +35,7 @@ const selected = ref(false)
   position: relative;
   background-image: url("/images/icons/card_border_small.png");
   background-size: 100% 100%;
-  padding: 3%;
+  padding: 2%;
   cursor: pointer;
 }
 
