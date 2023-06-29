@@ -32,7 +32,7 @@ defineProps<{
   width: 20%;
   margin: 0 1%;
 
-  .burst {
+  >.burst {
     background-image: url("/images/icons/skill_background_burst.png");
     background-size: 110%;
     background-position: center;
