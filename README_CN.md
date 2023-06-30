@@ -2,7 +2,7 @@
 
 > 声明: 本项目完全遵循 [米哈游原神游戏使用许可及服务协议](https://ys.mihoyo.com/main/company/agreement), 本仓库 (Thehrz/gcg-simulator) 不包含原神游戏资源, 无分发原神游戏资源的行为。
 
-![gcg-simulator.png](https://s2.loli.net/2023/06/28/a7uclbAWYFnCTXh.png)
+![gcg-simulator.png](https://s2.loli.net/2023/06/30/6JSpMbZzrT45ULC.png)
 
 一个开源的七圣召唤模拟器前端实现。使用 Vue3 开发。
 
