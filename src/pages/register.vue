@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { FormInstance } from "element-plus"
+import { ElMessage, FormInstance } from "element-plus"
+
 
 const form = reactive({
   nickName: "",
@@ -13,18 +14,19 @@ const submit = (formEl: FormInstance | undefined) => {
   if (!formEl) return
   formEl.validate(async (valid) => {
     if (valid) {
-      // const { data, pending, error, refresh } = await useFetch<{
-      //   player_nick_name: string
-      //   player_uid: string
-      // }>("/backend/player", {
-      //   method: "POST",
-      //   body: {
-      //     nick_name: form.nickName,
-      //     password: form.password,
-      //   },
-      // })
+      const { data } = await useFetch("/api/player")
+        .post({
+          nick_name: form.nickName,
+          password: form.password,
+        })
+        .json<{
+          player_nick_name: string
+          player_uid: string
+        }>()
+
+      ElMessage.info(data.value?.player_nick_name)
     } else {
-      // ElMessage.error("请检查信息")
+      ElMessage.error("请检查信息")
       return false
     }
   })
@@ -62,14 +64,7 @@ const rules = reactive({
   <div class="login">
     <h1>gcg-simulator Demo</h1>
 
-    <el-form
-      :model="form"
-      :rules="rules"
-      status-icon
-      ref="formRef"
-      label-position="left"
-      label-width="120px"
-    >
+    <el-form :model="form" :rules="rules" status-icon ref="formRef" label-position="left" label-width="120px">
       <el-form-item label="昵称">
         <el-input v-model="form.nickName" />
       </el-form-item>
