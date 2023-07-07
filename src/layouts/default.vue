@@ -32,8 +32,6 @@ export default {
       <el-menu-item index="/">主页</el-menu-item>
     </router-link>
 
-    <div class="flex-grow" />
-
     <router-link :to="page.path" v-for="page in pages">
       <el-menu-item :index="page.path">{{ page.name }}</el-menu-item>
     </router-link>
