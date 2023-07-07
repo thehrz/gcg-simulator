@@ -8,16 +8,15 @@ body {
   box-sizing: border-box;
   font-family: var(--el-font-family);
   user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 img,
 svg {
   vertical-align: top;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-drag: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
 }
 
 a {
