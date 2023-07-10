@@ -9,7 +9,7 @@ const iconUrl = computed(() => `url("${getIcon(props.cost.type)}")`)
 </script>
 
 <template>
-  <div class="icon font_shadow">
+  <div class="icon bg-contain h-0 py-50% flex items-center justify-center font_shadow">
     {{ cost.count }}
   </div>
 </template>
@@ -17,12 +17,5 @@ const iconUrl = computed(() => `url("${getIcon(props.cost.type)}")`)
 <style scoped>
 .icon {
   background-image: v-bind(iconUrl);
-  background-size: 100% 100%;
-  width: 100%;
-  height: 0;
-  padding: 50% 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 </style>
