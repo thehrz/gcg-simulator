@@ -1,10 +1,16 @@
 <script setup lang="ts">
-import { ElMessage, FormInstance } from "element-plus"
+import { ElMessage, FormInstance, FormRules } from "element-plus"
 
-const form = reactive({
-  player_uid: "",
-  password: "",
+
+const form = reactive<Form>({
+  player_uid: undefined,
+  password: undefined,
 })
+
+interface Form {
+  player_uid?: number
+  password?: string
+}
 
 const formRef = ref<FormInstance>()
 
@@ -30,7 +36,7 @@ const submit = (formEl: FormInstance | undefined) => {
   })
 }
 
-const rules = reactive({
+const rules = reactive<FormRules<Form>>({
   player_uid: [{
     required: true,
     message: 'Please input the uid',
