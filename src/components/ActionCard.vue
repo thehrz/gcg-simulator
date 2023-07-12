@@ -5,7 +5,7 @@ const props = defineProps<{
   action: IAction
 }>()
 
-const selected = ref(false)
+const [isSelected, toggle] = useToggle()
 
 const { cardID } = props.action
 
@@ -13,48 +13,24 @@ const card = getAction(cardID)
 </script>
 
 <template>
-  <div class="card" @click="selected = true">
-    <div class="cost font_shadow">
-      <CostIcon :cost="cost" v-for="cost in card.cost" />
+  <div class="relative cursor-pointer" @click="toggle()">
+    <div class="absolute top--23% left--16% w-35% z-1 font_shadow">
+      <cost-icon :cost="cost" v-for="cost in card.cost" />
     </div>
-    <div class="cardBoard">
-      <img :src="getCard(cardID)" />
+    <div class="cardBoard relative p-3%">
+      <img class="w-100%" :src="getCard(cardID)" />
 
       <transition name="fade">
-        <selected-icon :selected="selected" />
+        <selected-icon :selected="isSelected" />
       </transition>
     </div>
 
-    <action-info :show="selected" :action="action" @close="selected = false" />
+    <action-info :show="isSelected" :action="action" @close="toggle()" />
   </div>
 </template>
 
 <style scoped lang="scss">
-.card {
-  height: auto;
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-
-  img {
-    width: 100%;
-  }
-}
-
 .cardBoard {
   background: url("/images/icons/card_border.png");
-  background-size: cover;
-  padding: 3%;
-  position: relative;
-}
-
-.cost {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: -23%;
-  left: -16%;
-  width: 35%;
-  z-index: 1;
 }
 </style>
