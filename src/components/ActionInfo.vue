@@ -27,17 +27,17 @@ const card = getAction(props.action.cardID)
 <template>
   <Teleport to=".game" v-if="isMounted">
     <transition name="fade">
-      <div v-if="show" ref="contentRef" class="actionInfo">
-        <div class="card">
-          <div class="cardBoard">
-            <img :src="`images/cards/${action.cardID}.png`" />
+      <div v-if="show" ref="contentRef" class="actionInfo flex absolute top-8% left-3% w-32% h-80% c-#cad8ea">
+        <div class="card w-40% flex-shrink-0">
+          <div class="bg-fill cardBoard p-3% relative">
+            <img class="w-100%" :src="`images/cards/${action.cardID}.png`" />
           </div>
         </div>
-        <el-scrollbar>
-          <div class="info">
-            <h1>{{ card.name }}</h1>
+        <el-scrollbar class="ml-1%">
+          <div class="info rd-10px flex bg-#2e3741 flex-col p-3% overflow-auto">
+            <h1 class="text-40px mb-1px">{{ card.name }}</h1>
 
-            <p v-html="card.desc"></p>
+            <p class="text-30px" v-html="card.desc"></p>
           </div>
         </el-scrollbar>
       </div>
@@ -46,56 +46,7 @@ const card = getAction(props.action.cardID)
 </template>
 
 <style scoped lang="scss">
-.actionInfo {
-  position: absolute;
-  top: 8%;
-  left: 3%;
-  width: 32%;
-  height: 80%;
-  z-index: 10;
-  display: flex;
-  color: #cad8ea;
-  align-items: flex-start;
-
-  .card {
-    width: 40%;
-    flex-shrink: 0;
-
-    > .cardBoard {
-      background: url("/images/icons/card_border.png");
-      background-size: 100% 100%;
-      padding: 2.5% 3%;
-      position: relative;
-
-      > img {
-        width: 100%;
-      }
-    }
-  }
-
-  > .el-scrollbar {
-    margin-left: 1%;
-    width: 100%;
-
-    .info {
-      border-radius: 10px;
-      display: flex;
-      background-color: #2e3741;
-      flex-direction: column;
-      padding: 3%;
-      width: 100%;
-      max-height: 100%;
-      overflow: auto;
-
-      > h1 {
-        font-size: 40px;
-        margin-bottom: 1%;
-      }
-
-      > p {
-        font-size: 30px;
-      }
-    }
-  }
+.cardBoard {
+  background-image: url("/images/icons/card_border.png");
 }
 </style>
