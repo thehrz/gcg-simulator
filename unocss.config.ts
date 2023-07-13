@@ -9,6 +9,7 @@ import {
 } from "unocss"
 
 export default defineConfig({
+  rules: [["bg-fill", { "background-size": "100% 100%" }]],
   presets: [
     presetUno(),
     presetAttributify(),

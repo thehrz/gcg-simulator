@@ -17,7 +17,7 @@ const card = getAction(cardID)
     <div class="absolute top--23% left--16% w-35% z-1 font_shadow">
       <cost-icon :cost="cost" v-for="cost in card.cost" />
     </div>
-    <div class="cardBoard relative p-3%">
+    <div class="cardBoard bg-fill relative p-3%">
       <img class="w-100%" :src="getCard(cardID)" />
 
       <transition name="fade">
@@ -31,6 +31,6 @@ const card = getAction(cardID)
 
 <style scoped lang="scss">
 .cardBoard {
-  background: url("/images/icons/card_border.png");
+  background-image: url("/images/icons/card_border.png");
 }
 </style>
