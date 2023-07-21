@@ -25,27 +25,23 @@ const card = getCharacter(props.character.cardID)
 <template>
   <teleport to=".game" v-if="isMounted">
     <transition name="fade">
-      <div v-if="show" class="characterInfo">
-        <div class="card">
-          <div class="cardBoard">
-            <img :src="getCard(character.cardID)" />
+      <div v-if="show" class="absolute top-8% left-3% w-27% h-80% flex c-#cad8ea">
+        <div class="w-40% flex-shrink-0">
+          <div class="cardBoard bg-fill p-3% relative">
+            <img class="w-100%" :src="getCard(character.cardID)" />
           </div>
         </div>
 
-        <el-scrollbar>
-          <div class="info" v-on-click-outside="close">
-            <h1>{{ card.name }}</h1>
+        <el-scrollbar class="ml-1% w-100%">
+          <div class="rd-10px bg-#2e3741 p-3%" v-on-click-outside="close">
+            <h1 class="text-40px mb-1%">{{ card.name }}</h1>
 
-            <div class="icons">
-              <element-icon :element="card.element" />
+            <div class="mb-3%">
+              <element-icon class="w-15%" :element="card.element" />
             </div>
 
-            <skill-info
-              :character-name="card.id"
-              :skill="skill"
-              :index="index + 1"
-              v-for="(skill, index) in card.skills"
-            />
+            <skill-info :character-name="card.id" :skill="skill" :index="index + 1"
+              v-for="(skill, index) in card.skills" />
           </div>
         </el-scrollbar>
       </div>
@@ -54,60 +50,7 @@ const card = getCharacter(props.character.cardID)
 </template>
 
 <style scoped lang="scss">
-.characterInfo {
-  position: absolute;
-  top: 8%;
-  left: 3%;
-  width: 32%;
-  height: 80%;
-  z-index: 10;
-  display: flex;
-  color: #cad8ea;
-  align-items: flex-start;
-
-  .card {
-    width: 40%;
-    flex-shrink: 0;
-
-    > .cardBoard {
-      background: url("/images/icons/card_border.png");
-      background-size: 100% 100%;
-      padding: 2.5% 3%;
-      position: relative;
-
-      > img {
-        width: 100%;
-      }
-    }
-  }
-
-  > .el-scrollbar {
-    margin-left: 1%;
-    width: 100%;
-
-    .info {
-      border-radius: 10px;
-      display: flex;
-      background-color: #2e3741;
-      flex-direction: column;
-      padding: 3%;
-      width: 100%;
-      max-height: 100%;
-      overflow: auto;
-
-      > h1 {
-        font-size: 40px;
-        margin-bottom: 1%;
-      }
-
-      > .icons {
-        margin-bottom: 3%;
-
-        > img {
-          width: 15%;
-        }
-      }
-    }
-  }
+.cardBoard {
+  background-image: url("/images/icons/card_border.png");
 }
 </style>
